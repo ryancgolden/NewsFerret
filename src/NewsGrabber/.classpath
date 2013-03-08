@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="var" path="GRABBER_LIB_ROOT/ant.jar"/>
+	<classpathentry kind="var" path="GRABBER_LIB_ROOT/apache-cassandra-thrift-1.0.12.jar"/>
+	<classpathentry kind="var" path="GRABBER_LIB_ROOT/boilerpipe-1.2.0.jar"/>
+	<classpathentry kind="var" path="GRABBER_LIB_ROOT/commons-lang-2.4.jar"/>
+	<classpathentry kind="var" path="GRABBER_LIB_ROOT/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="var" path="GRABBER_LIB_ROOT/guava-r08.jar"/>
+	<classpathentry kind="var" path="GRABBER_LIB_ROOT/hector-core-1.0-5-SNAPSHOT.jar" sourcepath="/LIBSRC_ROOT/hector-core-1.0-5-SNAPSHOT-sources.jar"/>
+	<classpathentry kind="var" path="GRABBER_LIB_ROOT/jaxen.jar"/>
+	<classpathentry kind="var" path="GRABBER_LIB_ROOT/jdom-1.1.3.jar"/>
+	<classpathentry kind="var" path="GRABBER_LIB_ROOT/libthrift-0.6.jar"/>
+	<classpathentry kind="var" path="GRABBER_LIB_ROOT/log4j-1.2.16.jar"/>
+	<classpathentry kind="var" path="GRABBER_LIB_ROOT/nekohtml-1.9.13.jar"/>
+	<classpathentry kind="var" path="GRABBER_LIB_ROOT/rome-1.0.jar"/>
+	<classpathentry kind="var" path="GRABBER_LIB_ROOT/slf4j-api-1.6.1.jar"/>
+	<classpathentry kind="var" path="GRABBER_LIB_ROOT/slf4j-log4j12-1.6.1.jar"/>
+	<classpathentry kind="var" path="GRABBER_LIB_ROOT/xalan.jar"/>
+	<classpathentry kind="var" path="GRABBER_LIB_ROOT/xerces.jar"/>
+	<classpathentry kind="var" path="GRABBER_LIB_ROOT/xml-apis.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/NewsAnalyzer"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

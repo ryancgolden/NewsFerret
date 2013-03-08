@@ -1,0 +1,12 @@
+Aggregating News RSS Provider
+-----------------------------
+Google:
+http://news.google.com/news?um=1&ned=us&hl=en&q=identity+theft&output=rss
+
+Huffington Post:
+http://www.huffingtonpost.com/tag/identity-theft/feed
+
+Example Story URL from Google feed:
+http://news.google.com/news/url?sa=t&fd=R&usg=AFQjCNGcr3ebBaTZ9ODTZoI1dRgYXqSStA&url=http://www.sun-sentinel.com/news/opinion/editorials/fl-editorials-identity-theft-20130218,0,4333441.story
+
+
