@@ -105,15 +105,3 @@ Contact Ryan Golden at his gmail alias: ryan c golden (no spaces)
 Or see additional contact information at http://identity.utexas.edu
 
 
-
-
-
-
-
-When you save the preferences, it should build all the p
-    .  To do this, gotoTo build and run Java code, I use Eclipse.  To execute MATLAB code requires an installation of MATLAB.
-
-The Git source does not distribute an Eclipse workspace.  Open Eclipse and create a new workspace folder (we'll call it $WORKSPACE).
-
-
-
