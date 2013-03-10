@@ -1,0 +1,5 @@
+*.txt~
+*.class
+.metadata
+src/NewsAnalyzer/bin
+src/NewsGrabber/bin

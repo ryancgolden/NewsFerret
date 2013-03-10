@@ -2,7 +2,6 @@ package utexas.cid.news.analysis;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
@@ -22,7 +21,6 @@ import org.apache.cassandra.thrift.SlicePredicate;
 import org.apache.cassandra.utils.ByteBufferUtil;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.conf.Configured;
-import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.Mapper;
@@ -34,6 +32,7 @@ import org.slf4j.LoggerFactory;
 
 import utexas.cid.news.Constants;
 import utexas.cid.news.dataservices.NewsDao;
+import utexas.cid.news.dataservices.NewsSchema;
 /**
  * Implements Hadoop Map-Reduce to take news articles from a Cassandra column
  * family and produce a term-document matrix for further analytical processing.
@@ -44,7 +43,6 @@ public class TermDocMatCreator extends Configured implements Tool {
 
 	private static final Logger logger = LoggerFactory
 			.getLogger(TermDocMatCreator.class);
-
 	
 	/**
 	 * Maps <doc, full content> to <doc, term>
@@ -76,6 +74,7 @@ public class TermDocMatCreator extends Configured implements Tool {
 			
 
 			StringTokenizer itr = new StringTokenizer(value);
+			boolean hasWords = false; //track whether the doc has any valid words
 			while (itr.hasMoreTokens()) {
 				String myStr = itr.nextToken();
 				myStr = myStr.replaceAll("[^\\w\\s]", "");
@@ -87,6 +86,10 @@ public class TermDocMatCreator extends Configured implements Tool {
 					continue;
 				}
 				context.write(new Text(ByteBufferUtil.string(key)), word);
+				hasWords = true;
+			}
+			if (!hasWords) {
+				logger.warn("Document had no valid terms for indexing." );
 			}
 		}
 	}
@@ -142,8 +145,14 @@ public class TermDocMatCreator extends Configured implements Tool {
 	@Override
 	public int run(String[] args) throws Exception {
 
-		logger.debug("In run method.");
+		logger.debug("Creating M-R job to create term doc matrix.");
 
+		// drop and re-create the column family that will hold
+		// the output of the M-R job, which is essentially a form of
+		// term-doc matrix.
+		NewsSchema.dropDocTermColumnFamily();
+		NewsSchema.createDocTermColumnFamily();
+		
 		// TODO: optionally get these from command line
 		String myCasPort = Constants.PORT;
 		String myCasHost = Constants.HOST;

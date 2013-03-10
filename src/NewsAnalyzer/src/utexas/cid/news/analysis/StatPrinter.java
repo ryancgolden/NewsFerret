@@ -9,10 +9,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import utexas.cid.news.Constants;
-
 import me.prettyprint.cassandra.serializers.IntegerSerializer;
-import me.prettyprint.cassandra.serializers.LongSerializer;
 import me.prettyprint.cassandra.serializers.StringSerializer;
 import me.prettyprint.hector.api.Cluster;
 import me.prettyprint.hector.api.Keyspace;
@@ -25,10 +22,17 @@ import me.prettyprint.hector.api.factory.HFactory;
 import me.prettyprint.hector.api.query.QueryResult;
 import me.prettyprint.hector.api.query.RangeSlicesQuery;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import utexas.cid.news.Constants;
 import au.com.bytecode.opencsv.CSVReader;
 
 public class StatPrinter {
 
+    /** The logger. */
+    private static Logger logger = LoggerFactory.getLogger(StatPrinter.class);
+	
 	/**
 	 * @param args
 	 * @throws IOException
@@ -41,11 +45,11 @@ public class StatPrinter {
 			File f = new File(myPath);
 			StatPrinter.printTermCountStats(f);
 		} catch (Exception e) {
-			System.err.println("Could not open " + myPath);
+			logger.warn("Could not open " + myPath);
 			// do nothing
 		}
 
-		printTermDocSummary();
+		printDocTermSummary();
 
 	}
 
@@ -56,7 +60,7 @@ public class StatPrinter {
 	 * Though in a week of news scraping, I never found an article with
 	 * more than 800 unique terms.
 	 */
-	private static void printTermDocSummary() {
+	public static void printDocTermSummary() {
 		int maxCols = 0;
 		Cluster cluster = HFactory.getOrCreateCluster(Constants.CLUSTER,
 				Constants.HOST_IP);
@@ -66,6 +70,7 @@ public class StatPrinter {
 
 		try {
 
+			// XXX: should use a DAO instead of the Hector API
 			RangeSlicesQuery<String, String, Integer> rangeSlicesQuery = HFactory
 					.createRangeSlicesQuery(keyspaceOperator, stringSerializer,
 							stringSerializer, IntegerSerializer.get());
@@ -77,36 +82,36 @@ public class StatPrinter {
 			QueryResult<OrderedRows<String, String, Integer>> result = rangeSlicesQuery
 					.execute();
 			OrderedRows<String, String, Integer> orderedRows = result.get();
+			int rowCount = orderedRows.getCount();
 
 			Row<String, String, Integer> lastRow = orderedRows.peekLast();
 
-			System.out.println("Contents of rows: \n");
+			logger.info("Contents of rows:");
 			for (Row<String, String, Integer> r : orderedRows) {
 				ColumnSlice<String, Integer> mySlice = r.getColumnSlice();
 				List<HColumn<String, Integer>> myCols = mySlice.getColumns();
-				System.out.println("   " + r);
-				System.out.println("   # cols: " + myCols.size());
+				logger.info("" + r);
+				//logger.info("   # cols: " + myCols.size());
 				if (myCols.size() > maxCols) {
 					maxCols = myCols.size();
 				}
 			}
-			System.out.println("Total rows: " + orderedRows.getCount());
-			System.out.println("Max columns: " + maxCols);
-			// System.out.println("Should have 11 rows: " +
+			logger.info("Total rows: " + rowCount);
+			// logger.info("Should have 11 rows: " +
 			// orderedRows.getCount());
 
 //			rangeSlicesQuery.setKeys(lastRow.getKey(), "");
 //			orderedRows = rangeSlicesQuery.execute().get();
 //
-//			System.out.println("2nd page Contents of rows: \n");
+//			logger.info("2nd page Contents of rows: \n");
 //			for (Row<String, String, String> row : orderedRows) {
-//				System.out.println("   " + row);
+//				logger.info("   " + row);
 //			}
 
 		} catch (HectorException he) {
 			he.printStackTrace();
 		}
-		cluster.getConnectionManager().shutdown();
+		//cluster.getConnectionManager().shutdown();
 
 	}
 
@@ -137,7 +142,7 @@ public class StatPrinter {
 			Collections.sort(keys);
 			for (Integer key : keys) {
 				for (String value : countMap.get(key)) {
-					System.out.println("" + key + " " + value);
+					logger.info("" + key + " " + value);
 				}
 			}
 		} finally {

@@ -271,7 +271,7 @@ public class NewsDao {
 	 * @return
 	 */
 	public List<NewsArticle> readAll() {
-		logger.debug("Reading all from NewsDao");
+		logger.debug("Reading all NewsArticles from NewsDao");
 		
 		List<NewsArticle> myList = new ArrayList<NewsArticle>();
         int row_limit = 500;
@@ -287,17 +287,17 @@ public class NewsDao {
 
         while (true) {
             rangeSlicesQuery.setKeys(last_key, null);
-            logger.debug(" > " + last_key);
+            //logger.debug(" > " + last_key);
 
             QueryResult<OrderedRows<String, String, String>> result = rangeSlicesQuery.execute();
             OrderedRows<String, String, String> rows = result.get();
+            rowCount = rows.getCount();
             Iterator<Row<String, String, String>> rowsIterator = rows.iterator();
 
             // we'll skip this first one, since it is the same as the last one from previous time we executed
             if (last_key != null && rowsIterator != null) rowsIterator.next();   
 
             while (rowsIterator.hasNext()) {
-            	rowCount++;
             	Row<String, String, String> row = rowsIterator.next();
             	last_key = row.getKey();
 
@@ -305,12 +305,12 @@ public class NewsDao {
             		continue;
             	}
               
-            	logger.debug("key: " + row.getKey());
+            	//logger.debug("key: " + row.getKey());
             	NewsArticle myArticle = new NewsArticle();
             	for (HColumn<String, String> col : row.getColumnSlice().getColumns()) {
             		String name = col.getName();
             		String val = col.getValue();
-            		logger.debug("  reading {" + col.getName() + ":" + col.getValue() + "}");
+            		//logger.debug("  reading {" + col.getName() + ":" + col.getValue() + "}");
             		if (NewsDao.COL_TITLE.equals(name)) {
             			myArticle.setTitle(val);
             		} else if (NewsDao.COL_AUTHOR.equals(name)) {
@@ -332,7 +332,6 @@ public class NewsDao {
             	}
             	myList.add(myArticle);
             }
-
             if (rows.getCount() < row_limit)
                 break;
         }

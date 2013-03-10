@@ -23,5 +23,10 @@
 	<classpathentry kind="var" path="ANALYZER_LIB_ROOT/slf4j-log4j12-1.6.1.jar"/>
 	<classpathentry kind="var" path="ANALYZER_LIB_ROOT/opencsv-2.3.jar"/>
 	<classpathentry kind="var" path="ANALYZER_LIB_ROOT/hector-core-1.0-5-SNAPSHOT.jar"/>
+	<classpathentry kind="var" path="ANALYZER_LIB_ROOT/stanford-postagger.jar" sourcepath="/LIBSRC_ROOT/stanford-postagger-src-2012-07-09.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/win/UT/github/ID/libsrc/stanford-postagger-javadoc-2012-07-09.zip!/javadoc"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -118,21 +118,20 @@ public class NewsGrabber {
 		        myDao.update(myNews);
 
 		    }
+			
+			logger.info("Done grabbing news.");
+			
 		} catch (IOException ioe) {
-			logger.error("Problem reading URL: " + feedUrl);
-			ioe.printStackTrace();
+			logger.warn("Problem reading URL: " + feedUrl, ioe);
 		} catch (FeedException fe) {
-			logger.error("Problem with feed from URL: " + feedUrl);
-			fe.printStackTrace();
+			logger.warn("Problem with feed from URL: " + feedUrl, fe);
 		} finally {
 			if (reader != null)
 				try {
 					reader.close();
 				} catch (Exception e) {
-					logger.error("Problem closing reader");
-					e.printStackTrace();
+					logger.error("Problem closing reader", e);
 				}
 	    }
 	}
-
 }

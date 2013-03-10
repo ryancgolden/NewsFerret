@@ -16,7 +16,6 @@
 	<classpathentry kind="var" path="GRABBER_LIB_ROOT/nekohtml-1.9.13.jar"/>
 	<classpathentry kind="var" path="GRABBER_LIB_ROOT/rome-1.0.jar"/>
 	<classpathentry kind="var" path="GRABBER_LIB_ROOT/slf4j-api-1.6.1.jar"/>
-	<classpathentry kind="var" path="GRABBER_LIB_ROOT/slf4j-log4j12-1.6.1.jar"/>
 	<classpathentry kind="var" path="GRABBER_LIB_ROOT/xalan.jar"/>
 	<classpathentry kind="var" path="GRABBER_LIB_ROOT/xerces.jar"/>
 	<classpathentry kind="var" path="GRABBER_LIB_ROOT/xml-apis.jar"/>

@@ -85,15 +85,17 @@ RUNNING GRABBER and JAVA ANALYZERS
     - NOTE: Does not delete older articles, so generally it is safe to run this one or more times per day, which will incrementally accumulate articles in your database
 
 6. Run utexas.cid.news.analysis.Analyzer
+    - Pass as first argument the path to $NEWSFERRET/src/matlab/dat
     - Runs Hadoop map-reduce job to populate DOC_TERM_COLUMN_FAMILY with term-doc matrix
-    - Creates *.dat files for import into MATLAB
+    - Outputs some summary data to log
+    - Creates *.dat files below the dir you passed for import into MATLAB
     optionally, you can generate a jar using the jardesc and run $NEWSFERRET/bin/runAnalyzer.sh
 
 RUNNING MATLAB ANALYSIS
 -----------------------
 [TODO: more info here]
 
-1. Copy the *.dat files from above to the $NEWSFERRET/src/matlab/dat folder, if they aren't there already
+1. Ensure the *.dat files from above are at $NEWSFERRET/src/matlab/dat folder, if they aren't there already
 2. Run $NEWSFERRET/src/matlab/main_id.m to perform clustering and get top 25 words per doc
 3. Run $NEWSFERRET/src/matlab/termsim.m to get pairwise similarity cell array
 4. XXX: Open "c" in variable editor, copy and paste to Excel, to get pairwise similarity information into a spreadsheet.  As of this writing, I have not had good luck with using 'xlswrite' or 'csvwrite' functions with cell arrays.
