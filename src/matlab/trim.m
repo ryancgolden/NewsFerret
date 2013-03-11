@@ -2,7 +2,7 @@
 % and an array of words and removes the "tail" rows, i.e., words
 % that appear fewer than min or more than max.  
 % Returns [trimmed matrix, trimmed word array]
-function [trimmat, trimwords, trimpeople] = trim(mat, words, people, minword, maxword, mindocwords)
+function [trimmat, trimwords, trimpeople] = trim(mat, words, docs, minword, maxword, mindocwords)
     wc = sum(mat')';
     rc = sum(mat)';
     keepwords = wc < maxword & wc > minword;
@@ -10,5 +10,5 @@ function [trimmat, trimwords, trimpeople] = trim(mat, words, people, minword, ma
     trimmat = mat(keepwords,keepdocs);
     trimwords = words(keepwords);
     for i = 1:4
-        trimpeople{i} = people{i}(keepdocs);
+        trimpeople{i} = docs{i}(keepdocs);
     end
