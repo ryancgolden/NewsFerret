@@ -2,7 +2,7 @@
 % Load data for identity news word counts
 %----------------------------------------
 
-datDir = 'dat/'
+datDir = 'dat/';
 tdDir = [datDir 'termdoc/'];
 
 %-------------------------

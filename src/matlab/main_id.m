@@ -35,3 +35,4 @@ id_stats = nodestats(doc_node_info);
 [U,S,V] = svd(id_fin);
 D=pdist(U*S,'cosine'); % compute distances between term vectors in the lower dimensional space
 SquareD = squareform(D); % make it easier to dereference individual comparisons
+term_sims = termsim(SquareD, id_words_trim);

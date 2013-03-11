@@ -117,7 +117,7 @@ public class TermDocMatCreator extends Configured implements Tool {
 
 				// If the string was non alpha, skip it
 				// If the string is not a noun, skip it
-				if ("".equals(myRoot) || !("NN".equals(myTag))) {
+				if ("".equals(myRoot) || myTag == null || !(myTag.contains("NN"))) {
 					continue;
 				}
 
