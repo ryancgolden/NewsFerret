@@ -1,4 +1,5 @@
-*.txt~
+*~
+*.swp
 *.class
 .metadata
 src/NewsAnalyzer/bin

@@ -30,6 +30,8 @@ import org.apache.hadoop.util.ToolRunner;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import edu.stanford.nlp.tagger.maxent.MaxentTagger;
+
 import utexas.cid.news.Constants;
 import utexas.cid.news.dataservices.NewsDao;
 import utexas.cid.news.dataservices.NewsSchema;
@@ -50,6 +52,9 @@ public class TermDocMatCreator extends Configured implements Tool {
 	public static class TokenizerMapper 
 		extends Mapper<ByteBuffer, SortedMap<ByteBuffer, IColumn>, Text, Text> {
 
+		private String sTaggerLoc = "taggers/english-bidirectional-distsim.tagger";
+		private MaxentTagger sTagger = null;
+
 		private Text word = new Text();
 		private ByteBuffer sourceColumn;
 
@@ -59,6 +64,16 @@ public class TermDocMatCreator extends Configured implements Tool {
 					NewsDao.COL_CONTENT));
 			logger.debug("sourceColumn = " + context.getConfiguration().get(
 					NewsDao.COL_CONTENT));
+
+			// Create part of speech tagger
+			try {
+				sTagger = new MaxentTagger(sTaggerLoc);
+			} catch (ClassNotFoundException e) {
+				logger.error("Error occurred creating tagger.  Please ensure "
+						+ "training files are accessible at "
+						+ "taggers/english-bidirectional-distsim.tagger", e);
+				throw new InterruptedException();
+			}						
 		}
 
 		public void map(ByteBuffer key,
@@ -71,20 +86,42 @@ public class TermDocMatCreator extends Configured implements Tool {
 			if (column == null)
 				return;
 			String value = ByteBufferUtil.string(column.value());
-			
 
-			StringTokenizer itr = new StringTokenizer(value);
+			// tagged string contains part of speech suffix
+			// see http://www.computing.dcu.ie/~acahill/tagset.html
+			String tagged = sTagger.tagString(value);
+			StringTokenizer itr = new StringTokenizer(tagged);
 			boolean hasWords = false; //track whether the doc has any valid words
 			while (itr.hasMoreTokens()) {
-				String myStr = itr.nextToken();
-				myStr = myStr.replaceAll("[^\\w\\s]", "");
-				myStr = myStr.toLowerCase();
-				word.set(myStr);
-				if ("".equals(myStr)) {
-					// for the case that the only thing in the string were the tokens just removed
-					//logger.warn("Found empty string");
+				String myTaggedStr = itr.nextToken();
+
+				// Remove anything not alphanumeric or underscore
+				myTaggedStr = myTaggedStr.replaceAll("[^\\w\\s_]", "");
+
+				if (myTaggedStr.length() < 2) {
 					continue;
 				}
+				
+				// Separate root string and tag suffix
+				String myRoot = null;
+				String myTag = null;
+				try {
+					int idx = myTaggedStr.lastIndexOf('_');
+					myRoot = myTaggedStr.substring(0, idx);
+					myTag = myTaggedStr.substring(idx + 1, myTaggedStr.length() - 1);
+				} catch (Exception e) {
+					logger.debug("Problem tagging", e);
+				}
+
+				myRoot = myRoot.toLowerCase();
+
+				// If the string was non alpha, skip it
+				// If the string is not a noun, skip it
+				if ("".equals(myRoot) || !("NN".equals(myTag))) {
+					continue;
+				}
+
+				word.set(myRoot);
 				context.write(new Text(ByteBufferUtil.string(key)), word);
 				hasWords = true;
 			}
