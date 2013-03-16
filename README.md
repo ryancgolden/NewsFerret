@@ -71,12 +71,13 @@ RUNNING GRABBER and JAVA ANALYZERS
     - KEYSPACE = "identity" (will be created)
     - NEWS_COLUMN_FAMILY = "News" (will be created for storing and querying article content and metadata)
     - DOC_TERM_COLUMN_FAMILY = "DocTerm" (will be created for storing querying term-doc matrix)
+    - MATLABCMD = command that will be run to execute MATLAB by Analyzer
 
 3. Create a class with a main method that calls utexas.cid.news.dataservices.NewsSchema.createEverything() method.    I don't offer an out-of-the box class to do this because I don't want folks accidentally overwriting their existing Cassandra keyspaces, until a safer schema creation technique is available.
 
 4. If you want to use a different set of news feeds, append or remove feed URL Strings to feedUrls variable in utexas.cid.news.NewsGrabber.
 
-5. Run utexas.cid.news.NewsGrabber
+5. Run utexas.cid.news.NewsGrabber (repeat as often as you like)
     - Queries all news feeds
     - Pulls news article from URL
     - Uses BoilerPipe to extract the main content of the article from the HTML
@@ -85,6 +86,7 @@ RUNNING GRABBER and JAVA ANALYZERS
     - NOTE: Does not delete older articles, so generally it is safe to run this one or more times per day, which will incrementally accumulate articles in your database
 
 6. Run utexas.cid.news.analysis.Analyzer
+    - Create a Run Configuration environmental variable MATLABPATH=$NEWSFERRET/src/matlab
     - Pass as first argument the path to $NEWSFERRET/src/matlab/dat
     - Runs Hadoop map-reduce job to populate DOC_TERM_COLUMN_FAMILY with term-doc matrix
     - Outputs some summary data to log
@@ -93,13 +95,12 @@ RUNNING GRABBER and JAVA ANALYZERS
 
 RUNNING MATLAB ANALYSIS
 -----------------------
-[TODO: more info here]
+The Analyzer above automatically runs the main_id functions.  These instructions are only needed if you want to run MATLAB on your own, debug the functions, etc. 
+
 
 1. Ensure the *.dat files from above are at $NEWSFERRET/src/matlab/dat folder, if they aren't there already
-2. Run $NEWSFERRET/src/matlab/main_id.m to perform clustering and get top 25 words per doc
-3. Run $NEWSFERRET/src/matlab/termsim.m to get pairwise similarity cell array
-4. XXX: Open "c" in variable editor, copy and paste to Excel, to get pairwise similarity information into a spreadsheet.  As of this writing, I have not had good luck with using 'xlswrite' or 'csvwrite' functions with cell arrays.
-5. Explore the MATLAB code and variables!
+2. Run $NEWSFERRET/src/matlab/main_id.m to get all output vairables and write out dat files.
+3. Explore the MATLAB code and variables.
 
 QUESTIONS/COMMENTS
 ------------------
