@@ -4,3 +4,4 @@
 .metadata
 src/NewsAnalyzer/bin
 src/NewsGrabber/bin
+matlab.log
