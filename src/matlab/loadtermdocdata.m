@@ -5,7 +5,7 @@ function [wc, words, docs, stops, important] = loadtermdocdata(tdDir, datDir, do
 %   wc.dat: word count (term(N) x doc(M))
 %   words.dat: (1xN)
 %   docs.dat: MXN, where M is determined by
-%   importantwords.dat (1XN) of important terms
+%   importantstems.dat (1XN) of important stems
 % number of metadata fields about each doc
 %   stopwords.dat: (1XN) dat files
 % Output:
@@ -45,13 +45,13 @@ function [wc, words, docs, stops, important] = loadtermdocdata(tdDir, datDir, do
     fclose(fid);
 
     % array of stop words
-    fid = fopen([datDir 'stopwords.dat']);
+    fid = fopen([datDir 'stopstems.dat']);
     stops = textscan(fid,'%s');
     stops = stops{1};
     fclose(fid);
 
     % array of important words
-    fid = fopen([datDir 'importantwords.dat']);
+    fid = fopen([datDir 'importantstems.dat']);
     important = textscan(fid,'%s');
     important = important{1};
     fclose(fid);

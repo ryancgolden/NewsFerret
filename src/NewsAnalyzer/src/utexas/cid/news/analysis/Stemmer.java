@@ -425,4 +425,32 @@ class Stemmer
          break;
       }
    }
+   
+   /**
+     * Easier interface.  Not as efficient.
+     * Reduces a string to its "stem" or root, so that variations on the same
+	 * term can be compared as equals, e.g. "save" "saving" "saves" "saver"
+	 * @param pTerm
+	 * @return String stem of pTerm
+	 */
+   public static String easyStem(String pTerm) {
+		String myResult = "";
+		try {
+			Stemmer myStemmer = new Stemmer();
+			myStemmer.add(pTerm.toCharArray(), pTerm.length());
+			myStemmer.stem();
+			myResult = myStemmer.toString();
+			//logger.debug(pTerm + " -> " + myResult);
+		} catch (Exception e) {
+			System.err.println("Stemming problem");
+			e.printStackTrace();
+		}
+		if (!("".equals(myResult))) {
+			return myResult;
+		} else {
+			return pTerm;
+		}
+	}
+
+   
 }

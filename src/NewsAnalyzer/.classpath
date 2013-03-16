@@ -28,5 +28,10 @@
 			<attribute name="javadoc_location" value="jar:file:/win/UT/github/ID/libsrc/stanford-postagger-javadoc-2012-07-09.zip!/javadoc"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="var" path="ANALYZER_LIB_ROOT/matlabcontrol-4.1.0.jar" sourcepath="/LIBSRC_ROOT/matlabcontrol-4.1.0-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/win/UT/github/ID/libsrc/matlabcontrol-4.1.0-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

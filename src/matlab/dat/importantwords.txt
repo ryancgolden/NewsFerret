@@ -1,0 +1,249 @@
+System
+Person
+Age
+Airline Ticket Boarding Pass
+Allergies
+Astrological Sign
+Automobile Locator Onstar Account
+Bank Account
+Bank Account Number
+Birth Certificate
+Blood Sample
+Blood Type
+Body Dimensions Measurements
+CAC Card
+Certificate of US Citizenship
+Citizenship
+Civilsuit Records
+College Attended
+College Degree
+Credit Card Number
+Credit Debit Card
+Credit Score
+Customer Loyalty Cards
+Dateof Birth
+Dependants Insurance Id Card
+Divorce Decree
+DNA
+Driving License
+Email Account
+Email Id
+Employee Id
+Employee Id Card
+Employer
+Ethnicity
+Ex Spouse Name
+Eye Color
+Facility Access Card
+Fingerprint
+Gender
+Hair Color
+Health Insurance Card
+Height
+Hometown
+Insurance Id
+Internet Surfing History Patterns
+Last 4 Digits of SSN
+Lawsuits
+Lifestyle Patterns
+Maiden Name
+Medicaid Card
+Medical History
+Medicare Card
+Military Id
+Military Rank
+Military Service Record
+Mobile Phone Usage Patterns
+Mortgagee Id
+Mothers Maiden Name
+Name
+Name Of Your Insurer
+Namesof Your Doctors
+Occupation
+Offline Social Network
+Online Purchasing Patterns
+Other Passport
+Parents Name
+Parents Occupations
+Phone Number
+Photograph
+Prescription Number
+Professional Group Affiliations
+Professional Registration Number
+Public Assistance Cards
+Residential Address
+Residential Address Proof
+Scars
+Schools you have attended
+Security Clearance Level
+Shopping Patterns
+Signature
+Social Network Account
+Social Network Id
+Social Security Card
+Social Security Number
+Spouse Name
+Student Id
+Student Loan Number
+Tattoos
+Transportation Passes Tickets
+Travel Patterns
+US Passport
+Utility Accounts
+Vehicle Insurer
+Vehicle Loan Number
+Vehicle Registration License Plate
+Visa
+Zipcode
+sn
+given Name
+intitials
+middle Name
+generation Qualifier
+employee Number
+alt Identifier
+rank
+personal Title
+employee Type
+component
+organizational Unit Name
+agency
+position
+niprnet Email
+siprnet Email
+niprnet Display Name
+siprnet Display Name
+telephone Number
+secure Telephone Number
+mobile
+secure Mobile
+facsimile Telephone Number
+secure Facsimile Telephone Number
+ip Phone Number
+secure IP Phone Number
+dsn Telephone Number
+secure DSN Phone Number
+user Certificate
+distinguished Name
+cn
+street
+mail Stop
+room Number
+l
+st
+c
+postal Code
+source DN
+uid
+publish Flag
+citizenship
+citizenship Status
+primary Skill Code
+secondary Skill Code
+occupational Code
+language Proficiency
+r Component Code
+segment Term
+assigned Unit
+assigned Unit Name
+assigned Unit Location
+attached Unit
+attached Unit Location
+attached Unit Name
+SCI Controls
+job Series
+billet
+pay Grade
+clearance
+photo
+cleared
+401K Administrator
+Access Cards
+Acquisitions
+Address
+Administrator Password
+Application Name
+Application Type
+Attorney
+Balance Sheet
+Banking Institution
+Better Business Bureau Record
+Board Of Directors
+Business Property Tax Number
+Business Type
+Buyer
+Cache
+Cage No
+Circuit Design
+Computers Or IP Addresses
+Credit Rating
+Customers
+Date Established
+DUNSNo
+Email Address
+Employees
+Facebook Account
+Federal Tax ID
+Geolocation Zip Code
+Geolocation Street Address
+Incorporation State
+In Store Purchasing Patterns
+Investors
+IP Addresses
+JCP Certification Number
+Lawsuit Records
+License
+Loan Number
+Login Passwords
+Login User Id
+Loyalty Cards
+MAC Address
+Manufacture Location
+Manufacturer
+Memory Size
+Memory Type
+Model No
+Name
+Network Connection Speed
+Network Connection Type
+Network Proxy Settings
+Open Device Identification Number
+Operating System Type
+Organizational Location
+Owner
+Patents
+Perc Trans From Compromised Devices
+Processor Type
+Purchasing Patterns
+Registry Properties
+Sales Tax Number
+Serial No
+Ship Date
+Stock Price
+Time Zone
+Transactions By Country
+Transactions Profile
+Unique Device Identifier
+Vendor Address
+Vendor Name
+Watermark
+Website URL
+Apple
+LinkedIn
+Yahoo
+Mastercard
+American Express
+AmEx
+GMail
+Google
+Pinterest
+Twitter
+Social Media Site
+Web Site
+Wallet
+iPod
+iPad
+Android
+Tablet
+Samsung
+HTC

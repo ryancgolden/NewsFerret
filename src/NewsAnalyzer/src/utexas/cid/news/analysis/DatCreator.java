@@ -1,13 +1,24 @@
 package utexas.cid.news.analysis;
 
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.FileWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.StreamTokenizer;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.HashMap;
+import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Scanner;
+import java.util.Set;
 
 import me.prettyprint.cassandra.serializers.IntegerSerializer;
 import me.prettyprint.cassandra.serializers.StringSerializer;
@@ -54,7 +65,7 @@ public class DatCreator {
 	 * @throws Exception
 	 */
 	public static void main(String[] args) throws Exception {
-		createDatFiles(File.separator + "tmp" + File.separator + "news");
+		createDatFiles(args[0]);
 	}
 
 	/**
@@ -67,47 +78,67 @@ public class DatCreator {
 	 * XXX: Should page through rows and columns rather than read it all into
 	 * memory
 	 * 
+	 * XXX: Should probably break this method up a bit
+	 * 
 	 * <pre>
 	 *     <pRootDir>/news/wc.dat
 	 *     <pRootDir>/news/words.dat
 	 *     <pRootDir>/news/docs.dat
+	 *     <pRootDir>/importantstems.dat
 	 * </pre>
 	 * 
-	 * @param pRootDir
+	 * @param pRootDatDir
 	 *            - String absolute dir below which output will be written
+	 *            - NOTE: importantwords.txt must also exist here, in order to
+	 *            -    to create importantstems.dat
 	 * @throws Exception
 	 */
-	public static void createDatFiles(String pRootDir) throws Exception {
+	public static void createDatFiles(String pRootDatDir) throws Exception {
 
 		// Create the output directory if it doesn't exist
-		if (pRootDir == null) {
+		if (pRootDatDir == null) {
 			throw new Exception("Must pass root directory for output.");
 		}
 		try {
-			File myOutDir = new File(pRootDir + File.separator + sOutDir);
+			File myOutDir = new File(pRootDatDir + File.separator + sOutDir);
 			if (!myOutDir.exists()) {
 				logger.info("Out dir passed doesn't exist, so creating...");
 				boolean result = myOutDir.mkdirs();
 				if (result) {
-					logger.info("Created " + pRootDir);
+					logger.info("Created " + pRootDatDir);
 				} else {
-					throw new Exception("Failed creating " + pRootDir
+					throw new Exception("Failed creating " + pRootDatDir
 							+ File.separator + sOutDir);
 				}
 			}
 		} catch (Exception e) {
-			logger.error("Problem with directory argument " + pRootDir, e);
+			logger.error("Problem with directory argument " + pRootDatDir, e);
 			return;
 		}
 
-		// Individual output files
+		// Individual input/output files
 		String sep = File.separator;
-		String myWcDatFile = pRootDir + sep + sOutDir + sep + "wc.dat";
-		String myWordsDatFile = pRootDir + sep + sOutDir + sep + "words.dat";
-		String myDocsDatFile = pRootDir + sep + sOutDir + sep + "docs.dat";
+		String myWcDatFile = pRootDatDir + sep + sOutDir + sep + "wc.dat";
+		String myWordsDatFile = pRootDatDir + sep + sOutDir + sep + "words.dat";
+		String myDocsDatFile = pRootDatDir + sep + sOutDir + sep + "docs.dat";
+		String myImportantWordsTxtFile = pRootDatDir + sep + "importantwords.txt";
+		String myImportantStemsDatFile = pRootDatDir + sep + "importantstems.dat";
+		String myImportantStemsMapDatFile = pRootDatDir + sep + "importantstemsmap.dat";
+		String myStopWordsTxtFile = pRootDatDir + sep + "stopwords.txt";
+		String myStopStemsDatFile = pRootDatDir + sep + "stopstems.dat";
+		String myStopStemsMapDatFile = pRootDatDir + sep + "stopstemsmap.dat";
 
-		// XXX: should tie ourselves to Cassandra here, 
-		// should use NewsDao instead probably
+		// Convert importantwords.txt into importantstems.dat
+		// which has the same terms, but stemmed.  This allows importantwords.txt
+		// to be maintained as a simple English text file
+		createStemsDat(myImportantWordsTxtFile, myImportantStemsDatFile, myImportantStemsMapDatFile);
+
+		// Since we convert importantwords, we also need to convert stopwords.txt
+		createStemsDat(myStopWordsTxtFile, myStopStemsDatFile, myStopStemsMapDatFile);
+		
+		
+		// XXX: should not couple to Cassandra here, but 
+		// should use NewsDao instead
 		int maxCols = 0;
 		Cluster cluster = HFactory.getOrCreateCluster(Constants.CLUSTER,
 				Constants.HOST_IP);
@@ -227,6 +258,82 @@ public class DatCreator {
 
 		cluster.getConnectionManager().shutdown();
 		logger.info("Done writing data files.");
+	}
+
+	/**
+	 * Create stems from important words
+	 * @param pWordsTxtFile - location of input txt file
+	 * @param pStemsDatFile - output location of stems file
+	 * @param pStemsMapDatFile - output location of stem -> [word] map file
+	 * @throws FileNotFoundException if input txt not found
+	 * @throws IOException - if output file(s) can't be written
+	 */
+	private static void createStemsDat(String pWordsTxtFile, 
+			String pStemsDatFile, String pStemsMapDatFile) throws FileNotFoundException, IOException {
+
+		Scanner sc = null;
+		BufferedWriter out = null;
+		BufferedWriter outMap = null;
+		Map<String, Set<String>> stemMap = new HashMap<String, Set<String>>(); // preserve order
+
+		try {
+			// read important words into Map of stem -> {words}
+			sc = new Scanner(new File(pWordsTxtFile));
+			while (sc.hasNext()) {
+				String myWord = sc.next().toLowerCase();
+				String myStem = Stemmer.easyStem(myWord);
+				if (stemMap.containsKey(myStem)) {
+					stemMap.get(myStem).add(myWord);
+				} else {
+					Set<String> myWordSet = new HashSet<String>();
+					myWordSet.add(myWord);
+					stemMap.put(myStem, myWordSet);
+				}
+			}
+			
+			// Now write the stems and stems map to dat files
+			out = new BufferedWriter(new FileWriter(pStemsDatFile));
+			outMap = new BufferedWriter(new FileWriter(pStemsMapDatFile));
+			Collection<String> unsorted = stemMap.keySet();
+			List<String> sorted = DatCreator.asSortedList(unsorted);
+			for (String stem : sorted) {
+				out.write(stem + "\n");
+				outMap.write(stem);
+				for (String word : stemMap.get(stem)) {
+					outMap.write(" " + word);
+				}
+				outMap.write("\n");
+			}			
+			
+			logger.info("Done writing " + pStemsDatFile);
+			logger.info("Done writing " + pStemsMapDatFile);
+
+		} catch (FileNotFoundException e) {
+			logger.error("Problem reading " + pWordsTxtFile, e);
+			throw(e);
+		} catch (IOException ioe) {
+			logger.error("Problem creating stemming output", ioe);
+			throw(ioe);			
+		} finally {
+			if (sc!=null) {
+				sc.close();}
+			if (out!=null) {
+				out.close();}
+			if (outMap!=null) {
+				outMap.close();}
+		}
+	}
+	
+	/**
+	 * Utility method to sort a Collection
+	 * @param c - Collection to sort
+	 * @return sorted List
+	 */
+	public static
+	<T extends Comparable<? super T>> List<T> asSortedList(Collection<T> c) {
+	  List<T> list = new ArrayList<T>(c);
+	  java.util.Collections.sort(list);
+	  return list;
 	}
 
 }

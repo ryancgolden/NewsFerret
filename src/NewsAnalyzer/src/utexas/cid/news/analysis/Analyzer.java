@@ -43,10 +43,17 @@ public class Analyzer {
 		// Print informational stats
 		StatPrinter.printDocTermSummary();
 
-		// Output DAT matrix file(s)
+		// Output DAT matrix file(s) for MATLAB use
 		DatCreator.createDatFiles(myDataOutputRootDir);
+		
+		// This does the LSA analysis and other matrix crunching
+		MatLabRunner.runMatlabSteps();
+		log.info("You can safely ignore any errors/warnings about shopt above");
+		
+		// Now pretty-format our output files
+		// TODO
 
-		log.info("Analyzer done");
+		log.info("Analyzer done.  See *.dat files for output.");
 		System.exit(0);
 	}
 }

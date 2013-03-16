@@ -30,11 +30,10 @@ import org.apache.hadoop.util.ToolRunner;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import edu.stanford.nlp.tagger.maxent.MaxentTagger;
-
 import utexas.cid.news.Constants;
 import utexas.cid.news.dataservices.NewsDao;
 import utexas.cid.news.dataservices.NewsSchema;
+import edu.stanford.nlp.tagger.maxent.MaxentTagger;
 /**
  * Implements Hadoop Map-Reduce to take news articles from a Cassandra column
  * family and produce a term-document matrix for further analytical processing.
@@ -52,9 +51,13 @@ public class TermDocMatCreator extends Configured implements Tool {
 	public static class TokenizerMapper 
 		extends Mapper<ByteBuffer, SortedMap<ByteBuffer, IColumn>, Text, Text> {
 
-		private String sTaggerLoc = "taggers/english-bidirectional-distsim.tagger";
-		private MaxentTagger sTagger = null;
+		// Part of speech tagger
+		private static String sTaggerLoc = "taggers/english-bidirectional-distsim.tagger";
+		private MaxentTagger myTagger = null;
 
+		// Stemmer
+		private Stemmer myStemmer = null;
+		
 		private Text word = new Text();
 		private ByteBuffer sourceColumn;
 
@@ -67,13 +70,16 @@ public class TermDocMatCreator extends Configured implements Tool {
 
 			// Create part of speech tagger
 			try {
-				sTagger = new MaxentTagger(sTaggerLoc);
+				myTagger = new MaxentTagger(sTaggerLoc);
 			} catch (ClassNotFoundException e) {
 				logger.error("Error occurred creating tagger.  Please ensure "
 						+ "training files are accessible at "
 						+ "taggers/english-bidirectional-distsim.tagger", e);
 				throw new InterruptedException();
-			}						
+			}			
+			
+			// Create Stemmer
+			myStemmer = new Stemmer();
 		}
 
 		public void map(ByteBuffer key,
@@ -89,7 +95,7 @@ public class TermDocMatCreator extends Configured implements Tool {
 
 			// tagged string contains part of speech suffix
 			// see http://www.computing.dcu.ie/~acahill/tagset.html
-			String tagged = sTagger.tagString(value);
+			String tagged = myTagger.tagString(value);
 			StringTokenizer itr = new StringTokenizer(tagged);
 			boolean hasWords = false; //track whether the doc has any valid words
 			while (itr.hasMoreTokens()) {
@@ -120,6 +126,9 @@ public class TermDocMatCreator extends Configured implements Tool {
 				if ("".equals(myRoot) || myTag == null || !(myTag.contains("NN"))) {
 					continue;
 				}
+				
+				// Stem the word (Porter stemmer algorithm)
+				myRoot = Stemmer.easyStem(myRoot);
 
 				word.set(myRoot);
 				context.write(new Text(ByteBufferUtil.string(key)), word);
@@ -129,6 +138,7 @@ public class TermDocMatCreator extends Configured implements Tool {
 				logger.warn("Document had no valid terms for indexing." );
 			}
 		}
+
 	}
 
     public static class ReducerToCassandra extends Reducer<Text, Text, ByteBuffer, List<Mutation>>
