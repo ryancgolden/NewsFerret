@@ -56,6 +56,8 @@ pair_sims = sortcell(pair_sims,1);
 % Only let important word pairs through
 important_pairs = pair_sims(ismember(pair_sims(:,1), important), :);
 important_pairs = important_pairs(ismember(important_pairs(:,2), important), :);
+important_pairs = [important_pairs; important_pairs(:,[2 1 3])]; % add inverse
+important_pairs = sortcell(important_pairs,1);
 
 % Write important pair weights to a file
 [nrows,ncols]= size(important_pairs);
@@ -63,6 +65,5 @@ filename = [datDir '/importantpairs.dat'];
 fid = fopen(filename, 'w');
 for row=1:nrows
     fprintf(fid, '%s %s %1.4f \n', important_pairs{row,:});
-    fprintf(fid, '%s %s %1.4f \n', important_pairs{row,[2 1 3]}); % print inverse also
 end
 fclose(fid);
