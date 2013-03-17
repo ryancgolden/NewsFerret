@@ -53,7 +53,7 @@ public class Analyzer {
 		// Now pretty-format our output files
 		DatCreator.createPrettyPairsDat(myDataOutputRootDir);
 
-		log.info("Analyzer done.  See *.dat files for output.");
+		log.info("Analyzer done.  See " + myDataOutputRootDir + "/*.dat files for output.");
 		System.exit(0);
 	}
 }

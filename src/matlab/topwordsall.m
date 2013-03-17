@@ -26,4 +26,6 @@ function result = topwordsall(llrmat, replist, wordlist, topnum)
         %represult
         result = [result,represult];
     end
+    
+    result = result(:,2:end);
 
