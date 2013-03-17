@@ -51,7 +51,7 @@ public class Analyzer {
 		log.info("You can safely ignore any errors/warnings about shopt above");
 		
 		// Now pretty-format our output files
-		// TODO
+		DatCreator.createPrettyPairsDat(myDataOutputRootDir);
 
 		log.info("Analyzer done.  See *.dat files for output.");
 		System.exit(0);

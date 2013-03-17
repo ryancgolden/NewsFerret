@@ -1,19 +1,16 @@
 package utexas.cid.news.analysis;
 
-import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.StreamTokenizer;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
@@ -65,7 +62,8 @@ public class DatCreator {
 	 * @throws Exception
 	 */
 	public static void main(String[] args) throws Exception {
-		createDatFiles(args[0]);
+		//createDatFiles(args[0]);
+		createPrettyPairsDat(args[0]);
 	}
 
 	/**
@@ -336,4 +334,98 @@ public class DatCreator {
 	  return list;
 	}
 
+	/**
+	 * Makes the stemmed pairs output prettier by substituting back the original
+	 * words
+	 * 
+	 * @param pRootDatDir - root to dat dir in which the following files will be used:
+	 * 		<rootDatDir>/news/importantpairs.dat
+	 *      <rootDatDir>/news/importantpairspretty.dat
+	 *      <rootDatDir>/importantstemsmap.dat
+	 * 
+	 * @throws FileNotFoundException if inputs cannot be found
+	 * @throws IOException - if output file(s) can't be written
+	 */
+	public static void createPrettyPairsDat(String pRootDatDir) 
+					throws FileNotFoundException, IOException {
+
+		String sep = File.separator;
+		String myStemPairsDatFile = pRootDatDir + sep + "importantpairs.dat";
+		String myPrettyPairsDatFile = pRootDatDir + sep + "importantpairspretty.dat";
+		String myStemsMapDatFile = pRootDatDir + sep + "importantstemsmap.dat";
+		
+		Scanner scMap = null;
+		Scanner sc = null;
+		BufferedWriter out = null;
+		Map<String, Set<String>> stemMap = new LinkedHashMap<String, Set<String>>();
+
+		try {
+			// Read in Stem Map from dat file 
+			scMap = new Scanner(new File(myStemsMapDatFile));
+			while (scMap.hasNextLine()) {
+				String myLine = scMap.nextLine();
+				String[] myStrs = myLine.split("\\s+");
+				String myStem = "";
+				Set<String> myWordSet = new LinkedHashSet<String>();
+				for (int i =0; i<myStrs.length; i++) {
+					if (i==0) {
+						myStem = myStrs[i];
+						continue;
+					} else {
+						myWordSet.add(myStrs[i]);
+					}
+				}
+				stemMap.put(myStem, myWordSet);
+			}
+
+			// Read in stem pair weights from dat file, replacing in
+			// out file with the expanded word set, making it more readable
+			sc = new Scanner(new File(myStemPairsDatFile));
+			out = new BufferedWriter(new FileWriter(myPrettyPairsDatFile));
+
+			while (sc.hasNextLine()) {
+				String myLine = sc.nextLine();
+				String[] myStrs = myLine.split("\\s+");
+				if (myStrs.length != 3) {
+					logger.warn("stem pair weights input error, line doesn't have 3 items.");
+					continue;
+				}
+				String term1 = myStrs[0];
+				String term2 = myStrs[1];
+				String weight = myStrs[2];
+
+				StringBuffer words1 = new StringBuffer();
+				StringBuffer words2 = new StringBuffer();
+				for (String word : stemMap.get(term1)) {
+					words1.append(word + " ");
+				}
+				String words1Str = words1.substring(0, words1.lastIndexOf(" "));
+				for (String word : stemMap.get(term2)) {
+					words2.append(word + " ");
+				}
+				String words2Str = words2.substring(0, words2.lastIndexOf(" "));
+				out.write("\"" + words1Str + "\" \"" + words2Str + "\" " + weight + "\n");
+			}
+			
+			logger.info("Done writing " + myPrettyPairsDatFile);
+
+		} catch (FileNotFoundException e) {
+			logger.error("Problem reading " + myStemPairsDatFile + " or " + myStemsMapDatFile, e);
+			throw(e);
+		} catch (IOException ioe) {
+			logger.error("Problem creating pretty output", ioe);
+			throw(ioe);			
+		} finally {
+			if (scMap!=null) {
+				scMap.close();}
+			if (sc!=null) {
+				sc.close();}
+			if (out!=null) {
+				out.close();}
+		}
+	}
+
+	
+	
+	
 }

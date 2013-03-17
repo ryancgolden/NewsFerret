@@ -1,0 +1,807 @@
+"accounts account" "loan" 0.8325
+"accounts account" "passwords password" 0.8800
+"address addresses" "facility" 0.7293
+"address addresses" "application" 0.9666
+"address addresses" "network" 0.9884
+"address addresses" "ssn" 0.7917
+"address addresses" "android" 0.9605
+"address addresses" "institution" 0.7316
+"address addresses" "banking bank" 0.9278
+"address addresses" "name" 0.5036
+"address addresses" "photo" 0.7941
+"address addresses" "type" 0.9549
+"address addresses" "twitter" 0.9855
+"address addresses" "source" 0.9247
+"address addresses" "transactions" 0.8670
+"address addresses" "phone" 0.7470
+"address addresses" "ipad" 0.9228
+"address addresses" "purchasing" 0.8191
+"address addresses" "accounts account" 0.9334
+"address addresses" "credit" 0.9915
+"address addresses" "device devices" 0.9190
+"address addresses" "schools" 0.9058
+"address addresses" "passwords password" 0.8678
+"administrator" "android" 0.9844
+"administrator" "tax" 0.9231
+"administrator" "name" 0.9886
+"administrator" "photo" 0.9784
+"administrator" "assistance" 0.9703
+"administrator" "bureau" 0.8891
+"administrator" "business" 0.9962
+"administrator" "computers" 0.9042
+"administrator" "store" 0.9424
+"administrator" "ipad" 0.8405
+"administrator" "attorney" 0.9674
+"administrator" "device devices" 0.9921
+"administrator" "schools" 0.9687
+"administrator" "apple" 0.8319
+"administrator" "term" 0.8816
+"agency" "application" 0.9714
+"agency" "employee employees" 0.9382
+"agency" "network" 0.7368
+"agency" "service" 0.4676
+"agency" "customers customer" 0.9491
+"agency" "type" 0.9868
+"agency" "bureau" 0.9295
+"agency" "site" 0.9414
+"agency" "linkedin" 0.9813
+"agency" "accounts account" 0.9521
+"agency" "credit" 0.3854
+"agency" "id" 0.9085
+"agency" "loan" 0.9211
+"agency" "schools" 0.9899
+"android" "customers customer" 0.9786
+"android" "google" 0.6187
+"android" "twitter" 0.9812
+"android" "source" 0.9409
+"android" "phone" 0.6987
+"android" "computers" 0.5080
+"android" "user" 0.7743
+"android" "store" 0.9431
+"android" "internet" 0.3903
+"android" "ipad" 0.8453
+"android" "street" 0.9869
+"android" "purchasing" 0.9265
+"android" "accounts account" 0.9960
+"android" "device devices" 0.5012
+"android" "passwords password" 0.9792
+"android" "apple" 0.7593
+"android" "term" 0.9391
+"application" "employee employees" 0.8237
+"application" "service" 0.9843
+"application" "ssn" 0.9565
+"application" "android" 0.9705
+"application" "customers customer" 0.9195
+"application" "twitter" 0.9810
+"application" "bureau" 0.9486
+"application" "source" 0.9440
+"application" "linkedin" 0.9691
+"application" "phone" 0.8160
+"application" "secure security" 0.6711
+"application" "accounts account" 0.9958
+"application" "id" 0.9374
+"application" "date" 0.9488
+"application" "passwords password" 0.9915
+"application" "term" 0.9939
+"assistance" "secure security" 0.9759
+"assistance" "accounts account" 0.9889
+"attorney" "purchasing" 0.9291
+"attorney" "accounts account" 0.8324
+"attorney" "loan" 0.9828
+"attorney" "schools" 0.9620
+"banking bank" "name" 0.8437
+"banking bank" "google" 0.9922
+"banking bank" "twitter" 0.9747
+"banking bank" "source" 0.8807
+"banking bank" "site" 0.9982
+"banking bank" "business" 0.8093
+"banking bank" "transactions" 0.8180
+"banking bank" "user" 0.9584
+"banking bank" "internet" 0.9941
+"banking bank" "street" 0.9958
+"banking bank" "purchasing" 0.9262
+"banking bank" "accounts account" 0.9155
+"banking bank" "credit" 0.6665
+"banking bank" "device devices" 0.9601
+"banking bank" "passwords password" 0.9527
+"bureau" "business" 0.9249
+"bureau" "transactions" 0.9927
+"bureau" "secure security" 0.9939
+"bureau" "attorney" 0.9792
+"bureau" "purchasing" 0.9841
+"bureau" "accounts account" 0.9343
+"bureau" "credit" 0.9339
+"bureau" "loan" 0.6485
+"bureau" "date" 0.8548
+"bureau" "st" 0.9960
+"bureau" "schools" 0.9109
+"business" "transactions" 0.9710
+"business" "phone" 0.9758
+"business" "device devices" 0.8093
+"business" "date" 0.9568
+"business" "term" 0.9620
+"card cards" "visa" 0.9588
+"card cards" "address addresses" 0.5716
+"card cards" "digits" 0.8639
+"card cards" "online" 0.9015
+"card cards" "application" 0.9650
+"card cards" "ssn" 0.8426
+"card cards" "customers customer" 0.9534
+"card cards" "banking bank" 0.8447
+"card cards" "name" 0.9401
+"card cards" "photo" 0.9715
+"card cards" "type" 0.9890
+"card cards" "bureau" 0.8983
+"card cards" "site" 0.9793
+"card cards" "business" 0.9067
+"card cards" "transactions" 0.9318
+"card cards" "phone" 0.9765
+"card cards" "store" 0.9659
+"card cards" "license" 0.9228
+"card cards" "ipad" 0.9084
+"card cards" "secure security" 0.9956
+"card cards" "purchasing" 0.8095
+"card cards" "credit" 0.8511
+"card cards" "device devices" 0.8154
+"card cards" "date" 0.8228
+"card cards" "st" 0.6705
+"card cards" "passwords password" 0.9783
+"certification certificate" "score" 0.7953
+"certification certificate" "facebook" 0.8538
+"certification certificate" "network" 0.9251
+"certification certificate" "tax" 0.9910
+"certification certificate" "customers customer" 0.9970
+"certification certificate" "banking bank" 0.9990
+"certification certificate" "google" 0.9692
+"certification certificate" "accounts account" 0.9952
+"certification certificate" "apple" 0.9994
+"certification certificate" "term" 0.8592
+"college" "network" 0.9774
+"college" "customers customer" 0.8172
+"college" "banking bank" 0.9453
+"college" "photo" 0.9770
+"college" "google" 0.8447
+"college" "type" 0.9047
+"college" "twitter" 0.9983
+"college" "linkedin" 0.9419
+"college" "business" 0.7083
+"college" "phone" 0.9895
+"college" "computers" 0.8706
+"college" "attorney" 0.9509
+"college" "term" 0.9966
+"computers" "user" 0.9469
+"computers" "store" 0.7357
+"computers" "ipad" 0.3707
+"computers" "secure security" 0.9685
+"computers" "street" 0.9991
+"computers" "device devices" 0.5233
+"computers" "st" 0.9488
+"computers" "passwords password" 0.8853
+"computers" "apple" 0.3820
+"country" "system" 0.6868
+"country" "website" 0.9856
+"country" "card cards" 0.9969
+"country" "visa" 0.9692
+"country" "media" 0.9972
+"country" "online" 0.8103
+"country" "certification certificate" 0.4357
+"country" "facebook" 0.9577
+"country" "network" 0.9616
+"country" "google" 0.9872
+"country" "type" 0.9648
+"country" "site" 0.9706
+"country" "linkedin" 0.9863
+"country" "store" 0.8855
+"country" "license" 0.9857
+"country" "credit" 0.9635
+"country" "id" 0.9071
+"country" "date" 0.9379
+"country" "st" 0.8015
+"country" "term" 0.9323
+"credit" "id" 0.9990
+"credit" "loan" 0.9911
+"credit" "date" 0.9107
+"customers customer" "banking bank" 0.8461
+"customers customer" "photo" 0.9073
+"customers customer" "google" 0.9225
+"customers customer" "type" 0.8147
+"customers customer" "linkedin" 0.9186
+"customers customer" "business" 0.4926
+"customers customer" "transactions" 0.8501
+"customers customer" "phone" 0.9915
+"customers customer" "internet" 0.9398
+"customers customer" "purchasing" 0.9676
+"customers customer" "accounts account" 0.9454
+"customers customer" "credit" 0.9930
+"customers customer" "id" 0.9486
+"customers customer" "device devices" 0.9120
+"customers customer" "term" 0.9903
+"date" "st" 0.8790
+"device devices" "st" 0.9874
+"device devices" "apple" 0.7998
+"device devices" "term" 0.9425
+"digits" "settings" 0.7685
+"digits" "application" 0.9664
+"digits" "service" 0.9218
+"digits" "ssn" 0.9554
+"digits" "android" 0.8300
+"digits" "institution" 0.9564
+"digits" "photo" 0.8635
+"digits" "bureau" 0.9442
+"digits" "source" 0.7556
+"digits" "site" 0.6404
+"digits" "business" 0.9867
+"digits" "phone" 0.9828
+"digits" "computers" 0.8934
+"digits" "secure security" 0.8674
+"digits" "attorney" 0.9833
+"digits" "accounts account" 0.9993
+"digits" "device devices" 0.8577
+"digits" "date" 0.9451
+"digits" "st" 0.9948
+"digits" "passwords password" 0.9109
+"driving" "media" 0.9954
+"driving" "digits" 0.9256
+"driving" "settings" 0.7024
+"driving" "facebook" 0.9999
+"driving" "college" 0.9559
+"driving" "ssn" 0.9514
+"driving" "android" 0.7785
+"driving" "twitter" 0.9966
+"driving" "site" 0.9902
+"driving" "linkedin" 0.9989
+"driving" "phone" 0.9512
+"driving" "computers" 0.8377
+"driving" "street" 0.9105
+"driving" "purchasing" 0.9891
+"driving" "device devices" 0.7990
+"driving" "st" 0.9817
+"email" "driving" 0.9987
+"email" "media" 0.7524
+"email" "digits" 0.8152
+"email" "postal" 0.9176
+"email" "settings" 0.8874
+"email" "administrator" 0.7728
+"email" "facebook" 0.9423
+"email" "college" 0.9859
+"email" "network" 0.7547
+"email" "service" 0.9499
+"email" "ssn" 0.9911
+"email" "photo" 0.9594
+"email" "twitter" 0.9316
+"email" "bureau" 0.9780
+"email" "source" 0.8454
+"email" "linkedin" 0.9940
+"email" "business" 0.9564
+"email" "phone" 0.8826
+"email" "secure security" 0.9564
+"email" "street" 0.8830
+"email" "accounts account" 0.9792
+"email" "st" 0.9070
+"email" "passwords password" 0.8555
+"employee employees" "network" 0.8024
+"employee employees" "service" 0.9907
+"employee employees" "institution" 0.7123
+"employee employees" "customers customer" 0.8037
+"employee employees" "name" 0.8875
+"employee employees" "type" 0.7573
+"employee employees" "twitter" 0.9936
+"employee employees" "assistance" 0.5832
+"employee employees" "linkedin" 0.8955
+"employee employees" "transactions" 0.8528
+"employee employees" "accounts account" 0.9955
+"employee employees" "id" 0.8100
+"facebook" "college" 0.9011
+"facebook" "network" 0.9672
+"facebook" "customers customer" 0.8249
+"facebook" "banking bank" 0.9742
+"facebook" "google" 0.6763
+"facebook" "type" 0.9826
+"facebook" "twitter" 0.6189
+"facebook" "site" 0.9311
+"facebook" "linkedin" 0.5341
+"facebook" "business" 0.8478
+"facebook" "phone" 0.9526
+"facebook" "user" 0.5761
+"facebook" "internet" 0.9636
+"facebook" "street" 0.9753
+"facebook" "accounts account" 0.9290
+"facebook" "schools" 0.9865
+"facebook" "passwords password" 0.6861
+"facebook" "term" 0.8893
+"facility" "employee employees" 0.9018
+"facility" "network" 0.7560
+"facility" "ssn" 0.7584
+"facility" "institution" 0.9254
+"facility" "name" 0.8274
+"facility" "photo" 0.7644
+"facility" "phone" 0.9982
+"facility" "user" 0.9709
+"facility" "secure security" 0.9904
+"facility" "attorney" 0.9255
+"facility" "accounts account" 0.9973
+"facility" "device devices" 0.9766
+"facility" "schools" 0.9630
+"google" "twitter" 0.8048
+"google" "site" 0.9770
+"google" "linkedin" 0.5715
+"google" "business" 0.9499
+"google" "user" 0.4889
+"google" "internet" 0.3374
+"google" "street" 0.9868
+"google" "purchasing" 0.9432
+"google" "accounts account" 0.9650
+"google" "passwords password" 0.8731
+"google" "apple" 0.9255
+"google" "term" 0.7864
+"health" "system" 0.9907
+"health" "online" 0.9529
+"health" "facility" 0.5073
+"health" "employee employees" 0.6993
+"health" "facebook" 0.9966
+"health" "network" 0.4868
+"health" "service" 0.9814
+"health" "institution" 0.9632
+"health" "customers customer" 0.9856
+"health" "photo" 0.9442
+"health" "google" 0.9743
+"health" "assistance" 0.9985
+"health" "bureau" 0.9785
+"health" "attorney" 0.9470
+"health" "device devices" 0.9395
+"health" "schools" 0.9863
+"id" "date" 0.9860
+"institution" "customers customer" 0.9414
+"institution" "banking bank" 0.8780
+"institution" "name" 0.3240
+"institution" "business" 0.9309
+"institution" "transactions" 0.2798
+"institution" "internet" 0.9748
+"institution" "accounts account" 0.9261
+"institution" "id" 0.9636
+"institution" "loan" 0.9239
+"institution" "schools" 0.9848
+"internet" "street" 0.9743
+"internet" "purchasing" 0.8979
+"internet" "passwords password" 0.9385
+"internet" "apple" 0.9001
+"internet" "term" 0.8676
+"ipad" "secure security" 0.8901
+"ipad" "purchasing" 0.9436
+"ipad" "device devices" 0.7617
+"ipad" "st" 0.9301
+"ipad" "apple" 0.0493
+"job" "utility" 0.9701
+"job" "rating" 0.9517
+"job" "driving" 0.9600
+"job" "parents" 0.9086
+"job" "digits" 0.9762
+"job" "sales" 0.9617
+"job" "settings" 0.8502
+"job" "score" 0.9286
+"job" "agency" 0.9685
+"job" "application" 0.9789
+"job" "administrator" 0.8534
+"job" "employee employees" 0.9375
+"job" "android" 0.7298
+"job" "type" 0.9776
+"job" "bureau" 0.9165
+"job" "linkedin" 0.9989
+"job" "phone" 0.9305
+"job" "computers" 0.3616
+"job" "store" 0.6098
+"job" "license" 0.9536
+"job" "ipad" 0.1354
+"job" "secure security" 0.8418
+"job" "purchasing" 0.9676
+"job" "id" 0.9926
+"job" "device devices" 0.7229
+"job" "loan" 0.8858
+"job" "schools" 0.9922
+"job" "apple" 0.0969
+"license" "secure security" 0.6640
+"license" "attorney" 0.7699
+"license" "purchasing" 0.8714
+"license" "accounts account" 0.8750
+"license" "loan" 0.9983
+"license" "date" 0.8087
+"license" "st" 0.9110
+"linkedin" "business" 0.9505
+"linkedin" "user" 0.4117
+"linkedin" "internet" 0.9323
+"linkedin" "accounts account" 0.9299
+"linkedin" "id" 0.9745
+"linkedin" "schools" 0.8297
+"linkedin" "apple" 0.9769
+"linkedin" "term" 0.9913
+"media" "online" 0.8879
+"media" "settings" 0.8052
+"media" "certification certificate" 0.9838
+"media" "facebook" 0.4330
+"media" "college" 0.7676
+"media" "network" 0.9335
+"media" "customers customer" 0.8125
+"media" "banking bank" 0.8991
+"media" "photo" 0.9915
+"media" "google" 0.4454
+"media" "type" 0.9245
+"media" "twitter" 0.4808
+"media" "site" 0.7873
+"media" "linkedin" 0.4756
+"media" "business" 0.6744
+"media" "user" 0.5782
+"media" "internet" 0.9442
+"media" "street" 0.9757
+"media" "accounts account" 0.9358
+"media" "schools" 0.8446
+"media" "passwords password" 0.6252
+"media" "term" 0.8961
+"name" "photo" 0.7948
+"name" "source" 0.9329
+"name" "transactions" 0.3325
+"name" "attorney" 0.9271
+"name" "purchasing" 0.7702
+"name" "accounts account" 0.6771
+"name" "credit" 0.9646
+"name" "loan" 0.9660
+"name" "date" 0.9900
+"name" "schools" 0.9139
+"network" "service" 0.8428
+"network" "ssn" 0.9656
+"network" "android" 0.7819
+"network" "institution" 0.9171
+"network" "customers customer" 0.9764
+"network" "name" 0.9814
+"network" "photo" 0.9543
+"network" "google" 0.6770
+"network" "bureau" 0.9569
+"network" "business" 0.9947
+"network" "phone" 0.9428
+"network" "user" 0.8920
+"network" "internet" 0.6464
+"network" "accounts account" 0.9635
+"network" "credit" 0.9037
+"network" "device devices" 0.9933
+"network" "term" 0.8736
+"online" "facebook" 0.8425
+"online" "college" 0.9821
+"online" "service" 0.9981
+"online" "customers customer" 0.9153
+"online" "photo" 0.9244
+"online" "type" 0.9719
+"online" "bureau" 0.9350
+"online" "site" 0.9034
+"online" "business" 0.8055
+"online" "credit" 0.7282
+"online" "device devices" 0.9308
+"online" "date" 0.6941
+"parents" "agency" 0.9724
+"parents" "administrator" 0.9588
+"parents" "network" 0.8239
+"parents" "android" 0.6331
+"parents" "tax" 0.9658
+"parents" "customers customer" 0.9799
+"parents" "photo" 0.9809
+"parents" "google" 0.6570
+"parents" "bureau" 0.6574
+"parents" "user" 0.7971
+"parents" "internet" 0.4192
+"parents" "street" 0.9875
+"parents" "purchasing" 0.9486
+"parents" "credit" 0.9262
+"parents" "schools" 0.8699
+"parents" "apple" 0.9462
+"parents" "term" 0.8567
+"phone" "computers" 0.7433
+"phone" "store" 0.9634
+"phone" "license" 0.9998
+"phone" "ipad" 0.9173
+"phone" "purchasing" 0.9557
+"phone" "accounts account" 0.8638
+"phone" "device devices" 0.7999
+"phone" "st" 0.9455
+"phone" "passwords password" 0.9155
+"phone" "apple" 0.9258
+"photo" "google" 0.9765
+"photo" "site" 0.9200
+"photo" "business" 0.9288
+"photo" "phone" 0.9867
+"photo" "license" 0.9825
+"photo" "secure security" 0.9667
+"photo" "street" 0.9947
+"photo" "attorney" 0.9231
+"photo" "term" 0.9389
+"postal" "agency" 0.9873
+"postal" "employee employees" 0.9984
+"postal" "facebook" 0.9362
+"postal" "network" 0.8914
+"postal" "service" 0.8948
+"postal" "name" 0.9021
+"postal" "photo" 0.9843
+"postal" "bureau" 0.9384
+"postal" "source" 0.9163
+"postal" "transactions" 0.8854
+"postal" "store" 0.9714
+"postal" "license" 0.9754
+"postal" "attorney" 0.7606
+"postal" "purchasing" 0.8812
+"postal" "accounts account" 0.7940
+"purchasing" "accounts account" 0.5605
+"purchasing" "credit" 0.9645
+"purchasing" "device devices" 0.9541
+"purchasing" "st" 0.8239
+"purchasing" "passwords password" 0.9399
+"purchasing" "apple" 0.9271
+"rating" "system" 0.9767
+"rating" "media" 0.8978
+"rating" "sales" 0.9664
+"rating" "settings" 0.9230
+"rating" "agency" 0.9671
+"rating" "application" 0.8886
+"rating" "employee employees" 0.6913
+"rating" "facebook" 0.8371
+"rating" "service" 0.9708
+"rating" "institution" 0.9967
+"rating" "customers customer" 0.9015
+"rating" "google" 0.8777
+"rating" "type" 0.9687
+"rating" "twitter" 0.9345
+"rating" "site" 0.9622
+"rating" "linkedin" 0.5548
+"rating" "user" 0.7432
+"rating" "license" 0.9690
+"rating" "internet" 0.9486
+"rating" "attorney" 0.8901
+"rating" "id" 0.8343
+"rating" "loan" 0.9729
+"rating" "st" 0.8801
+"sales" "application" 0.9949
+"sales" "service" 0.9528
+"sales" "ssn" 0.9936
+"sales" "tax" 0.3098
+"sales" "type" 0.9421
+"sales" "business" 0.9221
+"sales" "computers" 0.9995
+"sales" "store" 0.8667
+"sales" "ipad" 0.9483
+"sales" "street" 0.9929
+"sales" "id" 0.8532
+"sales" "device devices" 0.9405
+"sales" "apple" 0.9434
+"sales" "term" 0.9158
+"score" "agency" 0.7645
+"score" "network" 0.9311
+"score" "service" 0.8513
+"score" "type" 0.7092
+"score" "bureau" 0.7599
+"score" "site" 0.9583
+"score" "street" 0.9874
+"score" "accounts account" 0.8600
+"score" "credit" 0.8475
+"score" "loan" 0.3350
+"secure security" "attorney" 0.9947
+"secure security" "id" 0.8935
+"secure security" "date" 0.8562
+"secure security" "apple" 0.8784
+"service" "google" 0.9606
+"service" "twitter" 0.9869
+"service" "source" 0.9378
+"service" "site" 0.9762
+"service" "internet" 0.9809
+"service" "attorney" 0.9232
+"service" "accounts account" 0.9909
+"service" "credit" 0.5962
+"service" "id" 0.9419
+"service" "loan" 0.9588
+"service" "passwords password" 0.9599
+"service" "term" 0.9758
+"settings" "facebook" 0.8932
+"settings" "college" 0.9701
+"settings" "network" 0.9973
+"settings" "android" 0.3424
+"settings" "google" 0.8009
+"settings" "twitter" 0.9481
+"settings" "site" 0.9838
+"settings" "linkedin" 0.7854
+"settings" "phone" 0.8767
+"settings" "computers" 0.5254
+"settings" "user" 0.8747
+"settings" "internet" 0.9782
+"settings" "accounts account" 0.9794
+"settings" "device devices" 0.4064
+"settings" "passwords password" 0.9942
+"settings" "term" 0.9862
+"site" "linkedin" 0.6817
+"site" "business" 0.9349
+"site" "user" 0.9074
+"site" "secure security" 0.9553
+"site" "street" 0.9724
+"site" "purchasing" 0.9589
+"site" "credit" 0.9130
+"site" "device devices" 0.8985
+"site" "date" 0.9426
+"site" "schools" 0.5106
+"social" "job" 0.8635
+"social" "health" 0.9827
+"social" "email" 0.9318
+"social" "digits" 0.8161
+"social" "facility" 0.9818
+"social" "application" 0.7067
+"social" "ssn" 0.9318
+"social" "photo" 0.9401
+"social" "twitter" 0.9800
+"social" "site" 0.8952
+"social" "computers" 0.9597
+"social" "store" 0.9550
+"social" "license" 0.7001
+"social" "ipad" 0.9016
+"social" "secure security" 0.0292
+"social" "attorney" 0.9997
+"social" "id" 0.8983
+"social" "date" 0.8701
+"social" "schools" 0.9960
+"social" "passwords password" 0.9673
+"social" "apple" 0.8914
+"source" "site" 0.9863
+"source" "transactions" 0.7902
+"source" "phone" 0.6503
+"source" "computers" 0.9996
+"source" "store" 0.9589
+"source" "license" 0.9638
+"source" "attorney" 0.9282
+"source" "purchasing" 0.8335
+"source" "accounts account" 0.5444
+"source" "id" 0.9864
+"source" "device devices" 0.9640
+"source" "date" 0.8707
+"source" "passwords password" 0.9175
+"ssn" "institution" 0.8880
+"ssn" "twitter" 0.9929
+"ssn" "bureau" 0.9063
+"ssn" "transactions" 0.9840
+"ssn" "phone" 0.9805
+"ssn" "store" 0.9498
+"ssn" "internet" 0.9756
+"ssn" "secure security" 0.9248
+"ssn" "street" 0.6441
+"ssn" "credit" 0.9686
+"ssn" "date" 0.9288
+"ssn" "st" 0.8344
+"ssn" "schools" 0.8876
+"st" "apple" 0.9911
+"store" "license" 0.8825
+"store" "ipad" 0.5870
+"store" "secure security" 0.9520
+"store" "street" 0.9962
+"store" "purchasing" 0.7470
+"store" "accounts account" 0.9155
+"store" "device devices" 0.9452
+"store" "st" 0.6570
+"store" "apple" 0.5671
+"street" "loan" 0.9774
+"street" "date" 0.7733
+"street" "st" 0.6764
+"system" "website" 0.9689
+"system" "card cards" 0.9952
+"system" "visa" 0.9999
+"system" "driving" 0.9963
+"system" "media" 0.9980
+"system" "parents" 0.9922
+"system" "sales" 0.9961
+"system" "settings" 0.9830
+"system" "employee employees" 0.9993
+"system" "facebook" 0.9967
+"system" "service" 0.9743
+"system" "android" 0.9915
+"system" "type" 0.7721
+"system" "twitter" 0.9593
+"system" "computers" 0.9979
+"system" "user" 0.9820
+"system" "secure security" 0.9925
+"system" "id" 0.6314
+"system" "device devices" 0.9801
+"system" "passwords password" 0.9563
+"tax" "photo" 0.9842
+"tax" "type" 0.8189
+"tax" "business" 0.9741
+"tax" "attorney" 0.9730
+"tax" "id" 0.8888
+"tax" "schools" 0.9830
+"tax" "term" 0.8805
+"transactions" "store" 0.9355
+"transactions" "license" 0.9684
+"transactions" "attorney" 0.9719
+"transactions" "purchasing" 0.7016
+"transactions" "accounts account" 0.4830
+"transactions" "id" 0.9918
+"transactions" "device devices" 0.9538
+"transactions" "loan" 0.9552
+"twitter" "source" 0.9842
+"twitter" "site" 0.7812
+"twitter" "linkedin" 0.8080
+"twitter" "phone" 0.9129
+"twitter" "computers" 0.8841
+"twitter" "user" 0.4773
+"twitter" "internet" 0.9553
+"twitter" "street" 0.9756
+"twitter" "accounts account" 0.8963
+"twitter" "loan" 0.9981
+"twitter" "schools" 0.7493
+"twitter" "passwords password" 0.1134
+"type" "assistance" 0.6629
+"type" "bureau" 0.8471
+"type" "linkedin" 0.9478
+"type" "business" 0.7111
+"type" "ipad" 0.9740
+"type" "id" 0.9038
+"type" "loan" 0.5692
+"user" "internet" 0.5722
+"user" "street" 1.0000
+"user" "purchasing" 0.9488
+"user" "accounts account" 0.8976
+"user" "passwords password" 0.4983
+"user" "apple" 0.9443
+"user" "term" 0.9789
+"utility" "rating" 0.8470
+"utility" "email" 0.9190
+"utility" "postal" 0.9513
+"utility" "sales" 0.9920
+"utility" "score" 0.9586
+"utility" "agency" 0.6158
+"utility" "application" 0.7961
+"utility" "employee employees" 0.7100
+"utility" "network" 0.7278
+"utility" "service" 0.7304
+"utility" "customers customer" 0.8654
+"utility" "photo" 0.9929
+"utility" "type" 0.8172
+"utility" "linkedin" 0.8980
+"utility" "credit" 0.8745
+"utility" "id" 0.8893
+"utility" "term" 0.7460
+"visa" "driving" 0.9775
+"visa" "online" 0.8060
+"visa" "score" 0.8518
+"visa" "customers customer" 0.8319
+"visa" "banking bank" 0.9747
+"visa" "type" 0.9429
+"visa" "bureau" 0.8502
+"visa" "source" 0.9686
+"visa" "site" 0.9072
+"visa" "transactions" 0.8291
+"visa" "phone" 0.9240
+"visa" "store" 0.9773
+"visa" "purchasing" 0.4830
+"visa" "accounts account" 0.9631
+"visa" "credit" 0.9492
+"visa" "device devices" 0.9382
+"visa" "loan" 0.7777
+"visa" "date" 0.9434
+"visa" "st" 0.9144
+"visa" "schools" 0.9739
+"website" "card cards" 0.8275
+"website" "email" 0.8728
+"website" "media" 0.5544
+"website" "address addresses" 0.7975
+"website" "settings" 0.9720
+"website" "certification certificate" 0.9641
+"website" "score" 0.9655
+"website" "facebook" 0.7477
+"website" "college" 0.9806
+"website" "network" 0.9779
+"website" "service" 0.9085
+"website" "banking bank" 0.9945
+"website" "google" 0.7747
+"website" "type" 0.9321
+"website" "twitter" 0.3199
+"website" "site" 0.9266
+"website" "linkedin" 0.9445
+"website" "computers" 0.9549
+"website" "user" 0.6644
+"website" "internet" 0.9643
+"website" "ipad" 0.9202
+"website" "accounts account" 0.9030
+"website" "device devices" 0.9133
+"website" "schools" 0.9093
+"website" "passwords password" 0.3379
+"website" "term" 0.9225
