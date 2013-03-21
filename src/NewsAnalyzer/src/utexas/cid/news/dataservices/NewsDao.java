@@ -8,6 +8,7 @@ import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
 
+import me.prettyprint.cassandra.serializers.IntegerSerializer;
 import me.prettyprint.cassandra.serializers.StringSerializer;
 import me.prettyprint.cassandra.service.template.ColumnFamilyResult;
 import me.prettyprint.cassandra.service.template.ColumnFamilyTemplate;
@@ -230,7 +231,7 @@ public class NewsDao {
             if (rows.getCount() < row_limit)
                 break;
         }
-        logger.info("Total rows retrieved: " + rowCount);
+        logger.info("Total NewsArticles retrieved: " + rowCount);
         
 		
 	}
@@ -316,7 +317,7 @@ public class NewsDao {
             		} else if (NewsDao.COL_AUTHOR.equals(name)) {
             			myArticle.setAuthor(val);
             		} else if (NewsDao.COL_CONTENT.equals(name)) {
-            			// myArticle.setContent(val);
+            			myArticle.setContent(val);
             			// do nothing for now... we have a different keyspace for this info
             		} else if (NewsDao.COL_DESCRIPTION.equals(name)) {
             			myArticle.setDescription(val);

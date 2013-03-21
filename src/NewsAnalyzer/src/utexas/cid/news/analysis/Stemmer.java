@@ -35,7 +35,9 @@ package utexas.cid.news.analysis;
 
 */
 
-import java.io.*;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 
 /**
   * Stemmer, implementing the Porter Stemming Algorithm
@@ -418,6 +420,17 @@ class Stemmer
          catch (IOException e)
          {  System.out.println("error reading " + args[i]);
             break;
+         }
+         finally
+         {
+        	 if (in != null) {
+        		 try {
+        			 in.close();
+        		 } catch (Exception e) {
+        			 System.err.println("Problem closing file input stream");
+        			 e.printStackTrace();
+        		 }
+        	 }
          }
       }
       catch (FileNotFoundException e)

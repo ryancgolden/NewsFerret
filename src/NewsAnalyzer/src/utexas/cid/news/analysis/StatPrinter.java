@@ -84,7 +84,7 @@ public class StatPrinter {
 			OrderedRows<String, String, Integer> orderedRows = result.get();
 			int rowCount = orderedRows.getCount();
 
-			Row<String, String, Integer> lastRow = orderedRows.peekLast();
+			//Row<String, String, Integer> lastRow = orderedRows.peekLast();
 
 			logger.info("Contents of rows:");
 			for (Row<String, String, Integer> r : orderedRows) {

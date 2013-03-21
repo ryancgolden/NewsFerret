@@ -18,7 +18,7 @@ function [wc, words, docs, stops, important] = loadtermdocdata(tdDir, datDir, do
 
     % cell array of doc info
     % title url author feedUri
-    fid = fopen([tdDir 'docs.dat']);
+    fid = fopen(fullfile(tdDir, 'docs.dat'));
     docScanFormat = '%q';
     for i=[1:docDims-1]
         docScanFormat = [docScanFormat ' %q'];
@@ -27,7 +27,7 @@ function [wc, words, docs, stops, important] = loadtermdocdata(tdDir, datDir, do
     fclose(fid);
 
     % word count matrix for doc data
-    fid = fopen([tdDir 'wc.dat']);
+    fid = fopen(fullfile(tdDir, 'wc.dat'));
     % scanFormat is a long string of %f's for use by textscan
     docCount = size(docs{1,1},1);
     scanFormat = '%f';
@@ -39,19 +39,19 @@ function [wc, words, docs, stops, important] = loadtermdocdata(tdDir, datDir, do
     fclose(fid);
 
     % array of all words used across docs
-    fid = fopen([tdDir 'words.dat']);
+    fid = fopen(fullfile(tdDir, 'words.dat'));
     words = textscan(fid,'%q');
     words = words{1};
     fclose(fid);
 
     % array of stop words
-    fid = fopen([datDir 'stopstems.dat']);
+    fid = fopen(fullfile(datDir, 'stopstems.dat'));
     stops = textscan(fid,'%s');
     stops = stops{1};
     fclose(fid);
 
     % array of important words
-    fid = fopen([datDir 'importantstems.dat']);
+    fid = fopen(fullfile(datDir, 'importantstems.dat'));
     important = textscan(fid,'%s');
     important = important{1};
     fclose(fid);

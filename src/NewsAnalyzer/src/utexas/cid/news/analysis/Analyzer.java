@@ -3,8 +3,6 @@
  */
 package utexas.cid.news.analysis;
 
-import java.io.File;
-
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.util.ToolRunner;
 import org.slf4j.Logger;
@@ -44,7 +42,7 @@ public class Analyzer {
 		StatPrinter.printDocTermSummary();
 
 		// Output DAT matrix file(s) for MATLAB use
-		DatCreator.createDatFiles(myDataOutputRootDir);
+		DatCreator.prepareForMatlab(myDataOutputRootDir);
 		
 		// This does the LSA analysis and other matrix crunching
 		MatLabRunner.runMatlabSteps();

@@ -1,0 +1,1394 @@
+source,target,weight,type
+accounts account,loan,0.1655,undirected
+accounts account,employer,0.4869,undirected
+accounts account,passwords password,0.1247,undirected
+accounts account,transunion,0.2061,undirected
+accounts account,ebay,0.0793,undirected
+address addresses,group,0.0932,undirected
+address addresses,number,0.1294,undirected
+address addresses,refund,0.3086,undirected
+address addresses,facility,0.2516,undirected
+address addresses,application,0.0349,undirected
+address addresses,network,0.0118,undirected
+address addresses,ssn,0.1988,undirected
+address addresses,android,0.041,undirected
+address addresses,institution,0.268,undirected
+address addresses,banking bank,0.0728,undirected
+address addresses,name,0.4886,undirected
+address addresses,photo,0.1912,undirected
+address addresses,type,0.0548,undirected
+address addresses,twitter,0.0171,undirected
+address addresses,source,0.0763,undirected
+address addresses,transactions,0.1362,undirected
+address addresses,phone,0.255,undirected
+address addresses,ipad,0.0829,undirected
+address addresses,identity,0.1529,undirected
+address addresses,purchasing purchase,0.1893,undirected
+address addresses,accounts account,0.0685,undirected
+address addresses,credit,0.0085,undirected
+address addresses,device devices,0.0883,undirected
+address addresses,employer,0.0948,undirected
+address addresses,schools,0.0933,undirected
+address addresses,passwords password,0.1379,undirected
+address addresses,ebay,0.1505,undirected
+administrator,android,0.016,undirected
+administrator,tax,0.0785,undirected
+administrator,equifax,0.0106,undirected
+administrator,name,0.0129,undirected
+administrator,photo,0.0228,undirected
+administrator,assistance,0.0303,undirected
+administrator,bureau,0.1088,undirected
+administrator,american,0.0407,undirected
+administrator,business,0.0026,undirected
+administrator,laptop,0.002,undirected
+administrator,computers,0.101,undirected
+administrator,store,0.0606,undirected
+administrator,eye,0.0227,undirected
+administrator,ipad,0.1623,undirected
+administrator,identity,0.0016,undirected
+administrator,attorney,0.0259,undirected
+administrator,device devices,0.0082,undirected
+administrator,schools,0.0329,undirected
+administrator,apple,0.1714,undirected
+administrator,transunion,0.0106,undirected
+administrator,term,0.1288,undirected
+adult,media,0.0926,undirected
+adult,group,0.1549,undirected
+adult,parents,0.2229,undirected
+adult,number,0.0343,undirected
+adult,online,0.1125,undirected
+adult,sales,0.0173,undirected
+adult,agency,0.0086,undirected
+adult,facebook,0.2916,undirected
+adult,college,0.0621,undirected
+adult,federal,0.0635,undirected
+adult,customers customer,0.0939,undirected
+adult,equifax,0.3868,undirected
+adult,banking bank,0.1531,undirected
+adult,type,0.0129,undirected
+adult,bureau,0.1744,undirected
+adult,source,0.1048,undirected
+adult,site,0.0928,undirected
+adult,business,0.2059,undirected
+adult,children,0.3094,undirected
+adult,identity,0.0756,undirected
+adult,secure security,0.0339,undirected
+adult,credit,0.0763,undirected
+adult,id,0.0069,undirected
+adult,locator location,0.2226,undirected
+adult,device devices,0.0132,undirected
+adult,date,0.091,undirected
+adult,employer,0.0481,undirected
+adult,schools,0.0558,undirected
+adult,transunion,0.3868,undirected
+adult,secret,0.0035,undirected
+agency,application,0.0321,undirected
+agency,employee employees,0.0695,undirected
+agency,network,0.2589,undirected
+agency,service,0.528,undirected
+agency,federal,0.0935,undirected
+agency,customers customer,0.0544,undirected
+agency,equifax,0.375,undirected
+agency,type,0.0191,undirected
+agency,bureau,0.0725,undirected
+agency,site,0.0576,undirected
+agency,linkedin,0.0218,undirected
+agency,children,0.0341,undirected
+agency,accounts account,0.0402,undirected
+agency,credit,0.6181,undirected
+agency,id,0.0947,undirected
+agency,loan,0.0786,undirected
+agency,employer,0.3866,undirected
+agency,schools,0.0075,undirected
+agency,transunion,0.375,undirected
+amazon,system,0.0113,undirected
+amazon,website,0.2587,undirected
+amazon,email,0.0396,undirected
+amazon,adult,0.2204,undirected
+amazon,media,0.3039,undirected
+amazon,address addresses,0.1342,undirected
+amazon,group,0.177,undirected
+amazon,number,0.1265,undirected
+amazon,settings,0.1004,undirected
+amazon,application,0.0687,undirected
+amazon,facebook,0.3545,undirected
+amazon,android,0.0736,undirected
+amazon,banking bank,0.2061,undirected
+amazon,google,0.2149,undirected
+amazon,twitter,0.4608,undirected
+amazon,source,0.1263,undirected
+amazon,site,0.1758,undirected
+amazon,linkedin,0.4526,undirected
+amazon,children,0.1063,undirected
+amazon,phone,0.3629,undirected
+amazon,computers,0.0748,undirected
+amazon,user,0.5648,undirected
+amazon,eye,0.0129,undirected
+amazon,internet,0.0443,undirected
+amazon,accounts account,0.1466,undirected
+amazon,credit,0.0572,undirected
+amazon,locator location,0.0133,undirected
+amazon,device devices,0.03,undirected
+amazon,passwords password,0.4413,undirected
+amazon,apple,0.0027,undirected
+amazon,ebay,0.334,undirected
+amazon,secret,0.0368,undirected
+american,site,0.0429,undirected
+american,business,0.0562,undirected
+american,credit,0.2109,undirected
+american,loan,0.0788,undirected
+american,date,0.2403,undirected
+american,employer,0.003,undirected
+american,ebay,0.4947,undirected
+android,customers customer,0.0191,undirected
+android,equifax,0.0112,undirected
+android,google,0.3842,undirected
+android,twitter,0.0159,undirected
+android,source,0.061,undirected
+android,children,0.0249,undirected
+android,laptop,0.4127,undirected
+android,phone,0.2964,undirected
+android,computers,0.4684,undirected
+android,user,0.2274,undirected
+android,store,0.0606,undirected
+android,eye,0.0232,undirected
+android,internet,0.6253,undirected
+android,ipad,0.1613,undirected
+android,street,0.0123,undirected
+android,purchasing purchase,0.0712,undirected
+android,accounts account,0.003,undirected
+android,device devices,0.4594,undirected
+android,passwords password,0.0209,undirected
+android,apple,0.2487,undirected
+android,transunion,0.0112,undirected
+android,ebay,0.1165,undirected
+android,term,0.0585,undirected
+apple,transunion,0.2037,undirected
+application,employee employees,0.1839,undirected
+application,service,0.019,undirected
+application,federal,0.0429,undirected
+application,ssn,0.045,undirected
+application,android,0.0307,undirected
+application,customers customer,0.0886,undirected
+application,type,0.0025,undirected
+application,twitter,0.0214,undirected
+application,bureau,0.0537,undirected
+application,source,0.0569,undirected
+application,linkedin,0.0343,undirected
+application,phone,0.1859,undirected
+application,secure security,0.3381,undirected
+application,accounts account,0.0061,undirected
+application,id,0.0681,undirected
+application,locator location,0.1784,undirected
+application,date,0.0529,undirected
+application,passwords password,0.0098,undirected
+application,ebay,0.1102,undirected
+application,term,0.0078,undirected
+assistance,identity,0.0006,undirected
+assistance,secure security,0.0282,undirected
+assistance,accounts account,0.0131,undirected
+attorney,purchasing purchase,0.081,undirected
+attorney,accounts account,0.1824,undirected
+attorney,loan,0.0148,undirected
+attorney,employer,0.05,undirected
+attorney,st,0.001,undirected
+attorney,schools,0.032,undirected
+attorney,secret,0.3447,undirected
+banking bank,name,0.1616,undirected
+banking bank,google,0.0082,undirected
+banking bank,twitter,0.0305,undirected
+banking bank,source,0.1293,undirected
+banking bank,site,0.0019,undirected
+banking bank,business,0.1882,undirected
+banking bank,transactions,0.1919,undirected
+banking bank,user,0.044,undirected
+banking bank,eye,0.0799,undirected
+banking bank,internet,0.0054,undirected
+banking bank,street,0.006,undirected
+banking bank,purchasing purchase,0.0775,undirected
+banking bank,accounts account,0.0912,undirected
+banking bank,credit,0.332,undirected
+banking bank,locator location,0.074,undirected
+banking bank,device devices,0.0355,undirected
+banking bank,employer,0.1014,undirected
+banking bank,passwords password,0.0522,undirected
+banking bank,transunion,0.0278,undirected
+banking bank,secret,0.1934,undirected
+bureau,american,0.1776,undirected
+bureau,business,0.0725,undirected
+bureau,children,0.2785,undirected
+bureau,transactions,0.0116,undirected
+bureau,identity,0.0841,undirected
+bureau,secure security,0.0089,undirected
+bureau,attorney,0.0214,undirected
+bureau,purchasing purchase,0.0185,undirected
+bureau,accounts account,0.0718,undirected
+bureau,credit,0.07,undirected
+bureau,locator location,0.2958,undirected
+bureau,loan,0.3614,undirected
+bureau,date,0.1429,undirected
+bureau,employer,0.1677,undirected
+bureau,st,0.0065,undirected
+bureau,schools,0.0923,undirected
+bureau,transunion,0.276,undirected
+bureau,ebay,0.0307,undirected
+business,transactions,0.0345,undirected
+business,phone,0.0242,undirected
+business,locator location,0.0779,undirected
+business,device devices,0.2102,undirected
+business,date,0.0431,undirected
+business,employer,0.2908,undirected
+business,term,0.0424,undirected
+card cards,visa,0.0346,undirected
+card cards,address addresses,0.4449,undirected
+card cards,group,0.1572,undirected
+card cards,number,0.0949,undirected
+card cards,digits,0.1325,undirected
+card cards,online,0.0905,undirected
+card cards,sales,0.002,undirected
+card cards,passport,0.0509,undirected
+card cards,application,0.0386,undirected
+card cards,federal,0.021,undirected
+card cards,ssn,0.1633,undirected
+card cards,institution,0.0003,undirected
+card cards,customers customer,0.033,undirected
+card cards,banking bank,0.1522,undirected
+card cards,name,0.063,undirected
+card cards,photo,0.02,undirected
+card cards,type,0.0228,undirected
+card cards,bureau,0.1043,undirected
+card cards,american,0.0192,undirected
+card cards,site,0.019,undirected
+card cards,business,0.0983,undirected
+card cards,corporation,0.0292,undirected
+card cards,laptop,0.095,undirected
+card cards,transactions,0.0649,undirected
+card cards,phone,0.0286,undirected
+card cards,store,0.0476,undirected
+card cards,license,0.0748,undirected
+card cards,eye,0.0323,undirected
+card cards,ipad,0.1018,undirected
+card cards,identity,0.024,undirected
+card cards,secure security,0.01,undirected
+card cards,purchasing purchase,0.1969,undirected
+card cards,credit,0.1442,undirected
+card cards,locator location,0.3782,undirected
+card cards,device devices,0.1973,undirected
+card cards,date,0.1729,undirected
+card cards,st,0.3392,undirected
+card cards,passwords password,0.0295,undirected
+card cards,ebay,0.0023,undirected
+card cards,secret,0.0977,undirected
+certification certificate,passport,0.2477,undirected
+certification certificate,score,0.2019,undirected
+certification certificate,facebook,0.1497,undirected
+certification certificate,network,0.0764,undirected
+certification certificate,tax,0.0098,undirected
+certification certificate,customers customer,0.0033,undirected
+certification certificate,banking bank,0.0018,undirected
+certification certificate,google,0.0316,undirected
+certification certificate,corporation,0.7193,undirected
+certification certificate,children,0.3907,undirected
+certification certificate,identity,0.3783,undirected
+certification certificate,accounts account,0.0046,undirected
+certification certificate,apple,0.0009,undirected
+certification certificate,term,0.1417,undirected
+certification certificate,secret,0.1821,undirected
+children,user,0.1545,undirected
+children,internet,0.0837,undirected
+children,identity,0.5911,undirected
+children,secure security,0.0444,undirected
+children,accounts account,0.0087,undirected
+children,credit,0.0866,undirected
+children,id,0.0044,undirected
+children,schools,0.1328,undirected
+children,apple,0.0001,undirected
+children,transunion,0.3115,undirected
+college,network,0.0242,undirected
+college,customers customer,0.1841,undirected
+college,banking bank,0.0542,undirected
+college,photo,0.0234,undirected
+college,google,0.1586,undirected
+college,type,0.0941,undirected
+college,twitter,0.0032,undirected
+college,linkedin,0.0594,undirected
+college,business,0.2864,undirected
+college,children,0.0009,undirected
+college,phone,0.0106,undirected
+college,computers,0.1422,undirected
+college,internet,0.0004,undirected
+college,attorney,0.056,undirected
+college,employer,0.1182,undirected
+college,ebay,0.2305,undirected
+college,term,0.0056,undirected
+computers,user,0.0585,undirected
+computers,store,0.2822,undirected
+computers,eye,0.1007,undirected
+computers,ipad,0.6537,undirected
+computers,secure security,0.035,undirected
+computers,device devices,0.4463,undirected
+computers,st,0.0578,undirected
+computers,passwords password,0.1225,undirected
+computers,apple,0.6413,undirected
+computers,transunion,0.0905,undirected
+computers,ebay,0.1189,undirected
+computers,secret,0.057,undirected
+corporation,phone,0.0111,undirected
+corporation,computers,0.0107,undirected
+corporation,license,0.0076,undirected
+corporation,eye,0.2581,undirected
+corporation,internet,0.0205,undirected
+corporation,ipad,0.0237,undirected
+corporation,identity,0.0349,undirected
+corporation,street,0,undirected
+corporation,attorney,0.0617,undirected
+corporation,device devices,0.0007,undirected
+corporation,loan,0.0094,undirected
+corporation,st,0.0771,undirected
+corporation,apple,0.0176,undirected
+corporation,term,0.1836,undirected
+corporation,secret,0.2018,undirected
+country,system,0.2908,undirected
+country,website,0.0151,undirected
+country,card cards,0.001,undirected
+country,visa,0.0251,undirected
+country,media,0.0027,undirected
+country,online,0.1781,undirected
+country,certification certificate,0.5701,undirected
+country,facebook,0.0416,undirected
+country,network,0.0395,undirected
+country,federal,0.01,undirected
+country,mortgage,0.0974,undirected
+country,sign,0.0266,undirected
+country,google,0.0133,undirected
+country,type,0.0215,undirected
+country,american,0.1487,undirected
+country,site,0.0227,undirected
+country,linkedin,0.01,undirected
+country,corporation,0.6425,undirected
+country,store,0.1244,undirected
+country,license,0.0171,undirected
+country,credit,0.0284,undirected
+country,id,0.0748,undirected
+country,date,0.054,undirected
+country,st,0.2088,undirected
+country,ebay,0.1339,undirected
+country,term,0.0686,undirected
+country,secret,0.1409,undirected
+credit,locator location,0.0755,undirected
+credit,loan,0.0112,undirected
+credit,date,0.0778,undirected
+credit,employer,0.2562,undirected
+credit,transunion,0.1919,undirected
+credit,ebay,0.1862,undirected
+credit,secret,0.1019,undirected
+customers customer,banking bank,0.151,undirected
+customers customer,photo,0.0947,undirected
+customers customer,google,0.0769,undirected
+customers customer,type,0.1914,undirected
+customers customer,linkedin,0.0866,undirected
+customers customer,business,0.517,undirected
+customers customer,transactions,0.1254,undirected
+customers customer,phone,0.0085,undirected
+customers customer,internet,0.0592,undirected
+customers customer,purchasing purchase,0.0272,undirected
+customers customer,accounts account,0.0368,undirected
+customers customer,credit,0.007,undirected
+customers customer,id,0.0584,undirected
+customers customer,device devices,0.0841,undirected
+customers customer,employer,0.2033,undirected
+customers customer,term,0.0115,undirected
+date,st,0.1263,undirected
+date,transunion,0.0863,undirected
+date,ebay,0.2179,undirected
+device devices,st,0.0161,undirected
+device devices,apple,0.2074,undirected
+device devices,transunion,0.0368,undirected
+device devices,ebay,0.002,undirected
+device devices,term,0.0657,undirected
+device devices,secret,0.0095,undirected
+digits,refund,0.0148,undirected
+digits,settings,0.2099,undirected
+digits,wii,0.2277,undirected
+digits,application,0.0347,undirected
+digits,service,0.094,undirected
+digits,ssn,0.0459,undirected
+digits,android,0.1499,undirected
+digits,institution,0.0411,undirected
+digits,photo,0.1346,undirected
+digits,bureau,0.0574,undirected
+digits,source,0.2579,undirected
+digits,site,0.3466,undirected
+digits,business,0.0133,undirected
+digits,laptop,0.1328,undirected
+digits,phone,0.0107,undirected
+digits,computers,0.0876,undirected
+digits,identity,0.1115,undirected
+digits,secure security,0.1325,undirected
+digits,attorney,0.0226,undirected
+digits,accounts account,0.0034,undirected
+digits,locator location,0.1653,undirected
+digits,device devices,0.1189,undirected
+digits,date,0.0563,undirected
+digits,st,0.0062,undirected
+digits,passwords password,0.0944,undirected
+driving,media,0.004,undirected
+driving,digits,0.0617,undirected
+driving,settings,0.2705,undirected
+driving,wii,0.2911,undirected
+driving,college,0.0471,undirected
+driving,ssn,0.0524,undirected
+driving,android,0.1962,undirected
+driving,twitter,0.0017,undirected
+driving,site,0.0088,undirected
+driving,laptop,0.1749,undirected
+driving,phone,0.0411,undirected
+driving,computers,0.1395,undirected
+driving,street,0.092,undirected
+driving,purchasing purchase,0.0105,undirected
+driving,device devices,0.1714,undirected
+driving,st,0.0202,undirected
+email,driving,0.0012,undirected
+email,media,0.2417,undirected
+email,number,0.2399,undirected
+email,digits,0.2038,undirected
+email,refund,0.0004,undirected
+email,postal,0.0794,undirected
+email,settings,0.1147,undirected
+email,passport,0.0275,undirected
+email,administrator,0.2097,undirected
+email,facebook,0.0583,undirected
+email,college,0.0144,undirected
+email,network,0.2358,undirected
+email,service,0.066,undirected
+email,ssn,0.0118,undirected
+email,photo,0.0384,undirected
+email,twitter,0.0718,undirected
+email,bureau,0.0183,undirected
+email,source,0.1677,undirected
+email,linkedin,0.0049,undirected
+email,business,0.0431,undirected
+email,phone,0.1211,undirected
+email,identity,0.0118,undirected
+email,secure security,0.0427,undirected
+email,street,0.1242,undirected
+email,accounts account,0.0235,undirected
+email,st,0.1013,undirected
+email,passwords password,0.1503,undirected
+email,ebay,0.0485,undirected
+employer,schools,0.0478,undirected
+employer,transunion,0.2177,undirected
+employee employees,network,0.2073,undirected
+employee employees,service,0.0118,undirected
+employee employees,federal,0.0402,undirected
+employee employees,institution,0.2905,undirected
+employee employees,customers customer,0.2101,undirected
+employee employees,name,0.1171,undirected
+employee employees,type,0.2544,undirected
+employee employees,twitter,0.0119,undirected
+employee employees,assistance,0.4164,undirected
+employee employees,linkedin,0.111,undirected
+employee employees,laptop,0.0358,undirected
+employee employees,transactions,0.1512,undirected
+employee employees,accounts account,0.0113,undirected
+employee employees,id,0.1991,undirected
+equifax,banking bank,0.0278,undirected
+equifax,type,0.0623,undirected
+equifax,bureau,0.276,undirected
+equifax,source,0.194,undirected
+equifax,site,0.0832,undirected
+equifax,children,0.3115,undirected
+equifax,transactions,0.0795,undirected
+equifax,phone,0.003,undirected
+equifax,computers,0.0905,undirected
+equifax,store,0.0634,undirected
+equifax,eye,0.022,undirected
+equifax,ipad,0.1921,undirected
+equifax,identity,0.0364,undirected
+equifax,secure security,0.069,undirected
+equifax,accounts account,0.2061,undirected
+equifax,credit,0.1919,undirected
+equifax,id,0.0212,undirected
+equifax,device devices,0.0368,undirected
+equifax,loan,0.3506,undirected
+equifax,date,0.0863,undirected
+equifax,employer,0.2177,undirected
+equifax,schools,0.0526,undirected
+equifax,apple,0.2037,undirected
+equifax,transunion,1,undirected
+eye,ipad,0.1719,undirected
+eye,identity,0.0392,undirected
+eye,purchasing purchase,0.108,undirected
+eye,credit,0.0327,undirected
+eye,id,0.0038,undirected
+eye,locator location,0.0078,undirected
+eye,device devices,0.0399,undirected
+eye,schools,0.0446,undirected
+eye,apple,0.1809,undirected
+eye,transunion,0.022,undirected
+eye,term,0.2175,undirected
+eye,secret,0.0211,undirected
+facebook,college,0.1011,undirected
+facebook,network,0.0353,undirected
+facebook,customers customer,0.1783,undirected
+facebook,banking bank,0.0272,undirected
+facebook,google,0.3336,undirected
+facebook,type,0.0176,undirected
+facebook,twitter,0.3902,undirected
+facebook,site,0.0682,undirected
+facebook,linkedin,0.4689,undirected
+facebook,business,0.1525,undirected
+facebook,corporation,0.0527,undirected
+facebook,children,0.0844,undirected
+facebook,phone,0.0493,undirected
+facebook,user,0.4317,undirected
+facebook,internet,0.0383,undirected
+facebook,identity,0.0129,undirected
+facebook,street,0.0277,undirected
+facebook,accounts account,0.0718,undirected
+facebook,locator location,0.2263,undirected
+facebook,employer,0.0434,undirected
+facebook,schools,0.0149,undirected
+facebook,passwords password,0.3221,undirected
+facebook,ebay,0.0609,undirected
+facebook,term,0.1133,undirected
+facility,employee employees,0.1058,undirected
+facility,network,0.2569,undirected
+facility,ssn,0.2344,undirected
+facility,institution,0.0747,undirected
+facility,sign,0.1195,undirected
+facility,name,0.1588,undirected
+facility,photo,0.2242,undirected
+facility,laptop,0.0577,undirected
+facility,phone,0.0031,undirected
+facility,user,0.0312,undirected
+facility,identity,0.1609,undirected
+facility,secure security,0.0056,undirected
+facility,attorney,0.0695,undirected
+facility,accounts account,0.0019,undirected
+facility,device devices,0.0271,undirected
+facility,employer,0.1263,undirected
+facility,schools,0.0349,undirected
+facility,secret,0.0264,undirected
+federal,tax,0.013,undirected
+federal,mortgage,0.1353,undirected
+federal,equifax,0.0101,undirected
+federal,banking bank,0.025,undirected
+federal,sign,0.0262,undirected
+federal,photo,0.0427,undirected
+federal,type,0.0828,undirected
+federal,assistance,0.0195,undirected
+federal,bureau,0.0467,undirected
+federal,american,0.3466,undirected
+federal,business,0.026,undirected
+federal,store,0.105,undirected
+federal,eye,0.187,undirected
+federal,internet,0.0505,undirected
+federal,ipad,0.1263,undirected
+federal,credit,0.0865,undirected
+federal,id,0.1799,undirected
+federal,date,0.0875,undirected
+federal,apple,0.1119,undirected
+federal,transunion,0.0101,undirected
+federal,ebay,0.2074,undirected
+federal,term,0.0529,undirected
+google,twitter,0.2,undirected
+google,site,0.0221,undirected
+google,linkedin,0.4305,undirected
+google,business,0.0496,undirected
+google,corporation,0.0748,undirected
+google,children,0.1526,undirected
+google,user,0.5042,undirected
+google,eye,0.0767,undirected
+google,internet,0.6576,undirected
+google,street,0.0127,undirected
+google,purchasing purchase,0.0509,undirected
+google,accounts account,0.034,undirected
+google,employer,0.0092,undirected
+google,st,0.0002,undirected
+google,passwords password,0.1297,undirected
+google,apple,0.0726,undirected
+google,term,0.2078,undirected
+group,number,0.1572,undirected
+group,postal,0.0943,undirected
+group,federal,0.0065,undirected
+group,mortgage,0.0673,undirected
+group,banking bank,0.6891,undirected
+group,name,0.0815,undirected
+group,site,0.0001,undirected
+group,eye,0.0971,undirected
+group,attorney,0.0443,undirected
+group,purchasing purchase,0.0374,undirected
+group,credit,0.4017,undirected
+group,locator location,0.1208,undirected
+group,device devices,0.0711,undirected
+group,secret,0.2586,undirected
+health,system,0.0105,undirected
+health,online,0.0468,undirected
+health,facility,0.5014,undirected
+health,employee employees,0.3072,undirected
+health,facebook,0.0043,undirected
+health,network,0.5314,undirected
+health,service,0.0165,undirected
+health,institution,0.0398,undirected
+health,customers customer,0.0144,undirected
+health,photo,0.056,undirected
+health,google,0.0281,undirected
+health,twitter,0.0003,undirected
+health,assistance,0.0016,undirected
+health,bureau,0.02,undirected
+health,laptop,0.1752,undirected
+health,attorney,0.0486,undirected
+health,device devices,0.0665,undirected
+health,schools,0.0116,undirected
+id,date,0.0126,undirected
+id,transunion,0.0212,undirected
+identity,secure security,0.0302,undirected
+identity,attorney,0.1238,undirected
+identity,id,0.029,undirected
+identity,date,0.0153,undirected
+identity,employer,0.1,undirected
+identity,schools,0.1867,undirected
+identity,passwords password,0.0449,undirected
+identity,transunion,0.0364,undirected
+identity,term,0.0632,undirected
+identity,secret,0.0933,undirected
+institution,customers customer,0.0623,undirected
+institution,banking bank,0.1252,undirected
+institution,name,0.6822,undirected
+institution,business,0.0704,undirected
+institution,transactions,0.7236,undirected
+institution,internet,0.0259,undirected
+institution,accounts account,0.0761,undirected
+institution,id,0.0392,undirected
+institution,loan,0.0771,undirected
+institution,employer,0.0628,undirected
+institution,schools,0.0145,undirected
+internet,street,0.0246,undirected
+internet,purchasing purchase,0.0976,undirected
+internet,passwords password,0.0632,undirected
+internet,apple,0.098,undirected
+internet,term,0.1297,undirected
+ipad,identity,0.0149,undirected
+ipad,secure security,0.117,undirected
+ipad,purchasing purchase,0.0573,undirected
+ipad,device devices,0.2487,undirected
+ipad,st,0.0736,undirected
+ipad,apple,0.9491,undirected
+ipad,transunion,0.1921,undirected
+ipad,secret,0.0633,undirected
+job,utility,0.0343,undirected
+job,rating,0.053,undirected
+job,adult,0.0271,undirected
+job,driving,0.0302,undirected
+job,parents,0.0967,undirected
+job,number,0.0156,undirected
+job,digits,0.0163,undirected
+job,sales,0.0396,undirected
+job,settings,0.1311,undirected
+job,wii,0.147,undirected
+job,passport,0.054,undirected
+job,score,0.0763,undirected
+job,agency,0.035,undirected
+job,application,0.0245,undirected
+job,administrator,0.1501,undirected
+job,employee employees,0.0694,undirected
+job,federal,0.07,undirected
+job,android,0.2615,undirected
+job,equifax,0.2894,undirected
+job,type,0.029,undirected
+job,bureau,0.0907,undirected
+job,linkedin,0.0032,undirected
+job,children,0.0844,undirected
+job,laptop,0.0739,undirected
+job,phone,0.0656,undirected
+job,computers,0.6466,undirected
+job,store,0.4028,undirected
+job,license,0.0503,undirected
+job,eye,0.1624,undirected
+job,ipad,0.8666,undirected
+job,identity,0.0483,undirected
+job,secure security,0.1699,undirected
+job,purchasing purchase,0.0334,undirected
+job,id,0.0113,undirected
+job,device devices,0.2655,undirected
+job,loan,0.1191,undirected
+job,employer,0.0271,undirected
+job,schools,0.0101,undirected
+job,apple,0.9073,undirected
+job,transunion,0.2894,undirected
+laptop,phone,0.1662,undirected
+laptop,computers,0.2865,undirected
+laptop,license,0.1455,undirected
+laptop,id,0.0504,undirected
+laptop,device devices,0.3717,undirected
+laptop,schools,0.0271,undirected
+license,secure security,0.3657,undirected
+license,attorney,0.2346,undirected
+license,purchasing purchase,0.1341,undirected
+license,accounts account,0.133,undirected
+license,loan,0.001,undirected
+license,date,0.198,undirected
+license,employer,0.0555,undirected
+license,st,0.091,undirected
+linkedin,business,0.049,undirected
+linkedin,children,0.2012,undirected
+linkedin,user,0.5819,undirected
+linkedin,internet,0.0685,undirected
+linkedin,accounts account,0.068,undirected
+linkedin,id,0.0292,undirected
+linkedin,employer,0.0097,undirected
+linkedin,schools,0.1743,undirected
+linkedin,apple,0.0229,undirected
+linkedin,term,0.0102,undirected
+loan,employer,0.4505,undirected
+loan,transunion,0.3506,undirected
+locator location,date,0.2773,undirected
+locator location,st,0.0764,undirected
+locator location,secret,0.0224,undirected
+media,number,0.0087,undirected
+media,online,0.108,undirected
+media,settings,0.2045,undirected
+media,certification certificate,0.017,undirected
+media,passport,0.0441,undirected
+media,facebook,0.5717,undirected
+media,college,0.2327,undirected
+media,network,0.0691,undirected
+media,customers customer,0.1884,undirected
+media,banking bank,0.1032,undirected
+media,photo,0.0074,undirected
+media,google,0.565,undirected
+media,type,0.0745,undirected
+media,twitter,0.5261,undirected
+media,american,0.0099,undirected
+media,site,0.2154,undirected
+media,linkedin,0.5231,undirected
+media,business,0.3202,undirected
+media,corporation,0.0139,undirected
+media,children,0.0844,undirected
+media,user,0.4239,undirected
+media,internet,0.059,undirected
+media,street,0.0255,undirected
+media,accounts account,0.0652,undirected
+media,employer,0.1099,undirected
+media,schools,0.1586,undirected
+media,passwords password,0.3804,undirected
+media,ebay,0.0674,undirected
+media,term,0.1077,undirected
+medicare,social,0.0253,undirected
+medicare,address addresses,0.0692,undirected
+medicare,number,0.0389,undirected
+medicare,refund,0.0966,undirected
+medicare,administrator,0.0554,undirected
+medicare,service,0.0132,undirected
+medicare,tax,0.0621,undirected
+medicare,name,0.1469,undirected
+medicare,laptop,0.0467,undirected
+medicare,computers,0.01,undirected
+medicare,license,0.0526,undirected
+medicare,identity,0.0736,undirected
+medicare,secure security,0.0271,undirected
+medicare,schools,0.1477,undirected
+medicare,term,0.0078,undirected
+mortgage,equifax,0.0065,undirected
+mortgage,sign,0.1057,undirected
+mortgage,type,0.0519,undirected
+mortgage,bureau,0.0877,undirected
+mortgage,american,0.3861,undirected
+mortgage,site,0.0166,undirected
+mortgage,corporation,0.1196,undirected
+mortgage,license,0.1162,undirected
+mortgage,identity,0.0257,undirected
+mortgage,attorney,0.3292,undirected
+mortgage,credit,0.1422,undirected
+mortgage,loan,0.2607,undirected
+mortgage,date,0.1597,undirected
+mortgage,employer,0.0466,undirected
+mortgage,transunion,0.0065,undirected
+mortgage,ebay,0.3386,undirected
+name,photo,0.1894,undirected
+name,source,0.0745,undirected
+name,laptop,0.0094,undirected
+name,transactions,0.6816,undirected
+name,store,0.0028,undirected
+name,identity,0.0093,undirected
+name,attorney,0.0752,undirected
+name,purchasing purchase,0.2424,undirected
+name,accounts account,0.3377,undirected
+name,credit,0.033,undirected
+name,loan,0.036,undirected
+name,date,0.0083,undirected
+name,employer,0.1008,undirected
+name,schools,0.0894,undirected
+name,secret,0.0152,undirected
+network,service,0.1544,undirected
+network,federal,0.0635,undirected
+network,ssn,0.0317,undirected
+network,android,0.2178,undirected
+network,institution,0.0863,undirected
+network,customers customer,0.0222,undirected
+network,equifax,0.0547,undirected
+network,name,0.0184,undirected
+network,photo,0.0427,undirected
+network,google,0.3218,undirected
+network,bureau,0.0371,undirected
+network,linkedin,0.0011,undirected
+network,business,0.0049,undirected
+network,corporation,0.1026,undirected
+network,children,0.0029,undirected
+network,laptop,0.0944,undirected
+network,phone,0.0592,undirected
+network,user,0.1043,undirected
+network,internet,0.3443,undirected
+network,accounts account,0.0363,undirected
+network,credit,0.0946,undirected
+network,device devices,0.011,undirected
+network,employer,0.1429,undirected
+network,transunion,0.0547,undirected
+network,term,0.1326,undirected
+number,digits,0.0439,undirected
+number,refund,0.0264,undirected
+number,settings,0.201,undirected
+number,wii,0.0951,undirected
+number,passport,0.0347,undirected
+number,application,0.0097,undirected
+number,network,0.0057,undirected
+number,federal,0.1234,undirected
+number,ssn,0.0542,undirected
+number,android,0.0346,undirected
+number,institution,0.1822,undirected
+number,customers customer,0.0051,undirected
+number,banking bank,0.1909,undirected
+number,sign,0.0726,undirected
+number,name,0.2291,undirected
+number,photo,0.1316,undirected
+number,bureau,0.0506,undirected
+number,site,0.0045,undirected
+number,linkedin,0.1102,undirected
+number,business,0.0447,undirected
+number,children,0.0992,undirected
+number,laptop,0.0796,undirected
+number,transactions,0.1165,undirected
+number,phone,0.0488,undirected
+number,computers,0.0085,undirected
+number,secure security,0.1693,undirected
+number,accounts account,0.0126,undirected
+number,credit,0.0276,undirected
+number,locator location,0.1917,undirected
+number,device devices,0.0634,undirected
+number,date,0.0991,undirected
+number,schools,0.0024,undirected
+number,apple,0.0079,undirected
+number,ebay,0.0101,undirected
+online,passport,0.0004,undirected
+online,facebook,0.1474,undirected
+online,college,0.0178,undirected
+online,federal,0.3286,undirected
+online,mortgage,0.4359,undirected
+online,customers customer,0.0872,undirected
+online,sign,0.1946,undirected
+online,photo,0.0766,undirected
+online,type,0.0219,undirected
+online,bureau,0.0566,undirected
+online,american,0.647,undirected
+online,site,0.0921,undirected
+online,business,0.1978,undirected
+online,identity,0.0302,undirected
+online,credit,0.2546,undirected
+online,locator location,0.0932,undirected
+online,device devices,0.0794,undirected
+online,date,0.2869,undirected
+online,ebay,0.5855,undirected
+parents,agency,0.0308,undirected
+parents,administrator,0.0427,undirected
+parents,network,0.1702,undirected
+parents,android,0.3726,undirected
+parents,tax,0.0353,undirected
+parents,customers customer,0.0187,undirected
+parents,equifax,0.2277,undirected
+parents,photo,0.0202,undirected
+parents,google,0.3347,undirected
+parents,bureau,0.3498,undirected
+parents,children,0.4678,undirected
+parents,user,0.1981,undirected
+parents,internet,0.5746,undirected
+parents,identity,0.1707,undirected
+parents,street,0.0119,undirected
+parents,purchasing purchase,0.0485,undirected
+parents,credit,0.08,undirected
+parents,schools,0.1364,undirected
+parents,apple,0.0523,undirected
+parents,transunion,0.2277,undirected
+parents,term,0.1331,undirected
+passport,score,0.1526,undirected
+passport,facebook,0.011,undirected
+passport,photo,0.0564,undirected
+passport,linkedin,0.0083,undirected
+passport,children,0.305,undirected
+passport,laptop,0.2563,undirected
+passport,phone,0.0328,undirected
+passport,license,0.6962,undirected
+passport,identity,0.2417,undirected
+passport,secure security,0.3556,undirected
+passport,attorney,0.0897,undirected
+passport,id,0.0066,undirected
+passport,date,0.1888,undirected
+passwords password,ebay,0.2617,undirected
+phone,computers,0.2539,undirected
+phone,store,0.0418,undirected
+phone,ipad,0.0847,undirected
+phone,purchasing purchase,0.0435,undirected
+phone,accounts account,0.1376,undirected
+phone,device devices,0.1895,undirected
+phone,st,0.0596,undirected
+phone,passwords password,0.0855,undirected
+phone,apple,0.0756,undirected
+phone,transunion,0.003,undirected
+phone,ebay,0.5475,undirected
+photo,google,0.0165,undirected
+photo,american,0.1543,undirected
+photo,site,0.0763,undirected
+photo,business,0.0712,undirected
+photo,corporation,0.0672,undirected
+photo,laptop,0.126,undirected
+photo,phone,0.0118,undirected
+photo,license,0.0156,undirected
+photo,eye,0.2664,undirected
+photo,identity,0.032,undirected
+photo,secure security,0.0271,undirected
+photo,street,0.0048,undirected
+photo,attorney,0.0715,undirected
+photo,locator location,0.0148,undirected
+photo,employer,0.0069,undirected
+photo,term,0.0433,undirected
+photo,secret,0.0881,undirected
+postal,agency,0.0133,undirected
+postal,employee employees,0.0029,undirected
+postal,facebook,0.0682,undirected
+postal,network,0.104,undirected
+postal,service,0.1093,undirected
+postal,federal,0.0396,undirected
+postal,name,0.1036,undirected
+postal,photo,0.0143,undirected
+postal,bureau,0.0623,undirected
+postal,source,0.0894,undirected
+postal,transactions,0.1231,undirected
+postal,store,0.0334,undirected
+postal,license,0.0283,undirected
+postal,attorney,0.2546,undirected
+postal,purchasing purchase,0.1273,undirected
+postal,accounts account,0.2191,undirected
+postal,employer,0.1137,undirected
+postal,secret,0.1059,undirected
+purchasing purchase,accounts account,0.4524,undirected
+purchasing purchase,credit,0.036,undirected
+purchasing purchase,device devices,0.0449,undirected
+purchasing purchase,employer,0.2381,undirected
+purchasing purchase,st,0.1833,undirected
+purchasing purchase,passwords password,0.0643,undirected
+purchasing purchase,apple,0.0725,undirected
+purchasing purchase,secret,0.0043,undirected
+rating,amazon,0.1979,undirected
+rating,system,0.0239,undirected
+rating,media,0.1,undirected
+rating,group,0.0005,undirected
+rating,sales,0.0363,undirected
+rating,settings,0.079,undirected
+rating,agency,0.0377,undirected
+rating,application,0.1181,undirected
+rating,employee employees,0.3172,undirected
+rating,facebook,0.1632,undirected
+rating,service,0.0332,undirected
+rating,federal,0.0121,undirected
+rating,institution,0.0058,undirected
+rating,mortgage,0.2512,undirected
+rating,customers customer,0.1087,undirected
+rating,google,0.1205,undirected
+rating,type,0.0369,undirected
+rating,twitter,0.067,undirected
+rating,site,0.0371,undirected
+rating,linkedin,0.4468,undirected
+rating,corporation,0.0379,undirected
+rating,children,0.0774,undirected
+rating,user,0.2537,undirected
+rating,license,0.028,undirected
+rating,internet,0.053,undirected
+rating,attorney,0.1017,undirected
+rating,id,0.1748,undirected
+rating,loan,0.0251,undirected
+rating,st,0.1132,undirected
+refund,postal,0.0157,undirected
+refund,sales,0.1281,undirected
+refund,facility,0.2423,undirected
+refund,employee employees,0.1578,undirected
+refund,ssn,0.3545,undirected
+refund,tax,0.3123,undirected
+refund,institution,0.3278,undirected
+refund,sign,0.0015,undirected
+refund,name,0.3269,undirected
+refund,photo,0.1336,undirected
+refund,transactions,0.1344,undirected
+refund,identity,0.348,undirected
+refund,id,0.0014,undirected
+refund,employer,0.1348,undirected
+refund,schools,0.1451,undirected
+sales,application,0.0068,undirected
+sales,service,0.0519,undirected
+sales,federal,0.2064,undirected
+sales,ssn,0.0071,undirected
+sales,tax,0.7146,undirected
+sales,sign,0.4042,undirected
+sales,type,0.0659,undirected
+sales,business,0.0867,undirected
+sales,computers,0.0022,undirected
+sales,store,0.0958,undirected
+sales,ipad,0.0523,undirected
+sales,street,0.0089,undirected
+sales,id,0.1579,undirected
+sales,device devices,0.067,undirected
+sales,apple,0.0571,undirected
+sales,term,0.0916,undirected
+schools,transunion,0.0526,undirected
+score,agency,0.2379,undirected
+score,network,0.0685,undirected
+score,service,0.1509,undirected
+score,mortgage,0.101,undirected
+score,equifax,0.357,undirected
+score,type,0.3061,undirected
+score,bureau,0.2514,undirected
+score,american,0.046,undirected
+score,site,0.0418,undirected
+score,children,0.2497,undirected
+score,identity,0.1586,undirected
+score,street,0.0139,undirected
+score,accounts account,0.1433,undirected
+score,credit,0.154,undirected
+score,loan,0.6797,undirected
+score,employer,0.4201,undirected
+score,transunion,0.357,undirected
+secure security,attorney,0.0124,undirected
+secure security,id,0.0912,undirected
+secure security,locator location,0.1147,undirected
+secure security,date,0.158,undirected
+secure security,apple,0.1288,undirected
+secure security,transunion,0.069,undirected
+service,federal,0.0743,undirected
+service,mortgage,0.003,undirected
+service,equifax,0.0571,undirected
+service,google,0.0459,undirected
+service,twitter,0.0147,undirected
+service,source,0.0783,undirected
+service,site,0.0197,undirected
+service,internet,0.0206,undirected
+service,attorney,0.0839,undirected
+service,accounts account,0.0132,undirected
+service,credit,0.4014,undirected
+service,id,0.0597,undirected
+service,loan,0.0468,undirected
+service,employer,0.1696,undirected
+service,passwords password,0.0439,undirected
+service,transunion,0.0571,undirected
+service,term,0.0342,undirected
+service,secret,0.1098,undirected
+settings,wii,0.9139,undirected
+settings,facebook,0.1127,undirected
+settings,college,0.0324,undirected
+settings,network,0.0023,undirected
+settings,android,0.6321,undirected
+settings,google,0.2127,undirected
+settings,twitter,0.0493,undirected
+settings,site,0.0144,undirected
+settings,linkedin,0.225,undirected
+settings,children,0.0554,undirected
+settings,laptop,0.563,undirected
+settings,phone,0.1058,undirected
+settings,computers,0.4386,undirected
+settings,user,0.1292,undirected
+settings,internet,0.0229,undirected
+settings,accounts account,0.0186,undirected
+settings,device devices,0.5486,undirected
+settings,passwords password,0.0049,undirected
+settings,term,0.0143,undirected
+sign,type,0.1167,undirected
+sign,american,0.1141,undirected
+sign,site,0.027,undirected
+sign,business,0.0637,undirected
+sign,phone,0.0034,undirected
+sign,computers,0.0603,undirected
+sign,user,0.0434,undirected
+sign,store,0.0377,undirected
+sign,identity,0.0185,undirected
+sign,attorney,0.0055,undirected
+sign,credit,0.1085,undirected
+sign,id,0.0426,undirected
+sign,date,0.0515,undirected
+sign,ebay,0.1452,undirected
+sign,term,0.0323,undirected
+sign,secret,0.0378,undirected
+site,linkedin,0.319,undirected
+site,business,0.0695,undirected
+site,children,0.0142,undirected
+site,user,0.0901,undirected
+site,secure security,0.0414,undirected
+site,street,0.0287,undirected
+site,purchasing purchase,0.0405,undirected
+site,credit,0.0823,undirected
+site,device devices,0.1119,undirected
+site,date,0.0554,undirected
+site,schools,0.4989,undirected
+site,transunion,0.0832,undirected
+site,ebay,0.0302,undirected
+social,job,0.1482,undirected
+social,health,0.0209,undirected
+social,email,0.0693,undirected
+social,adult,0.0205,undirected
+social,number,0.141,undirected
+social,digits,0.1856,undirected
+social,passport,0.3367,undirected
+social,facility,0.0165,undirected
+social,application,0.3051,undirected
+social,ssn,0.0746,undirected
+social,equifax,0.0522,undirected
+social,photo,0.0558,undirected
+social,twitter,0.0231,undirected
+social,site,0.1036,undirected
+social,children,0.0177,undirected
+social,computers,0.0448,undirected
+social,store,0.0536,undirected
+social,license,0.3302,undirected
+social,ipad,0.1059,undirected
+social,identity,0.0225,undirected
+social,secure security,0.9684,undirected
+social,attorney,0.006,undirected
+social,id,0.085,undirected
+social,locator location,0.0873,undirected
+social,date,0.1442,undirected
+social,schools,0.0051,undirected
+social,passwords password,0.0354,undirected
+social,apple,0.1164,undirected
+social,transunion,0.0522,undirected
+source,site,0.0171,undirected
+source,transactions,0.2187,undirected
+source,phone,0.3475,undirected
+source,computers,0.0024,undirected
+source,store,0.047,undirected
+source,license,0.0408,undirected
+source,identity,0.0387,undirected
+source,secure security,0.0038,undirected
+source,attorney,0.0836,undirected
+source,purchasing purchase,0.1735,undirected
+source,accounts account,0.4666,undirected
+source,id,0.0185,undirected
+source,device devices,0.0392,undirected
+source,date,0.1313,undirected
+source,employer,0.159,undirected
+source,passwords password,0.0871,undirected
+source,transunion,0.194,undirected
+source,ebay,0.1967,undirected
+ssn,institution,0.1068,undirected
+ssn,sign,0.121,undirected
+ssn,twitter,0.0084,undirected
+ssn,bureau,0.0957,undirected
+ssn,children,0.0231,undirected
+ssn,transactions,0.0202,undirected
+ssn,phone,0.0238,undirected
+ssn,store,0.0582,undirected
+ssn,internet,0.0231,undirected
+ssn,identity,0.2781,undirected
+ssn,secure security,0.0815,undirected
+ssn,street,0.3631,undirected
+ssn,credit,0.0374,undirected
+ssn,locator location,0.2148,undirected
+ssn,date,0.0729,undirected
+ssn,employer,0.3107,undirected
+ssn,st,0.1726,undirected
+ssn,schools,0.1078,undirected
+st,apple,0.0113,undirected
+st,secret,0.0336,undirected
+store,license,0.1286,undirected
+store,eye,0.0715,undirected
+store,ipad,0.4233,undirected
+store,secure security,0.0571,undirected
+store,street,0.0057,undirected
+store,purchasing purchase,0.2727,undirected
+store,accounts account,0.0972,undirected
+store,locator location,0.0251,undirected
+store,device devices,0.0587,undirected
+store,employer,0.0627,undirected
+store,st,0.3656,undirected
+store,apple,0.4446,undirected
+store,transunion,0.0634,undirected
+street,loan,0.0239,undirected
+street,date,0.2339,undirected
+street,st,0.3276,undirected
+system,website,0.0332,undirected
+system,card cards,0.0006,undirected
+system,driving,0.0018,undirected
+system,media,0.0018,undirected
+system,parents,0.0086,undirected
+system,sales,0.0049,undirected
+system,settings,0.0139,undirected
+system,wii,0.0173,undirected
+system,employee employees,0.0011,undirected
+system,facebook,0.0033,undirected
+system,service,0.0173,undirected
+system,android,0.0053,undirected
+system,equifax,0.0005,undirected
+system,type,0.2038,undirected
+system,twitter,0.0435,undirected
+system,children,0.0067,undirected
+system,laptop,0.0086,undirected
+system,user,0.0197,undirected
+system,secure security,0.0033,undirected
+system,id,0.3369,undirected
+system,device devices,0.0185,undirected
+system,passwords password,0.0471,undirected
+system,transunion,0.0005,undirected
+tax,sign,0.2887,undirected
+tax,photo,0.0166,undirected
+tax,type,0.1699,undirected
+tax,american,0.0245,undirected
+tax,business,0.0314,undirected
+tax,corporation,0.0054,undirected
+tax,identity,0.0617,undirected
+tax,attorney,0.0298,undirected
+tax,id,0.1222,undirected
+tax,schools,0.0188,undirected
+tax,term,0.1201,undirected
+transactions,store,0.0751,undirected
+transactions,license,0.0379,undirected
+transactions,attorney,0.0378,undirected
+transactions,purchasing purchase,0.3051,undirected
+transactions,accounts account,0.5225,undirected
+transactions,id,0.0105,undirected
+transactions,locator location,0.0284,undirected
+transactions,device devices,0.0455,undirected
+transactions,loan,0.0465,undirected
+transactions,employer,0.1842,undirected
+transactions,transunion,0.0795,undirected
+twitter,source,0.0185,undirected
+twitter,site,0.2198,undirected
+twitter,linkedin,0.1917,undirected
+twitter,children,0.0044,undirected
+twitter,phone,0.0876,undirected
+twitter,computers,0.1212,undirected
+twitter,user,0.5296,undirected
+twitter,internet,0.0472,undirected
+twitter,street,0.0265,undirected
+twitter,accounts account,0.1081,undirected
+twitter,loan,0.0029,undirected
+twitter,schools,0.2518,undirected
+twitter,passwords password,0.8866,undirected
+twitter,ebay,0.239,undirected
+type,twitter,0.0011,undirected
+type,assistance,0.3447,undirected
+type,bureau,0.1588,undirected
+type,american,0.0803,undirected
+type,linkedin,0.0559,undirected
+type,business,0.2835,undirected
+type,ipad,0.0327,undirected
+type,accounts account,0.0015,undirected
+type,id,0.0876,undirected
+type,loan,0.4447,undirected
+type,employer,0.3059,undirected
+type,transunion,0.0623,undirected
+type,secret,0.0404,undirected
+user,internet,0.4247,undirected
+user,purchasing purchase,0.0489,undirected
+user,accounts account,0.1033,undirected
+user,passwords password,0.5092,undirected
+user,apple,0.0542,undirected
+user,ebay,0.0863,undirected
+user,term,0.0195,undirected
+user,secret,0.0095,undirected
+utility,rating,0.1606,undirected
+utility,email,0.0759,undirected
+utility,postal,0.046,undirected
+utility,sales,0.0102,undirected
+utility,score,0.0408,undirected
+utility,agency,0.3856,undirected
+utility,application,0.2091,undirected
+utility,employee employees,0.2963,undirected
+utility,network,0.2667,undirected
+utility,service,0.2669,undirected
+utility,federal,0.2357,undirected
+utility,customers customer,0.1444,undirected
+utility,equifax,0.0279,undirected
+utility,photo,0.0054,undirected
+utility,type,0.1914,undirected
+utility,twitter,0.0018,undirected
+utility,linkedin,0.1075,undirected
+utility,credit,0.1233,undirected
+utility,id,0.1165,undirected
+utility,employer,0.0803,undirected
+utility,transunion,0.0279,undirected
+utility,term,0.2666,undirected
+visa,driving,0.0222,undirected
+visa,online,0.1813,undirected
+visa,wii,0.0304,undirected
+visa,score,0.1569,undirected
+visa,mortgage,0.1427,undirected
+visa,customers customer,0.1436,undirected
+visa,equifax,0.0871,undirected
+visa,banking bank,0.0297,undirected
+visa,sign,0.0182,undirected
+visa,type,0.0624,undirected
+visa,bureau,0.152,undirected
+visa,source,0.0353,undirected
+visa,american,0.1776,undirected
+visa,site,0.0898,undirected
+visa,transactions,0.1598,undirected
+visa,phone,0.077,undirected
+visa,store,0.029,undirected
+visa,eye,0.0618,undirected
+visa,purchasing purchase,0.5135,undirected
+visa,accounts account,0.0289,undirected
+visa,credit,0.0445,undirected
+visa,device devices,0.056,undirected
+visa,loan,0.2307,undirected
+visa,date,0.0481,undirected
+visa,employer,0.0775,undirected
+visa,st,0.0936,undirected
+visa,schools,0.0309,undirected
+visa,transunion,0.0871,undirected
+visa,ebay,0.134,undirected
+website,card cards,0.1836,undirected
+website,email,0.13,undirected
+website,media,0.4516,undirected
+website,address addresses,0.2111,undirected
+website,settings,0.0299,undirected
+website,certification certificate,0.0363,undirected
+website,passport,0.0078,undirected
+website,score,0.0342,undirected
+website,facebook,0.2612,undirected
+website,college,0.0213,undirected
+website,network,0.0241,undirected
+website,service,0.1037,undirected
+website,equifax,0.0264,undirected
+website,banking bank,0.0088,undirected
+website,google,0.2307,undirected
+website,type,0.0767,undirected
+website,twitter,0.6805,undirected
+website,site,0.0755,undirected
+website,linkedin,0.0572,undirected
+website,corporation,0.0379,undirected
+website,computers,0.0498,undirected
+website,user,0.3405,undirected
+website,internet,0.0387,undirected
+website,ipad,0.0842,undirected
+website,accounts account,0.0991,undirected
+website,device devices,0.0961,undirected
+website,schools,0.0867,undirected
+website,passwords password,0.6605,undirected
+website,transunion,0.0264,undirected
+website,ebay,0.111,undirected
+website,term,0.0808,undirected
+wii,android,0.6796,undirected
+wii,twitter,0.0101,undirected
+wii,laptop,0.6054,undirected
+wii,phone,0.119,undirected
+wii,computers,0.4775,undirected
+wii,store,0.0224,undirected
+wii,purchasing purchase,0.0239,undirected
+wii,device devices,0.5934,undirected
+wii,st,0.0511,undirected

@@ -1,12 +1,26 @@
+% Main driver for identity theft news story analysis.
+% Reads in term-doc matrix information, performs analysis and writes
+% results
+%
+% Author: Ryan Golden
+% Date: Spring 2013
+
 %max nodes in dendrogram
 nodes = 10;
 
-datDir = '/win/UT/github/ID/src/matlab/dat';
+baseLocationWin = 'C:\UT\github\ID\src\matlab\dat\';
+baseLocationOther = '/win/UT/github/ID/src/matlab/dat/';
+if ispc % true for windows
+    baseLocation = baseLocationWin;
+else
+    baseLocation = baseLocationOther;
+end
+datDir = baseLocation;
 
 % Load from dat files (produced by NewsFerret Java code)
-[id_wc, id_words, id_docs, stopwords, important] = loadtermdocdata([datDir '/termdoc/'], [datDir '/'], 4);
+[id_wc, id_words, id_docs, stopwords, important] = loadtermdocdata(fullfile(datDir, 'termdoc'), datDir, 4);
 
-%remove stop words
+% remove stop words
 [id_wc_stopped, id_words_stopped] = rmstopwords(id_wc, id_words, stopwords);
 
 % trim the tails (remove really frequent words >1% of words, really rare words < .01%, and docs 
@@ -23,7 +37,7 @@ id_fin = finitize(id_llr);
 doc_top25words = topwordsall(id_fin, id_docs_trim{1}, id_words_trim, 25);
 doc_top25words = doc_top25words';
 [nrows,ncols]= size(doc_top25words);
-filename = [datDir '/top25perdoc.csv'];
+filename = fullfile(datDir, 'top25perdoc.csv');
 fid = fopen(filename, 'w');
 for row=1:nrows
     fprintf(fid, '\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\"\n', doc_top25words{row,:});
@@ -56,12 +70,24 @@ pair_sims = sortcell(pair_sims,1);
 % Only let important word pairs through
 important_pairs = pair_sims(ismember(pair_sims(:,1), important), :);
 important_pairs = important_pairs(ismember(important_pairs(:,2), important), :);
-important_pairs = [important_pairs; important_pairs(:,[2 1 3])]; % add inverse
+%important_pairs = [important_pairs; important_pairs(:,[2 1 3])]; % add inverse
 important_pairs = sortcell(important_pairs,1);
 
 % Write important pair weights to a file
+
+% 1-cosine sim gives us a positive weight that increases with similarity
+% for our visualization tools
+for row=1:size(important_pairs,1)
+    if row==1
+        tmp = {important_pairs{row,1:2} 1.0000-cell2mat(important_pairs(row,3))};
+    else
+        tmp = [tmp; important_pairs(row,1:2) {1.0000-cell2mat(important_pairs(row,3))}];
+    end
+end
+important_pairs = tmp;
+
 [nrows,ncols]= size(important_pairs);
-filename = [datDir '/importantpairs.dat'];
+filename = fullfile(datDir, 'importantpairs.dat');
 fid = fopen(filename, 'w');
 for row=1:nrows
     fprintf(fid, '%s %s %1.4f \n', important_pairs{row,:});

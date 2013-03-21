@@ -55,9 +55,6 @@ public class TermDocMatCreator extends Configured implements Tool {
 		private static String sTaggerLoc = "taggers/english-bidirectional-distsim.tagger";
 		private MaxentTagger myTagger = null;
 
-		// Stemmer
-		private Stemmer myStemmer = null;
-		
 		private Text word = new Text();
 		private ByteBuffer sourceColumn;
 
@@ -78,8 +75,6 @@ public class TermDocMatCreator extends Configured implements Tool {
 				throw new InterruptedException();
 			}			
 			
-			// Create Stemmer
-			myStemmer = new Stemmer();
 		}
 
 		public void map(ByteBuffer key,
