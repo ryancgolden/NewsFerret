@@ -48,8 +48,8 @@ public class DatCreator {
 	 */
 	public static void main(String[] args) throws Exception {
 		//prepareForMatlab(args[0]);
-		//createPrettyPairsDat(args[0]);
-		createNewsDatFiles(args[0] + File.separator + "articles");
+		createPrettyPairsDat(args[0]);
+		//createNewsDatFiles(args[0] + File.separator + "articles");
 	}
 
 	/**
@@ -321,14 +321,18 @@ public class DatCreator {
 			throws FileNotFoundException, IOException {
 
 		String sep = File.separator;
-		String myStemPairsDatFile = pRootDatDir + sep + "importantpairs.dat";
+		String myStemPairsDatFile = pRootDatDir + sep + "importantpairs.csv";
 		String myPrettyPairsDatFile = pRootDatDir + sep
-				+ "importantpairspretty.dat";
+				+ "importantpairspretty.csv";
+		String myRelatedDocsFile = pRootDatDir + sep + "importantpairs_topmatchingdocs.csv";
+		String myPrettyRelatedDocsFile = pRootDatDir + sep
+				+ "importantpairs_topmatchingdocs_pretty.csv";
 		String myStemsMapDatFile = pRootDatDir + sep + "importantstemsmap.dat";
 
 		Scanner scMap = null;
 		Scanner sc = null;
 		BufferedWriter out = null;
+		BufferedWriter outRelated = null;
 		Map<String, Set<String>> stemMap = new LinkedHashMap<String, Set<String>>();
 
 		try {
@@ -355,33 +359,90 @@ public class DatCreator {
 			sc = new Scanner(new File(myStemPairsDatFile));
 			out = new BufferedWriter(new FileWriter(myPrettyPairsDatFile));
 
+			// hack to skip first line with headers
+			out.write(sc.nextLine() + "\n");
+			
 			while (sc.hasNextLine()) {
 				String myLine = sc.nextLine();
 				String[] myStrs = myLine.split("\\s+");
-				if (myStrs.length != 3) {
-					logger.warn("stem pair weights input error, line doesn't have 3 items.");
+				if (myStrs.length != 4) {
+					logger.warn("stem pair weights input error, line doesn't have 4 items.");
 					continue;
 				}
 				String term1 = myStrs[0];
 				String term2 = myStrs[1];
 				String weight = myStrs[2];
+				String type = myStrs[3];
 
 				StringBuffer words1 = new StringBuffer();
 				StringBuffer words2 = new StringBuffer();
 				for (String word : stemMap.get(term1)) {
 					words1.append(word + " ");
+					// hack: only use the first word to avoid ugly multi-word cells
+					break;
 				}
 				String words1Str = words1.substring(0, words1.lastIndexOf(" "));
 				for (String word : stemMap.get(term2)) {
 					words2.append(word + " ");
+					// hack: only use the first word to avoid ugly multi-word cells
+					break;
 				}
 				String words2Str = words2.substring(0, words2.lastIndexOf(" "));
 				out.write("\"" + words1Str + "\" \"" + words2Str + "\" "
-						+ weight + "\n");
+						+ weight + " \"" + type + "\"");
+				out.newLine();
 			}
 
 			logger.info("Done writing " + myPrettyPairsDatFile);
+			
+			// Read in stem pair related docs from csv file, replacing stems in
+			// out file with the expanded words, making it more readable
+			sc = new Scanner(new File(myRelatedDocsFile));
+			outRelated = new BufferedWriter(new FileWriter(myPrettyRelatedDocsFile));
 
+			// hack to skip first line with headers
+			outRelated.write(sc.nextLine() + "\n");
+			
+			while (sc.hasNextLine()) {
+				String myLine = sc.nextLine();
+				String[] myStrs = myLine.split("\",\"");
+				if (myStrs.length != 9) {
+					logger.warn("related docs input error, line doesn't have 9 items.");
+					outRelated.write(myLine);
+					outRelated.newLine();
+					continue;
+				}
+				String term1 = myStrs[0].replaceAll("\\\"", "");
+				String term2 = myStrs[1].replaceAll("\\\"", "");;
+				String weight = myStrs[2];
+				String type = myStrs[3].replaceAll("\\\"", "");
+				String doc1 = myStrs[4].replaceAll("\\\"", "");
+				String doc2 = myStrs[5].replaceAll("\\\"", "");
+				String doc3 = myStrs[6].replaceAll("\\\"", "");
+				String doc4 = myStrs[7].replaceAll("\\\"", "");
+				String doc5 = myStrs[8].replaceAll("\\\"", "");
+
+				StringBuffer words1 = new StringBuffer();
+				StringBuffer words2 = new StringBuffer();
+				for (String word : stemMap.get(term1)) {
+					words1.append(word + " ");
+					// hack: only use the first word to avoid ugly multi-word cells
+					break;
+				}
+				String words1Str = words1.substring(0, words1.lastIndexOf(" "));
+				for (String word : stemMap.get(term2)) {
+					words2.append(word + " ");
+					// hack: only use the first word to avoid ugly multi-word cells
+					break;
+				}
+				String words2Str = words2.substring(0, words2.lastIndexOf(" "));
+				outRelated.write("\"" + words1Str + "\", \"" + words2Str + "\", " + weight + ", \"undirected\", \""
+						+ doc1 + "\", \"" + doc2 + "\", \"" + doc3 + "\", \"" + doc4 + "\", \"" + doc5 + "\"");
+				outRelated.newLine();
+			}
+
+			logger.info("Done writing " + myPrettyRelatedDocsFile);
+			
 		} catch (FileNotFoundException e) {
 			logger.error("Problem reading " + myStemPairsDatFile + " or "
 					+ myStemsMapDatFile, e);
@@ -398,6 +459,9 @@ public class DatCreator {
 			}
 			if (out != null) {
 				out.close();
+			}
+			if (outRelated != null) {
+				outRelated.close();
 			}
 		}
 	}

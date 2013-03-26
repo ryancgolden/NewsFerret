@@ -1,0 +1,1430 @@
+"source","target","weight","type","label"
+"accounts account","device devices",0.0184,"undirected",0.0184
+"accounts account","loan",0.1515,"undirected",0.1515
+"accounts account","transunion",0.186,"undirected",0.186
+"accounts account","ebay",0.0855,"undirected",0.0855
+"accounts account","website",0.1141,"undirected",0.1141
+"accounts account","email",0.0473,"undirected",0.0473
+"accounts account","address addresses",0.1588,"undirected",0.1588
+"accounts account","number",0.0125,"undirected",0.0125
+"accounts account","postal",0.2757,"undirected",0.2757
+"accounts account","employee employees",0.0313,"undirected",0.0313
+"accounts account","network",0.0581,"undirected",0.0581
+"accounts account","android",0.0526,"undirected",0.0526
+"accounts account","institution",0.0767,"undirected",0.0767
+"accounts account","profile",0.0304,"undirected",0.0304
+"accounts account","equifax",0.186,"undirected",0.186
+"accounts account","banking bank",0.0978,"undirected",0.0978
+"accounts account","bill",0.0138,"undirected",0.0138
+"accounts account","photo",0.0637,"undirected",0.0637
+"accounts account","twitter",0.1249,"undirected",0.1249
+"accounts account","assistance",0.0185,"undirected",0.0185
+"accounts account","bureau",0.1393,"undirected",0.1393
+"accounts account","linkedin",0.0221,"undirected",0.0221
+"accounts account","transactions",0.5513,"undirected",0.5513
+"accounts account","phone",0.1061,"undirected",0.1061
+"accounts account","computers",0.0088,"undirected",0.0088
+"accounts account","internet",0.0033,"undirected",0.0033
+"accounts account","attorney",0.264,"undirected",0.264
+"accounts account","passwords password",0.1497,"undirected",0.1497
+"address addresses","number",0.1905,"undirected",0.1905
+"address addresses","refund",0.1788,"undirected",0.1788
+"address addresses","postal",0.1903,"undirected",0.1903
+"address addresses","facility",0.0533,"undirected",0.0533
+"address addresses","service",0.0002,"undirected",0.0002
+"address addresses","android",0.0758,"undirected",0.0758
+"address addresses","institution",0.1985,"undirected",0.1985
+"address addresses","profile",0.1116,"undirected",0.1116
+"address addresses","banking bank",0.0716,"undirected",0.0716
+"address addresses","bill",0.0694,"undirected",0.0694
+"address addresses","photo",0.5296,"undirected",0.5296
+"address addresses","twitter",0.0713,"undirected",0.0713
+"address addresses","transactions",0.1699,"undirected",0.1699
+"address addresses","phone",0.1278,"undirected",0.1278
+"address addresses","computers",0.1949,"undirected",0.1949
+"address addresses","identity",0.1411,"undirected",0.1411
+"address addresses","street",0.0077,"undirected",0.0077
+"address addresses","attorney",0.0546,"undirected",0.0546
+"address addresses","credit",0.0072,"undirected",0.0072
+"address addresses","date",0.1123,"undirected",0.1123
+"address addresses","vehicle",0.0072,"undirected",0.0072
+"address addresses","passwords password",0.141,"undirected",0.141
+"administrator","mortgage",0.018,"undirected",0.018
+"administrator","bill",0.168,"undirected",0.168
+"administrator","photo",0.0026,"undirected",0.0026
+"administrator","assistance",0.0127,"undirected",0.0127
+"administrator","bureau",0.0186,"undirected",0.0186
+"administrator","computers",0.0801,"undirected",0.0801
+"administrator","ipad",0.1531,"undirected",0.1531
+"administrator","identity",0.0032,"undirected",0.0032
+"administrator","attorney",0.0362,"undirected",0.0362
+"administrator","date",0.0023,"undirected",0.0023
+"adult","parents",0.6222,"undirected",0.6222
+"adult","number",0.2284,"undirected",0.2284
+"adult","online",0.1618,"undirected",0.1618
+"adult","equifax",0.2849,"undirected",0.2849
+"adult","banking bank",0.0081,"undirected",0.0081
+"adult","bill",0.3666,"undirected",0.3666
+"adult","photo",0.0248,"undirected",0.0248
+"adult","bureau",0.0732,"undirected",0.0732
+"adult","source",0.3752,"undirected",0.3752
+"adult","phone",0.0888,"undirected",0.0888
+"adult","identity",0.0327,"undirected",0.0327
+"adult","date",0.2015,"undirected",0.2015
+"adult","student",0.0847,"undirected",0.0847
+"agency","federal",0.1514,"undirected",0.1514
+"agency","customers customer",0.0605,"undirected",0.0605
+"agency","sign",0.1262,"undirected",0.1262
+"agency","type",0.0456,"undirected",0.0456
+"agency","secure security",0.0121,"undirected",0.0121
+"agency","accounts account",0.0692,"undirected",0.0692
+"agency","id",0.2237,"undirected",0.2237
+"agency","loan",0.0937,"undirected",0.0937
+"agency","transunion",0.4717,"undirected",0.4717
+"agency","utility utilities",0.6,"undirected",0.6
+"agency","rating",0.0289,"undirected",0.0289
+"agency","email",0.0527,"undirected",0.0527
+"agency","adult",0.1067,"undirected",0.1067
+"agency","number",0.0894,"undirected",0.0894
+"agency","postal",0.0312,"undirected",0.0312
+"agency","employee employees",0.0977,"undirected",0.0977
+"agency","network",0.3987,"undirected",0.3987
+"agency","service",0.2541,"undirected",0.2541
+"agency","profile",0.0158,"undirected",0.0158
+"agency","equifax",0.4717,"undirected",0.4717
+"agency","bill",0.061,"undirected",0.061
+"agency","bureau",0.1139,"undirected",0.1139
+"agency","linkedin",0.0651,"undirected",0.0651
+"agency","identity",0.0009,"undirected",0.0009
+"agency","credit",0.4717,"undirected",0.4717
+"agency","date",0.0025,"undirected",0.0025
+"american","business",0.0949,"undirected",0.0949
+"american","corporation",0.0094,"undirected",0.0094
+"american","loan",0.0814,"undirected",0.0814
+"american","ebay",0.5261,"undirected",0.5261
+"american","number",0.0288,"undirected",0.0288
+"american","online",0.5938,"undirected",0.5938
+"american","administrator",0.0325,"undirected",0.0325
+"american","service",0.0185,"undirected",0.0185
+"american","mortgage",0.4018,"undirected",0.4018
+"american","photo",0.062,"undirected",0.062
+"american","bureau",0.2233,"undirected",0.2233
+"american","identity",0.0283,"undirected",0.0283
+"american","credit",0.1686,"undirected",0.1686
+"american","date",0.2423,"undirected",0.2423
+"android","equifax",0.0391,"undirected",0.0391
+"android","twitter",0.0259,"undirected",0.0259
+"android","source",0.0977,"undirected",0.0977
+"android","linkedin",0.2076,"undirected",0.2076
+"android","phone",0.5332,"undirected",0.5332
+"android","computers",0.5021,"undirected",0.5021
+"android","internet",0.5172,"undirected",0.5172
+"android","ipad",0.2416,"undirected",0.2416
+"android","student",0.0045,"undirected",0.0045
+"android","passwords password",0.0129,"undirected",0.0129
+"apple","transunion",0.2333,"undirected",0.2333
+"apple","social",0.099,"undirected",0.099
+"apple","number",0.016,"undirected",0.016
+"apple","sales",0.0676,"undirected",0.0676
+"apple","administrator",0.1537,"undirected",0.1537
+"apple","network",0.0051,"undirected",0.0051
+"apple","android",0.298,"undirected",0.298
+"apple","equifax",0.2333,"undirected",0.2333
+"apple","bill",0.0193,"undirected",0.0193
+"apple","linkedin",0.0392,"undirected",0.0392
+"apple","phone",0.07,"undirected",0.07
+"apple","computers",0.6404,"undirected",0.6404
+"apple","internet",0.1096,"undirected",0.1096
+"apple","ipad",0.9803,"undirected",0.9803
+"application","federal",0.0148,"undirected",0.0148
+"application","ssn",0.0164,"undirected",0.0164
+"application","customers customer",0.3367,"undirected",0.3367
+"application","name",0.3684,"undirected",0.3684
+"application","laptop",0.009,"undirected",0.009
+"application","license",0.0481,"undirected",0.0481
+"application","secure security",0.1479,"undirected",0.1479
+"application","purchasing purchase",0.034,"undirected",0.034
+"application","accounts account",0.0014,"undirected",0.0014
+"application","id",0.0058,"undirected",0.0058
+"application","device devices",0.0269,"undirected",0.0269
+"application","st",0.0417,"undirected",0.0417
+"application","transunion",0.0071,"undirected",0.0071
+"application","ebay",0.0312,"undirected",0.0312
+"application","term",0.0637,"undirected",0.0637
+"application","social",0.1387,"undirected",0.1387
+"application","utility utilities",0.0529,"undirected",0.0529
+"application","rating",0.0149,"undirected",0.0149
+"application","address addresses",0.0505,"undirected",0.0505
+"application","employee employees",0.0236,"undirected",0.0236
+"application","android",0.0423,"undirected",0.0423
+"application","equifax",0.0071,"undirected",0.0071
+"application","banking bank",0.2377,"undirected",0.2377
+"application","bill",0.2273,"undirected",0.2273
+"application","photo",0.3053,"undirected",0.3053
+"application","twitter",0.006,"undirected",0.006
+"application","bureau",0.0065,"undirected",0.0065
+"application","linkedin",0.0212,"undirected",0.0212
+"application","phone",0.0482,"undirected",0.0482
+"application","computers",0.0039,"undirected",0.0039
+"application","street",0.0542,"undirected",0.0542
+"application","date",0.0382,"undirected",0.0382
+"assistance","identity",0.0028,"undirected",0.0028
+"attorney","student",0.0922,"undirected",0.0922
+"attorney","vehicle",0.0106,"undirected",0.0106
+"banking bank","photo",0.0729,"undirected",0.0729
+"banking bank","twitter",0.0414,"undirected",0.0414
+"banking bank","transactions",0.1984,"undirected",0.1984
+"banking bank","street",0.0292,"undirected",0.0292
+"banking bank","credit",0.2595,"undirected",0.2595
+"banking bank","passwords password",0.0553,"undirected",0.0553
+"bill","assistance",0.1521,"undirected",0.1521
+"bill","bureau",0.1955,"undirected",0.1955
+"bill","ipad",0.0306,"undirected",0.0306
+"bill","identity",0.0066,"undirected",0.0066
+"bill","date",0.1363,"undirected",0.1363
+"bill","student",0.1972,"undirected",0.1972
+"bureau","transactions",0.0603,"undirected",0.0603
+"bureau","identity",0.1916,"undirected",0.1916
+"bureau","street",0.002,"undirected",0.002
+"bureau","attorney",0.0344,"undirected",0.0344
+"bureau","credit",0.111,"undirected",0.111
+"bureau","date",0.1136,"undirected",0.1136
+"bureau","vehicle",0.0245,"undirected",0.0245
+"business","accounts account",0.0013,"undirected",0.0013
+"business","device devices",0.1038,"undirected",0.1038
+"business","ebay",0.0289,"undirected",0.0289
+"business","email",0.0861,"undirected",0.0861
+"business","adult",0.0356,"undirected",0.0356
+"business","number",0.0949,"undirected",0.0949
+"business","online",0.1307,"undirected",0.1307
+"business","sales",0.0763,"undirected",0.0763
+"business","institution",0.0906,"undirected",0.0906
+"business","mortgage",0.0238,"undirected",0.0238
+"business","banking bank",0.1974,"undirected",0.1974
+"business","bill",0.1379,"undirected",0.1379
+"business","photo",0.0089,"undirected",0.0089
+"business","bureau",0.0515,"undirected",0.0515
+"business","linkedin",0.1356,"undirected",0.1356
+"business","transactions",0.0397,"undirected",0.0397
+"business","date",0.0323,"undirected",0.0323
+"card cards","visa",0.0508,"undirected",0.0508
+"card cards","driving",0.0063,"undirected",0.0063
+"card cards","check",0.032,"undirected",0.032
+"card cards","group",0.1412,"undirected",0.1412
+"card cards","digits",0.1223,"undirected",0.1223
+"card cards","passport",0.2087,"undirected",0.2087
+"card cards","application",0.0467,"undirected",0.0467
+"card cards","federal",0.0105,"undirected",0.0105
+"card cards","ssn",0.2501,"undirected",0.2501
+"card cards","customers customer",0.0935,"undirected",0.0935
+"card cards","name",0.0168,"undirected",0.0168
+"card cards","american",0.0195,"undirected",0.0195
+"card cards","business",0.1095,"undirected",0.1095
+"card cards","corporation",0.0033,"undirected",0.0033
+"card cards","laptop",0.1634,"undirected",0.1634
+"card cards","store",0.074,"undirected",0.074
+"card cards","license",0.1623,"undirected",0.1623
+"card cards","secure security",0.0265,"undirected",0.0265
+"card cards","purchasing purchase",0.2549,"undirected",0.2549
+"card cards","device devices",0.2328,"undirected",0.2328
+"card cards","st",0.3892,"undirected",0.3892
+"card cards","transunion",0.0314,"undirected",0.0314
+"card cards","term",0.1297,"undirected",0.1297
+"card cards","secret",0.157,"undirected",0.157
+"card cards","website",0.1159,"undirected",0.1159
+"card cards","address addresses",0.2697,"undirected",0.2697
+"card cards","number",0.1615,"undirected",0.1615
+"card cards","equifax",0.0314,"undirected",0.0314
+"card cards","banking bank",0.1441,"undirected",0.1441
+"card cards","bill",0.1635,"undirected",0.1635
+"card cards","bureau",0.1501,"undirected",0.1501
+"card cards","transactions",0.1442,"undirected",0.1442
+"card cards","ipad",0.0425,"undirected",0.0425
+"card cards","identity",0.0812,"undirected",0.0812
+"card cards","street",0.0076,"undirected",0.0076
+"card cards","credit",0.1003,"undirected",0.1003
+"card cards","date",0.2163,"undirected",0.2163
+"card cards","vehicle",0.2848,"undirected",0.2848
+"card cards","passwords password",0.0092,"undirected",0.0092
+"certification certificate","passport",0.0151,"undirected",0.0151
+"certification certificate","score",0.0242,"undirected",0.0242
+"certification certificate","facebook",0.1396,"undirected",0.1396
+"certification certificate","ssn",0.0061,"undirected",0.0061
+"certification certificate","tax",0.0128,"undirected",0.0128
+"certification certificate","sign",0.008,"undirected",0.008
+"certification certificate","name",0.0071,"undirected",0.0071
+"certification certificate","mobile",0.0231,"undirected",0.0231
+"certification certificate","google",0.0251,"undirected",0.0251
+"certification certificate","corporation",0.916,"undirected",0.916
+"certification certificate","children",0.0086,"undirected",0.0086
+"certification certificate","accounts account",0.0002,"undirected",0.0002
+"certification certificate","apple",0.0031,"undirected",0.0031
+"certification certificate","transunion",0.0094,"undirected",0.0094
+"certification certificate","term",0.2596,"undirected",0.2596
+"certification certificate","secret",0.2804,"undirected",0.2804
+"certification certificate","website",0.0578,"undirected",0.0578
+"certification certificate","adult",0.0102,"undirected",0.0102
+"certification certificate","address addresses",0.0012,"undirected",0.0012
+"certification certificate","facility",0.0409,"undirected",0.0409
+"certification certificate","network",0.0821,"undirected",0.0821
+"certification certificate","equifax",0.0094,"undirected",0.0094
+"certification certificate","banking bank",0.0038,"undirected",0.0038
+"certification certificate","photo",0.0012,"undirected",0.0012
+"certification certificate","bureau",0.0051,"undirected",0.0051
+"certification certificate","identity",0.1863,"undirected",0.1863
+"certification certificate","attorney",0.0268,"undirected",0.0268
+"certification certificate","vehicle",0.0454,"undirected",0.0454
+"check","digits",0.0036,"undirected",0.0036
+"check","passport",0.009,"undirected",0.009
+"check","federal",0.0082,"undirected",0.0082
+"check","customers customer",0.02,"undirected",0.02
+"check","name",0.6407,"undirected",0.6407
+"check","business",0.0668,"undirected",0.0668
+"check","laptop",0.0127,"undirected",0.0127
+"check","accounts account",0.0842,"undirected",0.0842
+"check","id",0.0325,"undirected",0.0325
+"check","loan",0.0764,"undirected",0.0764
+"check","address addresses",0.2014,"undirected",0.2014
+"check","number",0.1741,"undirected",0.1741
+"check","refund",0.3033,"undirected",0.3033
+"check","employee employees",0.2598,"undirected",0.2598
+"check","network",0.0375,"undirected",0.0375
+"check","institution",0.9853,"undirected",0.9853
+"check","banking bank",0.0975,"undirected",0.0975
+"check","transactions",0.7612,"undirected",0.7612
+"check","internet",0.0149,"undirected",0.0149
+"check","attorney",0.0396,"undirected",0.0396
+"check","vehicle",0.0534,"undirected",0.0534
+"children","user",0.0718,"undirected",0.0718
+"children","schools",0.2044,"undirected",0.2044
+"children","transunion",0.0178,"undirected",0.0178
+"children","term",0.0018,"undirected",0.0018
+"children","social",0.0488,"undirected",0.0488
+"children","adult",0.495,"undirected",0.495
+"children","parents",0.8178,"undirected",0.8178
+"children","online",0.5231,"undirected",0.5231
+"children","android",0.0752,"undirected",0.0752
+"children","profile",0.0399,"undirected",0.0399
+"children","equifax",0.0178,"undirected",0.0178
+"children","photo",0.155,"undirected",0.155
+"children","source",0.9695,"undirected",0.9695
+"children","phone",0.3751,"undirected",0.3751
+"children","internet",0.0537,"undirected",0.0537
+"children","student",0.3284,"undirected",0.3284
+"college","customers customer",0.1803,"undirected",0.1803
+"college","google",0.1395,"undirected",0.1395
+"college","type",0.0865,"undirected",0.0865
+"college","business",0.3087,"undirected",0.3087
+"college","ebay",0.206,"undirected",0.206
+"college","rating",0.3059,"undirected",0.3059
+"college","website",0.0047,"undirected",0.0047
+"college","email",0.0411,"undirected",0.0411
+"college","adult",0.0016,"undirected",0.0016
+"college","online",0.006,"undirected",0.006
+"college","network",0.0166,"undirected",0.0166
+"college","android",0.0134,"undirected",0.0134
+"college","banking bank",0.0344,"undirected",0.0344
+"college","bill",0.0101,"undirected",0.0101
+"college","twitter",0.0114,"undirected",0.0114
+"college","linkedin",0.1476,"undirected",0.1476
+"college","computers",0.1221,"undirected",0.1221
+"college","internet",0.069,"undirected",0.069
+"college","attorney",0.067,"undirected",0.067
+"computers","ipad",0.6658,"undirected",0.6658
+"computers","passwords password",0.1399,"undirected",0.1399
+"corporation","laptop",0.0022,"undirected",0.0022
+"corporation","license",0.0088,"undirected",0.0088
+"corporation","device devices",0.0093,"undirected",0.0093
+"corporation","loan",0.0079,"undirected",0.0079
+"corporation","st",0.0157,"undirected",0.0157
+"corporation","apple",0.0224,"undirected",0.0224
+"corporation","term",0.2138,"undirected",0.2138
+"corporation","secret",0.2985,"undirected",0.2985
+"corporation","utility utilities",0.0293,"undirected",0.0293
+"corporation","rating",0.0395,"undirected",0.0395
+"corporation","website",0.0604,"undirected",0.0604
+"corporation","network",0.1319,"undirected",0.1319
+"corporation","android",0.0183,"undirected",0.0183
+"corporation","mortgage",0.1362,"undirected",0.1362
+"corporation","banking bank",0.0015,"undirected",0.0015
+"corporation","computers",0.006,"undirected",0.006
+"corporation","internet",0.0243,"undirected",0.0243
+"corporation","ipad",0.0179,"undirected",0.0179
+"corporation","identity",0.0452,"undirected",0.0452
+"corporation","street",0.0183,"undirected",0.0183
+"corporation","attorney",0.0684,"undirected",0.0684
+"corporation","vehicle",0.0027,"undirected",0.0027
+"country","system",0.3075,"undirected",0.3075
+"country","card cards",0.0018,"undirected",0.0018
+"country","visa",0.0331,"undirected",0.0331
+"country","driving",0.0205,"undirected",0.0205
+"country","certification certificate",0.7061,"undirected",0.7061
+"country","facebook",0.0187,"undirected",0.0187
+"country","federal",0.0267,"undirected",0.0267
+"country","google",0.0217,"undirected",0.0217
+"country","type",0.0398,"undirected",0.0398
+"country","american",0.179,"undirected",0.179
+"country","corporation",0.7256,"undirected",0.7256
+"country","store",0.0955,"undirected",0.0955
+"country","license",0.0284,"undirected",0.0284
+"country","purchasing purchase",0.0032,"undirected",0.0032
+"country","id",0.089,"undirected",0.089
+"country","st",0.2261,"undirected",0.2261
+"country","ebay",0.173,"undirected",0.173
+"country","term",0.0865,"undirected",0.0865
+"country","secret",0.1634,"undirected",0.1634
+"country","website",0.0077,"undirected",0.0077
+"country","online",0.1584,"undirected",0.1584
+"country","network",0.0809,"undirected",0.0809
+"country","mortgage",0.1103,"undirected",0.1103
+"country","bureau",0.0372,"undirected",0.0372
+"country","linkedin",0.0274,"undirected",0.0274
+"country","internet",0.0058,"undirected",0.0058
+"country","credit",0.0138,"undirected",0.0138
+"country","date",0.0612,"undirected",0.0612
+"credit","date",0.0311,"undirected",0.0311
+"customers customer","name",0.1928,"undirected",0.1928
+"customers customer","google",0.0679,"undirected",0.0679
+"customers customer","type",0.2812,"undirected",0.2812
+"customers customer","american",0.0063,"undirected",0.0063
+"customers customer","business",0.556,"undirected",0.556
+"customers customer","corporation",0.0158,"undirected",0.0158
+"customers customer","purchasing purchase",0.0056,"undirected",0.0056
+"customers customer","accounts account",0.0429,"undirected",0.0429
+"customers customer","device devices",0.0649,"undirected",0.0649
+"customers customer","term",0.028,"undirected",0.028
+"customers customer","utility utilities",0.1516,"undirected",0.1516
+"customers customer","rating",0.0307,"undirected",0.0307
+"customers customer","email",0.0199,"undirected",0.0199
+"customers customer","address addresses",0.1133,"undirected",0.1133
+"customers customer","number",0.0295,"undirected",0.0295
+"customers customer","postal",0.0112,"undirected",0.0112
+"customers customer","employee employees",0.1028,"undirected",0.1028
+"customers customer","network",0.0511,"undirected",0.0511
+"customers customer","service",0.0845,"undirected",0.0845
+"customers customer","institution",0.0361,"undirected",0.0361
+"customers customer","profile",0.0066,"undirected",0.0066
+"customers customer","banking bank",0.2846,"undirected",0.2846
+"customers customer","bill",0.0588,"undirected",0.0588
+"customers customer","photo",0.1559,"undirected",0.1559
+"customers customer","twitter",0.0028,"undirected",0.0028
+"customers customer","linkedin",0.234,"undirected",0.234
+"customers customer","transactions",0.0607,"undirected",0.0607
+"customers customer","street",0.055,"undirected",0.055
+"customers customer","credit",0.0407,"undirected",0.0407
+"customers customer","vehicle",0.0463,"undirected",0.0463
+"date","vehicle",0.0137,"undirected",0.0137
+"device devices","st",0.0045,"undirected",0.0045
+"device devices","apple",0.2939,"undirected",0.2939
+"device devices","transunion",0.0784,"undirected",0.0784
+"device devices","ebay",0.1239,"undirected",0.1239
+"device devices","secret",0.083,"undirected",0.083
+"device devices","website",0.0482,"undirected",0.0482
+"device devices","address addresses",0.1238,"undirected",0.1238
+"device devices","number",0.1829,"undirected",0.1829
+"device devices","sales",0.0334,"undirected",0.0334
+"device devices","facility",0.022,"undirected",0.022
+"device devices","network",0.0246,"undirected",0.0246
+"device devices","android",0.6287,"undirected",0.6287
+"device devices","profile",0.1092,"undirected",0.1092
+"device devices","equifax",0.0784,"undirected",0.0784
+"device devices","banking bank",0.0886,"undirected",0.0886
+"device devices","bill",0.023,"undirected",0.023
+"device devices","twitter",0.0151,"undirected",0.0151
+"device devices","transactions",0.01,"undirected",0.01
+"device devices","phone",0.3629,"undirected",0.3629
+"device devices","computers",0.5752,"undirected",0.5752
+"device devices","ipad",0.3393,"undirected",0.3393
+"device devices","date",0.023,"undirected",0.023
+"device devices","vehicle",0.0069,"undirected",0.0069
+"device devices","passwords password",0.0054,"undirected",0.0054
+"digits","settings",0.5284,"undirected",0.5284
+"digits","application",0.0088,"undirected",0.0088
+"digits","college",0.0448,"undirected",0.0448
+"digits","ssn",0.1755,"undirected",0.1755
+"digits","sign",0.0895,"undirected",0.0895
+"digits","site",0.4574,"undirected",0.4574
+"digits","children",0.4714,"undirected",0.4714
+"digits","laptop",0.1804,"undirected",0.1804
+"digits","secure security",0.2641,"undirected",0.2641
+"digits","id",0.0083,"undirected",0.0083
+"digits","device devices",0.2579,"undirected",0.2579
+"digits","schools",0.1113,"undirected",0.1113
+"digits","transunion",0.0064,"undirected",0.0064
+"digits","ebay",0.0068,"undirected",0.0068
+"digits","social",0.371,"undirected",0.371
+"digits","website",0.0618,"undirected",0.0618
+"digits","email",0.1823,"undirected",0.1823
+"digits","adult",0.3476,"undirected",0.3476
+"digits","address addresses",0.1024,"undirected",0.1024
+"digits","parents",0.4305,"undirected",0.4305
+"digits","number",0.0742,"undirected",0.0742
+"digits","refund",0.0154,"undirected",0.0154
+"digits","online",0.2052,"undirected",0.2052
+"digits","administrator",0.0062,"undirected",0.0062
+"digits","android",0.2797,"undirected",0.2797
+"digits","institution",0.028,"undirected",0.028
+"digits","equifax",0.0064,"undirected",0.0064
+"digits","bill",0.1743,"undirected",0.1743
+"digits","photo",0.1002,"undirected",0.1002
+"digits","twitter",0.0302,"undirected",0.0302
+"digits","bureau",0.0487,"undirected",0.0487
+"digits","source",0.4773,"undirected",0.4773
+"digits","phone",0.2954,"undirected",0.2954
+"digits","computers",0.1027,"undirected",0.1027
+"digits","date",0.0769,"undirected",0.0769
+"digits","student",0.1153,"undirected",0.1153
+"digits","passwords password",0.1193,"undirected",0.1193
+"driving","digits",0.2266,"undirected",0.2266
+"driving","settings",0.5786,"undirected",0.5786
+"driving","college",0.0596,"undirected",0.0596
+"driving","laptop",0.4181,"undirected",0.4181
+"driving","store",0.0203,"undirected",0.0203
+"driving","purchasing purchase",0.0046,"undirected",0.0046
+"driving","device devices",0.5,"undirected",0.5
+"driving","st",0.0286,"undirected",0.0286
+"driving","website",0.0159,"undirected",0.0159
+"driving","number",0.0409,"undirected",0.0409
+"driving","administrator",0.0095,"undirected",0.0095
+"driving","android",0.4507,"undirected",0.4507
+"driving","twitter",0.0023,"undirected",0.0023
+"driving","linkedin",0.0443,"undirected",0.0443
+"driving","transactions",0.0007,"undirected",0.0007
+"driving","phone",0.0127,"undirected",0.0127
+"driving","computers",0.2727,"undirected",0.2727
+"driving","street",0.0978,"undirected",0.0978
+"driving","date",0.1605,"undirected",0.1605
+"ebay","website",0.1375,"undirected",0.1375
+"ebay","email",0.1633,"undirected",0.1633
+"ebay","address addresses",0.0985,"undirected",0.0985
+"ebay","number",0.0449,"undirected",0.0449
+"ebay","postal",0.0015,"undirected",0.0015
+"ebay","online",0.5475,"undirected",0.5475
+"ebay","administrator",0.0301,"undirected",0.0301
+"ebay","android",0.2395,"undirected",0.2395
+"ebay","mortgage",0.3595,"undirected",0.3595
+"ebay","twitter",0.2716,"undirected",0.2716
+"ebay","bureau",0.1308,"undirected",0.1308
+"ebay","phone",0.4552,"undirected",0.4552
+"ebay","computers",0.1853,"undirected",0.1853
+"ebay","internet",0.0181,"undirected",0.0181
+"ebay","street",0.0215,"undirected",0.0215
+"ebay","credit",0.1397,"undirected",0.1397
+"ebay","date",0.1761,"undirected",0.1761
+"ebay","passwords password",0.2947,"undirected",0.2947
+"email","address addresses",0.0598,"undirected",0.0598
+"email","number",0.0777,"undirected",0.0777
+"email","refund",0.1056,"undirected",0.1056
+"email","postal",0.0016,"undirected",0.0016
+"email","facility",0.0063,"undirected",0.0063
+"email","administrator",0.3567,"undirected",0.3567
+"email","network",0.2001,"undirected",0.2001
+"email","service",0.0466,"undirected",0.0466
+"email","twitter",0.1587,"undirected",0.1587
+"email","phone",0.1845,"undirected",0.1845
+"email","identity",0.0398,"undirected",0.0398
+"email","street",0.168,"undirected",0.168
+"email","date",0.0155,"undirected",0.0155
+"email","vehicle",0.0351,"undirected",0.0351
+"email","passwords password",0.199,"undirected",0.199
+"employee employees","network",0.2781,"undirected",0.2781
+"employee employees","service",0.0251,"undirected",0.0251
+"employee employees","institution",0.3261,"undirected",0.3261
+"employee employees","mortgage",0.0025,"undirected",0.0025
+"employee employees","bill",0.05,"undirected",0.05
+"employee employees","twitter",0.0213,"undirected",0.0213
+"employee employees","assistance",0.487,"undirected",0.487
+"employee employees","linkedin",0.2812,"undirected",0.2812
+"employee employees","transactions",0.195,"undirected",0.195
+"employee employees","attorney",0.0069,"undirected",0.0069
+"equifax","banking bank",0.0385,"undirected",0.0385
+"equifax","bill",0.137,"undirected",0.137
+"equifax","bureau",0.4945,"undirected",0.4945
+"equifax","transactions",0.0331,"undirected",0.0331
+"equifax","computers",0.1181,"undirected",0.1181
+"equifax","ipad",0.2264,"undirected",0.2264
+"equifax","identity",0.2174,"undirected",0.2174
+"equifax","credit",0.2283,"undirected",0.2283
+"equifax","date",0.1377,"undirected",0.1377
+"facebook","college",0.0551,"undirected",0.0551
+"facebook","customers customer",0.1201,"undirected",0.1201
+"facebook","mobile",0.0344,"undirected",0.0344
+"facebook","google",0.4583,"undirected",0.4583
+"facebook","type",0.0069,"undirected",0.0069
+"facebook","site",0.2779,"undirected",0.2779
+"facebook","business",0.0891,"undirected",0.0891
+"facebook","corporation",0.0296,"undirected",0.0296
+"facebook","children",0.0676,"undirected",0.0676
+"facebook","user",0.8095,"undirected",0.8095
+"facebook","accounts account",0.0378,"undirected",0.0378
+"facebook","device devices",0.1003,"undirected",0.1003
+"facebook","ebay",0.0209,"undirected",0.0209
+"facebook","term",0.1229,"undirected",0.1229
+"facebook","rating",0.0657,"undirected",0.0657
+"facebook","website",0.2226,"undirected",0.2226
+"facebook","email",0.031,"undirected",0.031
+"facebook","adult",0.0275,"undirected",0.0275
+"facebook","address addresses",0.0135,"undirected",0.0135
+"facebook","online",0.0496,"undirected",0.0496
+"facebook","network",0.1203,"undirected",0.1203
+"facebook","android",0.0103,"undirected",0.0103
+"facebook","profile",0.786,"undirected",0.786
+"facebook","photo",0.0726,"undirected",0.0726
+"facebook","twitter",0.2539,"undirected",0.2539
+"facebook","linkedin",0.4252,"undirected",0.4252
+"facebook","phone",0.0071,"undirected",0.0071
+"facebook","computers",0.0156,"undirected",0.0156
+"facebook","internet",0.2299,"undirected",0.2299
+"facebook","identity",0.0466,"undirected",0.0466
+"facebook","street",0.0201,"undirected",0.0201
+"facebook","vehicle",0.0058,"undirected",0.0058
+"facebook","passwords password",0.209,"undirected",0.209
+"facility","administrator",0,"undirected",0
+"facility","employee employees",0.1745,"undirected",0.1745
+"facility","network",0.3213,"undirected",0.3213
+"facility","institution",0.037,"undirected",0.037
+"facility","bill",0.1516,"undirected",0.1516
+"facility","photo",0.0844,"undirected",0.0844
+"facility","bureau",0.0034,"undirected",0.0034
+"facility","phone",0.0082,"undirected",0.0082
+"facility","computers",0.0003,"undirected",0.0003
+"facility","identity",0.1761,"undirected",0.1761
+"facility","attorney",0.1142,"undirected",0.1142
+"federal","tax",0.0626,"undirected",0.0626
+"federal","customers customer",0.0435,"undirected",0.0435
+"federal","sign",0.0856,"undirected",0.0856
+"federal","type",0.0842,"undirected",0.0842
+"federal","american",0.3994,"undirected",0.3994
+"federal","business",0.0785,"undirected",0.0785
+"federal","store",0.0245,"undirected",0.0245
+"federal","secure security",0.0247,"undirected",0.0247
+"federal","id",0.2204,"undirected",0.2204
+"federal","device devices",0.0097,"undirected",0.0097
+"federal","schools",0.1971,"undirected",0.1971
+"federal","apple",0.1266,"undirected",0.1266
+"federal","ebay",0.2543,"undirected",0.2543
+"federal","utility utilities",0.3185,"undirected",0.3185
+"federal","number",0.2845,"undirected",0.2845
+"federal","postal",0.0297,"undirected",0.0297
+"federal","online",0.1642,"undirected",0.1642
+"federal","sales",0.2049,"undirected",0.2049
+"federal","administrator",0.2349,"undirected",0.2349
+"federal","employee employees",0.1211,"undirected",0.1211
+"federal","network",0.0405,"undirected",0.0405
+"federal","service",0.051,"undirected",0.051
+"federal","mortgage",0.1601,"undirected",0.1601
+"federal","banking bank",0.0227,"undirected",0.0227
+"federal","bill",0.1286,"undirected",0.1286
+"federal","assistance",0.0254,"undirected",0.0254
+"federal","bureau",0.1098,"undirected",0.1098
+"federal","internet",0.006,"undirected",0.006
+"federal","ipad",0.1126,"undirected",0.1126
+"federal","identity",0.0438,"undirected",0.0438
+"federal","attorney",0.0257,"undirected",0.0257
+"federal","credit",0.0743,"undirected",0.0743
+"federal","date",0.1191,"undirected",0.1191
+"google","site",0.0695,"undirected",0.0695
+"google","business",0.0422,"undirected",0.0422
+"google","corporation",0.0668,"undirected",0.0668
+"google","user",0.6091,"undirected",0.6091
+"google","purchasing purchase",0.0376,"undirected",0.0376
+"google","accounts account",0.0437,"undirected",0.0437
+"google","apple",0.0747,"undirected",0.0747
+"google","term",0.2646,"undirected",0.2646
+"google","rating",0.0871,"undirected",0.0871
+"google","website",0.263,"undirected",0.263
+"google","network",0.3834,"undirected",0.3834
+"google","service",0.0049,"undirected",0.0049
+"google","android",0.3907,"undirected",0.3907
+"google","profile",0.2879,"undirected",0.2879
+"google","banking bank",0.0091,"undirected",0.0091
+"google","twitter",0.215,"undirected",0.215
+"google","linkedin",0.7219,"undirected",0.7219
+"google","internet",0.8115,"undirected",0.8115
+"google","street",0.0024,"undirected",0.0024
+"google","passwords password",0.1243,"undirected",0.1243
+"group","name",0.0881,"undirected",0.0881
+"group","purchasing purchase",0.0513,"undirected",0.0513
+"group","device devices",0.1152,"undirected",0.1152
+"group","secret",0.3651,"undirected",0.3651
+"group","adult",0.0163,"undirected",0.0163
+"group","address addresses",0.0906,"undirected",0.0906
+"group","number",0.1843,"undirected",0.1843
+"group","postal",0.0709,"undirected",0.0709
+"group","service",0.0165,"undirected",0.0165
+"group","mortgage",0.0881,"undirected",0.0881
+"group","banking bank",0.6989,"undirected",0.6989
+"group","attorney",0.0879,"undirected",0.0879
+"group","credit",0.3618,"undirected",0.3618
+"health","system",0.0019,"undirected",0.0019
+"health","media",0.0029,"undirected",0.0029
+"health","digits",0.0155,"undirected",0.0155
+"health","federal",0.2069,"undirected",0.2069
+"health","sign",0.0013,"undirected",0.0013
+"health","mobile",0.0556,"undirected",0.0556
+"health","google",0.0062,"undirected",0.0062
+"health","laptop",0.1517,"undirected",0.1517
+"health","user",0.0082,"undirected",0.0082
+"health","device devices",0.0749,"undirected",0.0749
+"health","schools",0.5361,"undirected",0.5361
+"health","parents",0.0016,"undirected",0.0016
+"health","online",0.0081,"undirected",0.0081
+"health","facility",0.5263,"undirected",0.5263
+"health","administrator",0.3646,"undirected",0.3646
+"health","employee employees",0.3028,"undirected",0.3028
+"health","network",0.4969,"undirected",0.4969
+"health","android",0.0077,"undirected",0.0077
+"health","institution",0.0339,"undirected",0.0339
+"health","bill",0.2006,"undirected",0.2006
+"health","photo",0.0094,"undirected",0.0094
+"health","bureau",0.0539,"undirected",0.0539
+"health","source",0.0152,"undirected",0.0152
+"health","internet",0.0181,"undirected",0.0181
+"health","attorney",0.0485,"undirected",0.0485
+"health","student",0.0009,"undirected",0.0009
+"id","transunion",0.0699,"undirected",0.0699
+"id","social",0.2698,"undirected",0.2698
+"id","utility utilities",0.2198,"undirected",0.2198
+"id","rating",0.0919,"undirected",0.0919
+"id","adult",0.2701,"undirected",0.2701
+"id","parents",0.0203,"undirected",0.0203
+"id","number",0.1743,"undirected",0.1743
+"id","sales",0.2491,"undirected",0.2491
+"id","employee employees",0.1821,"undirected",0.1821
+"id","service",0.0151,"undirected",0.0151
+"id","institution",0.0251,"undirected",0.0251
+"id","equifax",0.0699,"undirected",0.0699
+"id","bill",0.0977,"undirected",0.0977
+"id","linkedin",0.0917,"undirected",0.0917
+"id","date",0.1171,"undirected",0.1171
+"identity","attorney",0.1987,"undirected",0.1987
+"identity","credit",0.0075,"undirected",0.0075
+"identity","date",0.0882,"undirected",0.0882
+"identity","vehicle",0.092,"undirected",0.092
+"identity","passwords password",0.0552,"undirected",0.0552
+"institution","banking bank",0.1185,"undirected",0.1185
+"institution","transactions",0.7454,"undirected",0.7454
+"institution","internet",0.0125,"undirected",0.0125
+"institution","attorney",0.014,"undirected",0.014
+"internet","ipad",0.0019,"undirected",0.0019
+"internet","street",0.05,"undirected",0.05
+"internet","passwords password",0.0517,"undirected",0.0517
+"ipad","identity",0.032,"undirected",0.032
+"ipad","vehicle",0.0214,"undirected",0.0214
+"job","visa",0.0039,"undirected",0.0039
+"job","driving",0.0769,"undirected",0.0769
+"job","settings",0.1,"undirected",0.1
+"job","passport",0.0482,"undirected",0.0482
+"job","score",0.1237,"undirected",0.1237
+"job","agency",0.0364,"undirected",0.0364
+"job","federal",0.1106,"undirected",0.1106
+"job","type",0.0495,"undirected",0.0495
+"job","laptop",0.0735,"undirected",0.0735
+"job","store",0.4885,"undirected",0.4885
+"job","license",0.0499,"undirected",0.0499
+"job","secure security",0.1485,"undirected",0.1485
+"job","purchasing purchase",0.019,"undirected",0.019
+"job","device devices",0.388,"undirected",0.388
+"job","loan",0.1203,"undirected",0.1203
+"job","apple",0.9257,"undirected",0.9257
+"job","transunion",0.337,"undirected",0.337
+"job","social",0.1297,"undirected",0.1297
+"job","utility utilities",0.0309,"undirected",0.0309
+"job","rating",0.0236,"undirected",0.0236
+"job","number",0.0245,"undirected",0.0245
+"job","sales",0.0569,"undirected",0.0569
+"job","administrator",0.1285,"undirected",0.1285
+"job","employee employees",0.0206,"undirected",0.0206
+"job","android",0.3053,"undirected",0.3053
+"job","equifax",0.337,"undirected",0.337
+"job","bill",0.0238,"undirected",0.0238
+"job","bureau",0.1189,"undirected",0.1189
+"job","linkedin",0.0371,"undirected",0.0371
+"job","phone",0.0882,"undirected",0.0882
+"job","computers",0.6565,"undirected",0.6565
+"job","ipad",0.9192,"undirected",0.9192
+"job","identity",0.0611,"undirected",0.0611
+"job","vehicle",0.0165,"undirected",0.0165
+"laptop","license",0.0962,"undirected",0.0962
+"laptop","id",0.0383,"undirected",0.0383
+"laptop","device devices",0.5194,"undirected",0.5194
+"laptop","ebay",0.0374,"undirected",0.0374
+"laptop","rating",0.0199,"undirected",0.0199
+"laptop","address addresses",0.0694,"undirected",0.0694
+"laptop","number",0.0889,"undirected",0.0889
+"laptop","facility",0.0704,"undirected",0.0704
+"laptop","employee employees",0.0687,"undirected",0.0687
+"laptop","network",0.0842,"undirected",0.0842
+"laptop","android",0.4041,"undirected",0.4041
+"laptop","institution",0.0008,"undirected",0.0008
+"laptop","photo",0.0412,"undirected",0.0412
+"laptop","phone",0.2361,"undirected",0.2361
+"laptop","computers",0.2573,"undirected",0.2573
+"laptop","ipad",0.0096,"undirected",0.0096
+"license","secure security",0.2652,"undirected",0.2652
+"license","purchasing purchase",0.3332,"undirected",0.3332
+"license","accounts account",0.1144,"undirected",0.1144
+"license","id",0.0294,"undirected",0.0294
+"license","st",0.2842,"undirected",0.2842
+"license","term",0.2836,"undirected",0.2836
+"license","social",0.2427,"undirected",0.2427
+"license","rating",0.0278,"undirected",0.0278
+"license","address addresses",0.1409,"undirected",0.1409
+"license","number",0.0253,"undirected",0.0253
+"license","postal",0.0125,"undirected",0.0125
+"license","mortgage",0.109,"undirected",0.109
+"license","transactions",0.0413,"undirected",0.0413
+"license","attorney",0.3359,"undirected",0.3359
+"license","date",0.357,"undirected",0.357
+"linkedin","internet",0.4329,"undirected",0.4329
+"linkedin","passwords password",0.1146,"undirected",0.1146
+"loan","transunion",0.3761,"undirected",0.3761
+"loan","rating",0.0137,"undirected",0.0137
+"loan","adult",0.0368,"undirected",0.0368
+"loan","postal",0.0232,"undirected",0.0232
+"loan","service",0.015,"undirected",0.015
+"loan","institution",0.0727,"undirected",0.0727
+"loan","mortgage",0.2609,"undirected",0.2609
+"loan","equifax",0.3761,"undirected",0.3761
+"loan","bill",0.1059,"undirected",0.1059
+"loan","twitter",0.0001,"undirected",0.0001
+"loan","bureau",0.4672,"undirected",0.4672
+"loan","transactions",0.0436,"undirected",0.0436
+"loan","street",0.0164,"undirected",0.0164
+"loan","attorney",0.0396,"undirected",0.0396
+"loan","credit",0.0068,"undirected",0.0068
+"loan","student",0.0568,"undirected",0.0568
+"media","digits",0.4203,"undirected",0.4203
+"media","settings",0.4865,"undirected",0.4865
+"media","certification certificate",0.0036,"undirected",0.0036
+"media","facebook",0.1527,"undirected",0.1527
+"media","college",0.0509,"undirected",0.0509
+"media","mobile",0.2293,"undirected",0.2293
+"media","google",0.1939,"undirected",0.1939
+"media","site",0.8658,"undirected",0.8658
+"media","business",0.0497,"undirected",0.0497
+"media","children",0.9028,"undirected",0.9028
+"media","user",0.1572,"undirected",0.1572
+"media","schools",0.1784,"undirected",0.1784
+"media","term",0.0751,"undirected",0.0751
+"media","social",0.006,"undirected",0.006
+"media","website",0.1741,"undirected",0.1741
+"media","adult",0.3345,"undirected",0.3345
+"media","parents",0.6885,"undirected",0.6885
+"media","online",0.5656,"undirected",0.5656
+"media","network",0.0511,"undirected",0.0511
+"media","android",0.1119,"undirected",0.1119
+"media","photo",0.1472,"undirected",0.1472
+"media","twitter",0.1458,"undirected",0.1458
+"media","source",0.9217,"undirected",0.9217
+"media","linkedin",0.1964,"undirected",0.1964
+"media","phone",0.368,"undirected",0.368
+"media","internet",0.14,"undirected",0.14
+"media","student",0.3125,"undirected",0.3125
+"media","passwords password",0.1689,"undirected",0.1689
+"mobile","google",0.0253,"undirected",0.0253
+"mobile","site",0.1445,"undirected",0.1445
+"mobile","children",0.2056,"undirected",0.2056
+"mobile","user",0.0583,"undirected",0.0583
+"mobile","store",0.0396,"undirected",0.0396
+"mobile","st",0.0541,"undirected",0.0541
+"mobile","ebay",0.0328,"undirected",0.0328
+"mobile","term",0.0035,"undirected",0.0035
+"mobile","secret",0.0363,"undirected",0.0363
+"mobile","adult",0.0444,"undirected",0.0444
+"mobile","parents",0.1281,"undirected",0.1281
+"mobile","online",0.0751,"undirected",0.0751
+"mobile","facility",0.1472,"undirected",0.1472
+"mobile","employee employees",0.0076,"undirected",0.0076
+"mobile","network",0.0677,"undirected",0.0677
+"mobile","photo",0.0376,"undirected",0.0376
+"mobile","twitter",0.1298,"undirected",0.1298
+"mobile","source",0.1989,"undirected",0.1989
+"mobile","linkedin",0.0328,"undirected",0.0328
+"mobile","phone",0.1834,"undirected",0.1834
+"mobile","street",0.1844,"undirected",0.1844
+"mobile","student",0.0271,"undirected",0.0271
+"mobile","vehicle",0.1723,"undirected",0.1723
+"mobile","passwords password",0.0895,"undirected",0.0895
+"mortgage","equifax",0.0233,"undirected",0.0233
+"mortgage","bureau",0.1848,"undirected",0.1848
+"mortgage","identity",0.0149,"undirected",0.0149
+"mortgage","attorney",0.4452,"undirected",0.4452
+"mortgage","credit",0.0987,"undirected",0.0987
+"mortgage","date",0.1416,"undirected",0.1416
+"name","laptop",0.0067,"undirected",0.0067
+"name","store",0.0071,"undirected",0.0071
+"name","license",0.056,"undirected",0.056
+"name","purchasing purchase",0.2118,"undirected",0.2118
+"name","accounts account",0.3496,"undirected",0.3496
+"name","loan",0.0313,"undirected",0.0313
+"name","term",0.0269,"undirected",0.0269
+"name","secret",0.0495,"undirected",0.0495
+"name","address addresses",0.3139,"undirected",0.3139
+"name","number",0.253,"undirected",0.253
+"name","refund",0.3694,"undirected",0.3694
+"name","postal",0.068,"undirected",0.068
+"name","facility",0.0541,"undirected",0.0541
+"name","administrator",0.0193,"undirected",0.0193
+"name","employee employees",0.126,"undirected",0.126
+"name","service",0.0073,"undirected",0.0073
+"name","institution",0.6583,"undirected",0.6583
+"name","banking bank",0.3108,"undirected",0.3108
+"name","photo",0.174,"undirected",0.174
+"name","transactions",0.6666,"undirected",0.6666
+"name","identity",0.1286,"undirected",0.1286
+"name","attorney",0.1585,"undirected",0.1585
+"name","credit",0.0161,"undirected",0.0161
+"name","date",0.0648,"undirected",0.0648
+"network","service",0.1206,"undirected",0.1206
+"network","android",0.2205,"undirected",0.2205
+"network","institution",0.0983,"undirected",0.0983
+"network","profile",0.1128,"undirected",0.1128
+"network","equifax",0.1128,"undirected",0.1128
+"network","photo",0.0156,"undirected",0.0156
+"network","linkedin",0.2008,"undirected",0.2008
+"network","phone",0.0615,"undirected",0.0615
+"network","internet",0.4322,"undirected",0.4322
+"network","credit",0.1487,"undirected",0.1487
+"number","refund",0.1411,"undirected",0.1411
+"number","network",0.0147,"undirected",0.0147
+"number","android",0.099,"undirected",0.099
+"number","institution",0.1775,"undirected",0.1775
+"number","equifax",0.0888,"undirected",0.0888
+"number","banking bank",0.2177,"undirected",0.2177
+"number","bill",0.1038,"undirected",0.1038
+"number","bureau",0.0575,"undirected",0.0575
+"number","transactions",0.1283,"undirected",0.1283
+"number","computers",0.0574,"undirected",0.0574
+"number","ipad",0.0027,"undirected",0.0027
+"number","identity",0.1895,"undirected",0.1895
+"number","credit",0.0254,"undirected",0.0254
+"number","date",0.2041,"undirected",0.2041
+"online","administrator",0.0169,"undirected",0.0169
+"online","android",0.0005,"undirected",0.0005
+"online","mortgage",0.3821,"undirected",0.3821
+"online","profile",0.002,"undirected",0.002
+"online","photo",0.0757,"undirected",0.0757
+"online","bureau",0.1086,"undirected",0.1086
+"online","source",0.5511,"undirected",0.5511
+"online","linkedin",0.0114,"undirected",0.0114
+"online","phone",0.2152,"undirected",0.2152
+"online","credit",0.1089,"undirected",0.1089
+"online","date",0.1991,"undirected",0.1991
+"online","student",0.173,"undirected",0.173
+"parents","online",0.3821,"undirected",0.3821
+"parents","service",0.1986,"undirected",0.1986
+"parents","android",0.0969,"undirected",0.0969
+"parents","equifax",0.0394,"undirected",0.0394
+"parents","bill",0.0859,"undirected",0.0859
+"parents","photo",0.1047,"undirected",0.1047
+"parents","source",0.7635,"undirected",0.7635
+"parents","phone",0.2821,"undirected",0.2821
+"parents","internet",0.0839,"undirected",0.0839
+"parents","credit",0.236,"undirected",0.236
+"parents","student",0.244,"undirected",0.244
+"passport","application",0.0697,"undirected",0.0697
+"passport","laptop",0.1583,"undirected",0.1583
+"passport","license",0.4557,"undirected",0.4557
+"passport","secure security",0.2194,"undirected",0.2194
+"passport","accounts account",0.0844,"undirected",0.0844
+"passport","transunion",0.2322,"undirected",0.2322
+"passport","social",0.2126,"undirected",0.2126
+"passport","website",0.0115,"undirected",0.0115
+"passport","email",0.0362,"undirected",0.0362
+"passport","number",0.0155,"undirected",0.0155
+"passport","equifax",0.2322,"undirected",0.2322
+"passport","bureau",0.0298,"undirected",0.0298
+"passport","linkedin",0.007,"undirected",0.007
+"passport","identity",0.1039,"undirected",0.1039
+"passport","attorney",0.0899,"undirected",0.0899
+"passport","date",0.1317,"undirected",0.1317
+"passport","vehicle",0.0073,"undirected",0.0073
+"phone","computers",0.277,"undirected",0.277
+"phone","internet",0.0578,"undirected",0.0578
+"phone","ipad",0.0589,"undirected",0.0589
+"phone","street",0.0294,"undirected",0.0294
+"phone","student",0.1046,"undirected",0.1046
+"phone","passwords password",0.0943,"undirected",0.0943
+"photo","source",0.1647,"undirected",0.1647
+"photo","phone",0.0718,"undirected",0.0718
+"photo","computers",0.149,"undirected",0.149
+"photo","street",0.0065,"undirected",0.0065
+"photo","student",0.053,"undirected",0.053
+"photo","passwords password",0.0184,"undirected",0.0184
+"postal","employee employees",0.0052,"undirected",0.0052
+"postal","service",0.0436,"undirected",0.0436
+"postal","profile",0.1282,"undirected",0.1282
+"postal","bill",0.1586,"undirected",0.1586
+"postal","photo",0.0466,"undirected",0.0466
+"postal","bureau",0.0625,"undirected",0.0625
+"postal","transactions",0.1151,"undirected",0.1151
+"postal","attorney",0.198,"undirected",0.198
+"postal","student",0.4416,"undirected",0.4416
+"profile","bill",0.0195,"undirected",0.0195
+"profile","photo",0.0262,"undirected",0.0262
+"profile","linkedin",0.1048,"undirected",0.1048
+"profile","internet",0.2266,"undirected",0.2266
+"profile","identity",0.0047,"undirected",0.0047
+"purchasing purchase","accounts account",0.4647,"undirected",0.4647
+"purchasing purchase","device devices",0.1042,"undirected",0.1042
+"purchasing purchase","st",0.43,"undirected",0.43
+"purchasing purchase","apple",0.0688,"undirected",0.0688
+"purchasing purchase","term",0.2588,"undirected",0.2588
+"purchasing purchase","secret",0.0681,"undirected",0.0681
+"purchasing purchase","website",0.0139,"undirected",0.0139
+"purchasing purchase","address addresses",0.1899,"undirected",0.1899
+"purchasing purchase","postal",0.0969,"undirected",0.0969
+"purchasing purchase","android",0.0329,"undirected",0.0329
+"purchasing purchase","banking bank",0.0738,"undirected",0.0738
+"purchasing purchase","bill",0.0383,"undirected",0.0383
+"purchasing purchase","bureau",0.0524,"undirected",0.0524
+"purchasing purchase","transactions",0.3238,"undirected",0.3238
+"purchasing purchase","phone",0.023,"undirected",0.023
+"purchasing purchase","computers",0.0138,"undirected",0.0138
+"purchasing purchase","internet",0.0571,"undirected",0.0571
+"purchasing purchase","ipad",0.0801,"undirected",0.0801
+"purchasing purchase","street",0.0764,"undirected",0.0764
+"purchasing purchase","attorney",0.1971,"undirected",0.1971
+"purchasing purchase","credit",0.0338,"undirected",0.0338
+"purchasing purchase","date",0.1315,"undirected",0.1315
+"purchasing purchase","passwords password",0.0261,"undirected",0.0261
+"rating","employee employees",0.2106,"undirected",0.2106
+"rating","network",0.0137,"undirected",0.0137
+"rating","android",0.0161,"undirected",0.0161
+"rating","mortgage",0.2085,"undirected",0.2085
+"rating","profile",0.0202,"undirected",0.0202
+"rating","twitter",0.075,"undirected",0.075
+"rating","linkedin",0.2429,"undirected",0.2429
+"rating","internet",0.103,"undirected",0.103
+"rating","attorney",0.106,"undirected",0.106
+"refund","sales",0.1272,"undirected",0.1272
+"refund","facility",0.1703,"undirected",0.1703
+"refund","employee employees",0.1945,"undirected",0.1945
+"refund","service",0.0343,"undirected",0.0343
+"refund","institution",0.3374,"undirected",0.3374
+"refund","photo",0.039,"undirected",0.039
+"refund","transactions",0.2036,"undirected",0.2036
+"refund","internet",0.0011,"undirected",0.0011
+"refund","identity",0.3947,"undirected",0.3947
+"refund","attorney",0.0485,"undirected",0.0485
+"sales","administrator",0.0003,"undirected",0.0003
+"sales","service",0.0959,"undirected",0.0959
+"sales","twitter",0.0024,"undirected",0.0024
+"sales","computers",0.0232,"undirected",0.0232
+"sales","ipad",0.0673,"undirected",0.0673
+"sales","street",0.0142,"undirected",0.0142
+"sales","attorney",0.022,"undirected",0.022
+"sales","credit",0.0147,"undirected",0.0147
+"schools","website",0.0051,"undirected",0.0051
+"schools","adult",0.1122,"undirected",0.1122
+"schools","parents",0.1575,"undirected",0.1575
+"schools","online",0.0662,"undirected",0.0662
+"schools","administrator",0.6177,"undirected",0.6177
+"schools","bill",0.2715,"undirected",0.2715
+"schools","photo",0.02,"undirected",0.02
+"schools","twitter",0.0509,"undirected",0.0509
+"schools","bureau",0.0591,"undirected",0.0591
+"schools","source",0.1875,"undirected",0.1875
+"schools","phone",0.0662,"undirected",0.0662
+"schools","identity",0.0389,"undirected",0.0389
+"schools","student",0.1345,"undirected",0.1345
+"schools","vehicle",0.0804,"undirected",0.0804
+"schools","passwords password",0.0518,"undirected",0.0518
+"score","agency",0.3248,"undirected",0.3248
+"score","type",0.4519,"undirected",0.4519
+"score","american",0.0647,"undirected",0.0647
+"score","accounts account",0.1695,"undirected",0.1695
+"score","id",0.0048,"undirected",0.0048
+"score","loan",0.9174,"undirected",0.9174
+"score","transunion",0.5042,"undirected",0.5042
+"score","utility utilities",0.0995,"undirected",0.0995
+"score","facility",0.0053,"undirected",0.0053
+"score","network",0.0932,"undirected",0.0932
+"score","service",0.095,"undirected",0.095
+"score","mortgage",0.1458,"undirected",0.1458
+"score","equifax",0.5042,"undirected",0.5042
+"score","bill",0.0399,"undirected",0.0399
+"score","twitter",0.0047,"undirected",0.0047
+"score","bureau",0.5033,"undirected",0.5033
+"score","identity",0.0036,"undirected",0.0036
+"score","street",0.0001,"undirected",0.0001
+"score","credit",0.1586,"undirected",0.1586
+"score","vehicle",0.022,"undirected",0.022
+"secret","address addresses",0.0184,"undirected",0.0184
+"secret","postal",0.0111,"undirected",0.0111
+"secret","facility",0.0664,"undirected",0.0664
+"secret","service",0.0096,"undirected",0.0096
+"secret","institution",0.0021,"undirected",0.0021
+"secret","banking bank",0.2441,"undirected",0.2441
+"secret","computers",0.0887,"undirected",0.0887
+"secret","ipad",0.0811,"undirected",0.0811
+"secret","identity",0.0774,"undirected",0.0774
+"secret","attorney",0.2628,"undirected",0.2628
+"secret","credit",0.0944,"undirected",0.0944
+"secure security","id",0.2843,"undirected",0.2843
+"secure security","apple",0.108,"undirected",0.108
+"secure security","transunion",0.1188,"undirected",0.1188
+"secure security","social",0.9663,"undirected",0.9663
+"secure security","email",0.0706,"undirected",0.0706
+"secure security","adult",0.2935,"undirected",0.2935
+"secure security","number",0.3822,"undirected",0.3822
+"secure security","equifax",0.1188,"undirected",0.1188
+"secure security","bill",0.461,"undirected",0.461
+"secure security","assistance",0.0259,"undirected",0.0259
+"secure security","bureau",0.0762,"undirected",0.0762
+"secure security","computers",0.0256,"undirected",0.0256
+"secure security","ipad",0.108,"undirected",0.108
+"secure security","identity",0.1174,"undirected",0.1174
+"secure security","attorney",0.0034,"undirected",0.0034
+"secure security","date",0.2504,"undirected",0.2504
+"service","mortgage",0.0003,"undirected",0.0003
+"service","equifax",0.03,"undirected",0.03
+"service","twitter",0.0222,"undirected",0.0222
+"service","linkedin",0.0044,"undirected",0.0044
+"service","identity",0.1374,"undirected",0.1374
+"service","credit",0.7044,"undirected",0.7044
+"service","passwords password",0.0111,"undirected",0.0111
+"settings","application",0.014,"undirected",0.014
+"settings","facebook",0.0857,"undirected",0.0857
+"settings","college",0.0214,"undirected",0.0214
+"settings","google",0.1736,"undirected",0.1736
+"settings","site",0.432,"undirected",0.432
+"settings","children",0.4527,"undirected",0.4527
+"settings","laptop",0.4702,"undirected",0.4702
+"settings","user",0.0497,"undirected",0.0497
+"settings","accounts account",0.0096,"undirected",0.0096
+"settings","device devices",0.6308,"undirected",0.6308
+"settings","schools",0.0637,"undirected",0.0637
+"settings","ebay",0.0833,"undirected",0.0833
+"settings","term",0.0947,"undirected",0.0947
+"settings","rating",0.0303,"undirected",0.0303
+"settings","website",0.0794,"undirected",0.0794
+"settings","adult",0.1554,"undirected",0.1554
+"settings","address addresses",0.0159,"undirected",0.0159
+"settings","parents",0.342,"undirected",0.342
+"settings","online",0.2416,"undirected",0.2416
+"settings","network",0.0142,"undirected",0.0142
+"settings","android",0.7191,"undirected",0.7191
+"settings","photo",0.0356,"undirected",0.0356
+"settings","twitter",0.0327,"undirected",0.0327
+"settings","source",0.4649,"undirected",0.4649
+"settings","linkedin",0.1624,"undirected",0.1624
+"settings","phone",0.4675,"undirected",0.4675
+"settings","computers",0.3415,"undirected",0.3415
+"settings","internet",0.1001,"undirected",0.1001
+"settings","ipad",0.0026,"undirected",0.0026
+"settings","student",0.1478,"undirected",0.1478
+"settings","passwords password",0.0093,"undirected",0.0093
+"sign","name",0.0074,"undirected",0.0074
+"sign","mobile",0.0467,"undirected",0.0467
+"sign","type",0.0065,"undirected",0.0065
+"sign","american",0.0816,"undirected",0.0816
+"sign","business",0.0545,"undirected",0.0545
+"sign","children",0.0597,"undirected",0.0597
+"sign","store",0.1834,"undirected",0.1834
+"sign","secure security",0.3161,"undirected",0.3161
+"sign","id",0.3173,"undirected",0.3173
+"sign","loan",0.0324,"undirected",0.0324
+"sign","transunion",0.1233,"undirected",0.1233
+"sign","ebay",0.1283,"undirected",0.1283
+"sign","term",0.0817,"undirected",0.0817
+"sign","social",0.2931,"undirected",0.2931
+"sign","utility utilities",0.0116,"undirected",0.0116
+"sign","adult",0.6667,"undirected",0.6667
+"sign","parents",0.2615,"undirected",0.2615
+"sign","number",0.3799,"undirected",0.3799
+"sign","online",0.0668,"undirected",0.0668
+"sign","sales",0.305,"undirected",0.305
+"sign","facility",0.046,"undirected",0.046
+"sign","network",0.0331,"undirected",0.0331
+"sign","mortgage",0.0493,"undirected",0.0493
+"sign","equifax",0.1233,"undirected",0.1233
+"sign","bill",0.2608,"undirected",0.2608
+"sign","bureau",0.0292,"undirected",0.0292
+"sign","phone",0.0108,"undirected",0.0108
+"sign","computers",0.0102,"undirected",0.0102
+"sign","identity",0.0819,"undirected",0.0819
+"sign","date",0.1812,"undirected",0.1812
+"site","children",0.9016,"undirected",0.9016
+"site","user",0.2964,"undirected",0.2964
+"site","schools",0.1575,"undirected",0.1575
+"site","social",0.0463,"undirected",0.0463
+"site","adult",0.3518,"undirected",0.3518
+"site","parents",0.7022,"undirected",0.7022
+"site","online",0.5353,"undirected",0.5353
+"site","network",0.011,"undirected",0.011
+"site","android",0.0535,"undirected",0.0535
+"site","profile",0.2776,"undirected",0.2776
+"site","photo",0.1303,"undirected",0.1303
+"site","source",0.9024,"undirected",0.9024
+"site","linkedin",0.0334,"undirected",0.0334
+"site","phone",0.3377,"undirected",0.3377
+"site","internet",0.0909,"undirected",0.0909
+"site","student",0.2732,"undirected",0.2732
+"site","passwords password",0.0437,"undirected",0.0437
+"social","website",0.0311,"undirected",0.0311
+"social","email",0.1131,"undirected",0.1131
+"social","adult",0.3295,"undirected",0.3295
+"social","parents",0.1046,"undirected",0.1046
+"social","number",0.3185,"undirected",0.3185
+"social","equifax",0.098,"undirected",0.098
+"social","bill",0.4055,"undirected",0.4055
+"social","photo",0.0002,"undirected",0.0002
+"social","twitter",0.0098,"undirected",0.0098
+"social","bureau",0.052,"undirected",0.052
+"social","source",0.0097,"undirected",0.0097
+"social","computers",0.0225,"undirected",0.0225
+"social","ipad",0.1014,"undirected",0.1014
+"social","identity",0.0494,"undirected",0.0494
+"social","date",0.2318,"undirected",0.2318
+"social","passwords password",0.0205,"undirected",0.0205
+"source","phone",0.4221,"undirected",0.4221
+"source","internet",0.0404,"undirected",0.0404
+"source","student",0.3479,"undirected",0.3479
+"ssn","corporation",0.013,"undirected",0.013
+"ssn","store",0.1362,"undirected",0.1362
+"ssn","secure security",0.1285,"undirected",0.1285
+"ssn","purchasing purchase",0.0295,"undirected",0.0295
+"ssn","st",0.224,"undirected",0.224
+"ssn","term",0.076,"undirected",0.076
+"ssn","social",0.1279,"undirected",0.1279
+"ssn","utility utilities",0.0481,"undirected",0.0481
+"ssn","website",0.0696,"undirected",0.0696
+"ssn","email",0.1844,"undirected",0.1844
+"ssn","address addresses",0.0997,"undirected",0.0997
+"ssn","number",0.0684,"undirected",0.0684
+"ssn","refund",0.2164,"undirected",0.2164
+"ssn","facility",0.025,"undirected",0.025
+"ssn","network",0.0242,"undirected",0.0242
+"ssn","institution",0.0102,"undirected",0.0102
+"ssn","bill",0.1403,"undirected",0.1403
+"ssn","bureau",0.1487,"undirected",0.1487
+"ssn","transactions",0.0615,"undirected",0.0615
+"ssn","phone",0.0809,"undirected",0.0809
+"ssn","internet",0.0525,"undirected",0.0525
+"ssn","identity",0.0984,"undirected",0.0984
+"ssn","street",0.4726,"undirected",0.4726
+"ssn","credit",0.0486,"undirected",0.0486
+"ssn","date",0.116,"undirected",0.116
+"ssn","passwords password",0.0183,"undirected",0.0183
+"st","apple",0.0123,"undirected",0.0123
+"st","term",0.2233,"undirected",0.2233
+"st","secret",0.196,"undirected",0.196
+"st","rating",0.0747,"undirected",0.0747
+"st","website",0.0094,"undirected",0.0094
+"st","email",0.0818,"undirected",0.0818
+"st","address addresses",0.1315,"undirected",0.1315
+"st","service",0.0089,"undirected",0.0089
+"st","bill",0.0301,"undirected",0.0301
+"st","computers",0.0151,"undirected",0.0151
+"st","ipad",0.0689,"undirected",0.0689
+"st","street",0.3221,"undirected",0.3221
+"st","attorney",0.0447,"undirected",0.0447
+"st","credit",0.0474,"undirected",0.0474
+"st","date",0.2408,"undirected",0.2408
+"st","vehicle",0.0149,"undirected",0.0149
+"store","license",0.1742,"undirected",0.1742
+"store","secure security",0.1221,"undirected",0.1221
+"store","purchasing purchase",0.3349,"undirected",0.3349
+"store","accounts account",0.1365,"undirected",0.1365
+"store","id",0.0192,"undirected",0.0192
+"store","device devices",0.0773,"undirected",0.0773
+"store","st",0.4085,"undirected",0.4085
+"store","apple",0.5404,"undirected",0.5404
+"store","transunion",0.119,"undirected",0.119
+"store","social",0.1083,"undirected",0.1083
+"store","adult",0.0636,"undirected",0.0636
+"store","number",0.0279,"undirected",0.0279
+"store","postal",0.0246,"undirected",0.0246
+"store","sales",0.0732,"undirected",0.0732
+"store","administrator",0.0715,"undirected",0.0715
+"store","android",0.0864,"undirected",0.0864
+"store","equifax",0.119,"undirected",0.119
+"store","bill",0.0702,"undirected",0.0702
+"store","transactions",0.0883,"undirected",0.0883
+"store","phone",0.037,"undirected",0.037
+"store","computers",0.3288,"undirected",0.3288
+"store","ipad",0.525,"undirected",0.525
+"store","attorney",0.0114,"undirected",0.0114
+"street","date",0.3141,"undirected",0.3141
+"student","passwords password",0.0111,"undirected",0.0111
+"system","card cards",0.0169,"undirected",0.0169
+"system","visa",0.0003,"undirected",0.0003
+"system","driving",0.0069,"undirected",0.0069
+"system","settings",0.0094,"undirected",0.0094
+"system","score",0.0015,"undirected",0.0015
+"system","customers customer",0.0071,"undirected",0.0071
+"system","type",0.2321,"undirected",0.2321
+"system","corporation",0.0009,"undirected",0.0009
+"system","laptop",0.0135,"undirected",0.0135
+"system","user",0.0137,"undirected",0.0137
+"system","secure security",0.0014,"undirected",0.0014
+"system","id",0.4285,"undirected",0.4285
+"system","device devices",0.0274,"undirected",0.0274
+"system","rating",0.0317,"undirected",0.0317
+"system","website",0.0449,"undirected",0.0449
+"system","sales",0.0024,"undirected",0.0024
+"system","employee employees",0.0063,"undirected",0.0063
+"system","service",0.0289,"undirected",0.0289
+"system","android",0.0099,"undirected",0.0099
+"system","twitter",0.0506,"undirected",0.0506
+"system","computers",0.0059,"undirected",0.0059
+"system","passwords password",0.0493,"undirected",0.0493
+"tax","sign",0.1812,"undirected",0.1812
+"tax","type",0.2094,"undirected",0.2094
+"tax","american",0.0349,"undirected",0.0349
+"tax","business",0.0638,"undirected",0.0638
+"tax","corporation",0.0098,"undirected",0.0098
+"tax","id",0.1371,"undirected",0.1371
+"tax","term",0.1818,"undirected",0.1818
+"tax","website",0.0048,"undirected",0.0048
+"tax","refund",0.3839,"undirected",0.3839
+"tax","sales",0.7375,"undirected",0.7375
+"tax","administrator",0.0687,"undirected",0.0687
+"tax","identity",0.0739,"undirected",0.0739
+"tax","street",0.0073,"undirected",0.0073
+"tax","attorney",0.0482,"undirected",0.0482
+"term","utility utilities",0.0718,"undirected",0.0718
+"term","website",0.1623,"undirected",0.1623
+"term","email",0.0025,"undirected",0.0025
+"term","address addresses",0.2388,"undirected",0.2388
+"term","number",0.0406,"undirected",0.0406
+"term","refund",0.0703,"undirected",0.0703
+"term","sales",0.167,"undirected",0.167
+"term","network",0.1061,"undirected",0.1061
+"term","android",0.1124,"undirected",0.1124
+"term","linkedin",0.1259,"undirected",0.1259
+"term","internet",0.2258,"undirected",0.2258
+"term","identity",0.1218,"undirected",0.1218
+"term","attorney",0.1321,"undirected",0.1321
+"term","date",0.1571,"undirected",0.1571
+"term","vehicle",0.0323,"undirected",0.0323
+"transactions","attorney",0.1398,"undirected",0.1398
+"transactions","vehicle",0.1638,"undirected",0.1638
+"transunion","social",0.098,"undirected",0.098
+"transunion","utility utilities",0.1216,"undirected",0.1216
+"transunion","adult",0.2849,"undirected",0.2849
+"transunion","parents",0.0394,"undirected",0.0394
+"transunion","number",0.0888,"undirected",0.0888
+"transunion","network",0.1128,"undirected",0.1128
+"transunion","service",0.03,"undirected",0.03
+"transunion","android",0.0391,"undirected",0.0391
+"transunion","mortgage",0.0233,"undirected",0.0233
+"transunion","equifax",1,"undirected",1
+"transunion","banking bank",0.0385,"undirected",0.0385
+"transunion","bill",0.137,"undirected",0.137
+"transunion","bureau",0.4945,"undirected",0.4945
+"transunion","transactions",0.0331,"undirected",0.0331
+"transunion","computers",0.1181,"undirected",0.1181
+"transunion","ipad",0.2264,"undirected",0.2264
+"transunion","identity",0.2174,"undirected",0.2174
+"transunion","credit",0.2283,"undirected",0.2283
+"transunion","date",0.1377,"undirected",0.1377
+"twitter","linkedin",0.2751,"undirected",0.2751
+"twitter","phone",0.0595,"undirected",0.0595
+"twitter","computers",0.1335,"undirected",0.1335
+"twitter","internet",0.0727,"undirected",0.0727
+"twitter","identity",0.0214,"undirected",0.0214
+"twitter","street",0.0245,"undirected",0.0245
+"twitter","passwords password",0.9694,"undirected",0.9694
+"type","american",0.1395,"undirected",0.1395
+"type","business",0.3718,"undirected",0.3718
+"type","corporation",0.0085,"undirected",0.0085
+"type","accounts account",0.0182,"undirected",0.0182
+"type","id",0.1399,"undirected",0.1399
+"type","device devices",0.0106,"undirected",0.0106
+"type","loan",0.4613,"undirected",0.4613
+"type","transunion",0.0847,"undirected",0.0847
+"type","term",0.0412,"undirected",0.0412
+"type","secret",0.032,"undirected",0.032
+"type","utility utilities",0.2324,"undirected",0.2324
+"type","rating",0.0391,"undirected",0.0391
+"type","sales",0.1064,"undirected",0.1064
+"type","employee employees",0.3086,"undirected",0.3086
+"type","service",0.0249,"undirected",0.0249
+"type","mortgage",0.0612,"undirected",0.0612
+"type","equifax",0.0847,"undirected",0.0847
+"type","bill",0.0582,"undirected",0.0582
+"type","twitter",0.0442,"undirected",0.0442
+"type","assistance",0.3563,"undirected",0.3563
+"type","bureau",0.2575,"undirected",0.2575
+"type","linkedin",0.114,"undirected",0.114
+"user","purchasing purchase",0.0057,"undirected",0.0057
+"user","accounts account",0.0744,"undirected",0.0744
+"user","device devices",0.0756,"undirected",0.0756
+"user","apple",0.0342,"undirected",0.0342
+"user","ebay",0.0905,"undirected",0.0905
+"user","term",0.0094,"undirected",0.0094
+"user","rating",0.0436,"undirected",0.0436
+"user","website",0.3281,"undirected",0.3281
+"user","email",0.0049,"undirected",0.0049
+"user","parents",0.015,"undirected",0.015
+"user","network",0.2504,"undirected",0.2504
+"user","android",0.1668,"undirected",0.1668
+"user","profile",0.7975,"undirected",0.7975
+"user","banking bank",0.0129,"undirected",0.0129
+"user","twitter",0.4148,"undirected",0.4148
+"user","source",0.0176,"undirected",0.0176
+"user","linkedin",0.3784,"undirected",0.3784
+"user","phone",0.0347,"undirected",0.0347
+"user","computers",0.0311,"undirected",0.0311
+"user","internet",0.5301,"undirected",0.5301
+"user","passwords password",0.3986,"undirected",0.3986
+"utility utilities","rating",0.251,"undirected",0.251
+"utility utilities","email",0.1037,"undirected",0.1037
+"utility utilities","number",0.0117,"undirected",0.0117
+"utility utilities","postal",0.0149,"undirected",0.0149
+"utility utilities","sales",0.0624,"undirected",0.0624
+"utility utilities","employee employees",0.3536,"undirected",0.3536
+"utility utilities","network",0.3493,"undirected",0.3493
+"utility utilities","service",0.2045,"undirected",0.2045
+"utility utilities","equifax",0.1216,"undirected",0.1216
+"utility utilities","twitter",0.0246,"undirected",0.0246
+"utility utilities","bureau",0.0037,"undirected",0.0037
+"utility utilities","linkedin",0.2124,"undirected",0.2124
+"utility utilities","internet",0.0397,"undirected",0.0397
+"utility utilities","credit",0.1762,"undirected",0.1762
+"utility utilities","vehicle",0.0274,"undirected",0.0274
+"visa","driving",0.0277,"undirected",0.0277
+"visa","score",0.2212,"undirected",0.2212
+"visa","federal",0.0168,"undirected",0.0168
+"visa","customers customer",0.0539,"undirected",0.0539
+"visa","type",0.0997,"undirected",0.0997
+"visa","american",0.207,"undirected",0.207
+"visa","business",0.0199,"undirected",0.0199
+"visa","store",0.0442,"undirected",0.0442
+"visa","purchasing purchase",0.5238,"undirected",0.5238
+"visa","accounts account",0.0298,"undirected",0.0298
+"visa","device devices",0.0755,"undirected",0.0755
+"visa","loan",0.2332,"undirected",0.2332
+"visa","st",0.0953,"undirected",0.0953
+"visa","transunion",0.1091,"undirected",0.1091
+"visa","ebay",0.1705,"undirected",0.1705
+"visa","online",0.1568,"undirected",0.1568
+"visa","mortgage",0.158,"undirected",0.158
+"visa","equifax",0.1091,"undirected",0.1091
+"visa","banking bank",0.0421,"undirected",0.0421
+"visa","bill",0.025,"undirected",0.025
+"visa","bureau",0.2466,"undirected",0.2466
+"visa","transactions",0.1424,"undirected",0.1424
+"visa","phone",0.0878,"undirected",0.0878
+"visa","credit",0.0323,"undirected",0.0323
+"visa","date",0.0539,"undirected",0.0539
+"visa","vehicle",0.0333,"undirected",0.0333
+"website","email",0.2329,"undirected",0.2329
+"website","address addresses",0.1549,"undirected",0.1549
+"website","refund",0.0053,"undirected",0.0053
+"website","service",0.0387,"undirected",0.0387
+"website","banking bank",0.015,"undirected",0.015
+"website","photo",0.0407,"undirected",0.0407
+"website","twitter",0.8514,"undirected",0.8514
+"website","linkedin",0.2504,"undirected",0.2504
+"website","computers",0.123,"undirected",0.123
+"website","internet",0.0226,"undirected",0.0226
+"website","ipad",0.0082,"undirected",0.0082
+"website","identity",0.0613,"undirected",0.0613
+"website","date",0.0044,"undirected",0.0044
+"website","student",0.0086,"undirected",0.0086
+"website","vehicle",0.034,"undirected",0.034
+"website","passwords password",0.8419,"undirected",0.8419

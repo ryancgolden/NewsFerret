@@ -25,7 +25,7 @@ datDir = baseLocation;
 
 % trim the tails (remove really frequent words >1% of words, really rare words < .01%, and docs 
 % that don't have more than 20 words)
-[id_wc_trim, id_words_trim, id_docs_trim] = trim(id_wc_stopped, id_words_stopped, id_docs, 0.0001, 0.01, 20);
+[id_wc_trim, id_words_trim, id_docs_trim] = trim(id_wc_stopped, id_words_stopped, id_docs, 0.00005, 0.02, 20);
 %[id_wc_trim, id_words_trim, id_docs_trim] = trim(id_wc, id_words, id_docs, 5, 600, 20);
 %clear id_wc % else we run out of memory in the next command
 
@@ -61,35 +61,48 @@ fclose(fid);
 %id_stats = nodestats(doc_node_info);
 
 % latent semantic analysis to compute pairwise term similarity
+% first compute singular value decomposition
 [U,S,V] = svd(id_fin);
-D=pdist(U*S,'cosine'); % compute distances between term vectors in the lower dimensional space
-SquareD = squareform(D); % make it easier to dereference individual comparisons
-pair_sims = termsim(SquareD, id_words_trim, 1);
-pair_sims = sortcell(pair_sims,1);
+% now reduce the rank.  50 < k < 1000 has been shown to work well,
+% with 100 typically performing well, though no theory exists to explain why
+k = 100;
+Uk = U(:,1:k);
+Sk = S(1:k,1:k);
+Vk = V(:,1:k);
 
-% Only let important word pairs through
-important_pairs = pair_sims(ismember(pair_sims(:,1), important), :);
-important_pairs = important_pairs(ismember(important_pairs(:,2), important), :);
-%important_pairs = [important_pairs; important_pairs(:,[2 1 3])]; % add inverse
-important_pairs = sortcell(important_pairs,1);
+D=pdist(Uk*Sk,'cosine'); % compute distances between term vectors in the lower dimensional space
+SquareD = squareform(D); % make it easier to dereference individual comparisons
+[pair_sims, pair_related_docs] = termsim(SquareD, id_words_trim, important, 1, Uk, Sk, Vk, id_docs_trim{1}, 5);
+%pair_sims = sortcell(pair_sims,1);
 
 % Write important pair weights to a file
 
 % 1-cosine sim gives us a positive weight that increases with similarity
 % for our visualization tools
-for row=1:size(important_pairs,1)
+for row=1:size(pair_sims,1)
     if row==1
-        tmp = {important_pairs{row,1:2} 1.0000-cell2mat(important_pairs(row,3))};
+        tmp = {pair_sims{row,1:2} 1.0000-cell2mat(pair_sims(row,3))};
     else
-        tmp = [tmp; important_pairs(row,1:2) {1.0000-cell2mat(important_pairs(row,3))}];
+        tmp = [tmp; pair_sims(row,1:2) {1.0000-cell2mat(pair_sims(row,3))}];
     end
 end
-important_pairs = tmp;
+pair_sims = tmp;
 
-[nrows,ncols]= size(important_pairs);
-filename = fullfile(datDir, 'importantpairs.dat');
+[nrows,ncols]= size(pair_sims);
+filename = fullfile(datDir, 'importantpairs.csv');
 fid = fopen(filename, 'w');
+fprintf(fid, '\"%s\" \"%s\" \"%s\" \"%s\"\n', 'source','target','weight','type');
 for row=1:nrows
-    fprintf(fid, '%s %s %1.4f \n', important_pairs{row,:});
+    fprintf(fid, '%s %s %1.4f undirected\n', pair_sims{row,:});
 end
 fclose(fid);
+
+[nrows,ncols]= size(pair_related_docs);
+filename = fullfile(datDir, 'importantpairs_topmatchingdocs.csv');
+fid = fopen(filename, 'w');
+fprintf(fid, '\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\"\n', 'source','target','weight','type','rank1','rank2','rank3','rank4','rank5');
+for row=1:nrows
+    fprintf(fid, '\"%s\",\"%s\",\"%1.4f\",\"undirected\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\"\n', pair_related_docs{row,:});
+end
+fclose(fid);
+

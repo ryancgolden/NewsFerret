@@ -53,11 +53,26 @@ public class TermDocMatCreator extends Configured implements Tool {
 
 		// Part of speech tagger
 		private static String sTaggerLoc = "taggers/english-bidirectional-distsim.tagger";
-		private MaxentTagger myTagger = null;
+		private static MaxentTagger sTagger = null;
 
 		private Text word = new Text();
 		private ByteBuffer sourceColumn;
 
+		// initialize tagger in static block to save startup time on each task
+		// XXX: should we be passing this in the distributed cache?
+		//--------------REMOVING TAGGING FOR NOW
+//		static {
+//			// Create part of speech tagger
+//			try {
+//				sTagger = new MaxentTagger(sTaggerLoc);
+//			} catch (Exception e) {
+//				logger.error("Error occurred creating tagger.  Please ensure "
+//						+ "training files are accessible at "
+//						+ "taggers/english-bidirectional-distsim.tagger", e);
+//				//suppress remaining exception... not sure if this is okay
+//			}			
+//		}
+		
 		protected void setup(Context context) throws IOException,
 				InterruptedException {
 			sourceColumn = ByteBufferUtil.bytes(context.getConfiguration().get(
@@ -65,15 +80,6 @@ public class TermDocMatCreator extends Configured implements Tool {
 			logger.debug("sourceColumn = " + context.getConfiguration().get(
 					NewsDao.COL_CONTENT));
 
-			// Create part of speech tagger
-			try {
-				myTagger = new MaxentTagger(sTaggerLoc);
-			} catch (ClassNotFoundException e) {
-				logger.error("Error occurred creating tagger.  Please ensure "
-						+ "training files are accessible at "
-						+ "taggers/english-bidirectional-distsim.tagger", e);
-				throw new InterruptedException();
-			}			
 			
 		}
 
@@ -88,37 +94,52 @@ public class TermDocMatCreator extends Configured implements Tool {
 				return;
 			String value = ByteBufferUtil.string(column.value());
 
+			//--------------REMOVING TAGGING FOR NOW
 			// tagged string contains part of speech suffix
 			// see http://www.computing.dcu.ie/~acahill/tagset.html
-			String tagged = myTagger.tagString(value);
-			StringTokenizer itr = new StringTokenizer(tagged);
+			//String tagged = sTagger.tagString(value);
+			//StringTokenizer itr = new StringTokenizer(tagged);
+			StringTokenizer itr = new StringTokenizer(value);
 			boolean hasWords = false; //track whether the doc has any valid words
 			while (itr.hasMoreTokens()) {
-				String myTaggedStr = itr.nextToken();
-
+				//String myTaggedStr = itr.nextToken();
+				String myRoot = itr.nextToken();
+				
 				// Remove anything not alphanumeric or underscore
-				myTaggedStr = myTaggedStr.replaceAll("[^\\w\\s_]", "");
+				//--------------REMOVING TAGGING FOR NOW
+//				myTaggedStr = myTaggedStr.replaceAll("[^\\w\\s_]", "");
+				myRoot = myRoot.replaceAll("[^\\w\\s_]", "");
 
-				if (myTaggedStr.length() < 2) {
+				//--------------REMOVING TAGGING FOR NOW
+//				if (myTaggedStr.length() < 2) {
+//					continue;
+//				}
+
+				if (myRoot.length() < 2) {
 					continue;
 				}
-				
-				// Separate root string and tag suffix
-				String myRoot = null;
-				String myTag = null;
-				try {
-					int idx = myTaggedStr.lastIndexOf('_');
-					myRoot = myTaggedStr.substring(0, idx);
-					myTag = myTaggedStr.substring(idx + 1, myTaggedStr.length() - 1);
-				} catch (Exception e) {
-					logger.debug("Problem tagging", e);
-				}
+
+//--------------REMOVING TAGGING FOR NOW
+//				// Separate root string and tag suffix
+//				String myRoot = null;
+//				String myTag = null;
+//				try {
+//					int idx = myTaggedStr.lastIndexOf('_');
+//					myRoot = myTaggedStr.substring(0, idx);
+//					myTag = myTaggedStr.substring(idx + 1, myTaggedStr.length() - 1);
+//				} catch (Exception e) {
+//					logger.debug("Problem tagging", e);
+//				}
 
 				myRoot = myRoot.toLowerCase();
 
 				// If the string was non alpha, skip it
 				// If the string is not a noun, skip it
-				if ("".equals(myRoot) || myTag == null || !(myTag.contains("NN"))) {
+				//--------------REMOVING TAGGING FOR NOW
+//				if ("".equals(myRoot) || myTag == null || !(myTag.contains("NN"))) {
+//					continue;
+//				}
+				if ("".equals(myRoot)) {
 					continue;
 				}
 				
